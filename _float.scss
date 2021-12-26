@@ -1,0 +1,42 @@
+.float-none { float: none; }
+.float-l { float: left; }
+.float-r { float: right; }
+.float-x { float: both; }
+
+.float-clear {
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+@media screen and (max-width: $desktop-width - 1) {
+    .float-none--m { float: none; }
+    .float-l--m { float: left; }
+    .float-r--m { float: right; }
+    .float-x--m { float: both; }
+
+    .float-clear--m {
+        &:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .float-none--d { float: none; }
+    .float-l--d { float: left; }
+    .float-r--d { float: right; }
+    .float-x--d { float: both; }
+
+    .float-clear--d {
+        &:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+    }
+}

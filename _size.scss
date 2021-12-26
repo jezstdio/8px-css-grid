@@ -1,0 +1,72 @@
+.desktop-width { max-width: $desktop-width; }
+.max-width { max-width: $max-width; }
+.text-width { max-width: $text-width; }
+
+.height-0 { height: 0 !important; }
+.width-0 { width: 0 !important; }
+
+@each $minWidth in $size { .min-width-#{$minWidth} { min-width: percentage($minWidth) / 100 !important; } }
+@each $width in $size { .width-#{$width} { width: percentage($width) / 100 !important; } }
+@each $maxWidth in $size { .max-width-#{$maxWidth} { max-width: percentage($maxWidth) / 100 !important; } }
+
+@each $minWidth in $size { .min-width-#{$minWidth}vw { min-width: #{$minWidth}vw !important; } }
+@each $width in $size { .width-#{$width}vw { width: #{$width}vw !important; } }
+@each $maxWidth in $size { .max-width-#{$maxWidth}vw { max-width: #{$maxWidth}vw !important; } }
+
+@each $minHeight in $size { .min-height-#{$minHeight} { min-height: percentage($minHeight) / 100 !important; } }
+@each $height in $size { .height-#{$height} { height: percentage($height) / 100 !important; } }
+@each $maxHeight in $size { .max-height-#{$maxHeight} { max-height: percentage($maxHeight) / 100 !important; } }
+
+@each $minHeight in $size { .min-height-#{$minHeight}vh { min-height: #{$minHeight}vh !important; } }
+@each $height in $size { .height-#{$height}vh { height: #{$height}vh !important; } }
+@each $maxHeight in $size { .max-height-#{$maxHeight}vh { max-height: #{$maxHeight}vh !important; } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    .desktop-width--m { max-width: $desktop-width; }
+    .max-width--m { max-width: $max-width; }
+    .text-width--m { max-width: $text-width; }
+
+    .height-0--m { height: 0 !important; }
+    .width-0--m { width: 0 !important; }
+
+    @each $minWidth in $size { .min-width-#{$minWidth}--m { min-width: percentage($minWidth) / 100 !important; } }
+    @each $width in $size { .width-#{$width}--m { width: percentage($width) / 100 !important; } }
+    @each $maxWidth in $size { .max-width-#{$maxWidth}--m { max-width: percentage($maxWidth) / 100 !important; } }
+    
+    @each $minWidth in $size { .min-width-#{$minWidth}vw--m { min-width: #{$minWidth}vw !important; } }
+    @each $width in $size { .width-#{$width}vw--m { width: #{$width}vw !important; } }
+    @each $maxWidth in $size { .max-width-#{$maxWidth}vw--m { max-width: #{$maxWidth}vw !important; } }
+    
+    @each $minHeight in $size { .min-height-#{$minHeight}--m { min-height: percentage($minHeight) / 100 !important; } }
+    @each $height in $size { .height-#{$height}--m { height: percentage($height) / 100 !important; } }
+    @each $maxHeight in $size { .max-height-#{$maxHeight}--m { max-height: percentage($maxHeight) / 100 !important; } }
+    
+    @each $minHeight in $size { .min-height-#{$minHeight}vh--m { min-height: #{$minHeight}vh !important; } }
+    @each $height in $size { .height-#{$height}vh--m { height: #{$height}vh !important; } }
+    @each $maxHeight in $size { .max-height-#{$maxHeight}vh--m { max-height: #{$maxHeight}vh !important; } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .desktop-width--d { max-width: $desktop-width; }
+    .max-width--d { max-width: $max-width; }
+    .text-width--d { max-width: $text-width; }
+
+    .height-0--d { height: 0 !important; }
+    .width-0--d { width: 0 !important; }
+
+    @each $minWidth in $size { .min-width-#{$minWidth}--d { min-width: percentage($minWidth) / 100 !important; } }
+    @each $width in $size { .width-#{$width}--d { width: percentage($width) / 100 !important; } }
+    @each $maxWidth in $size { .max-width-#{$maxWidth}--d { max-width: percentage($maxWidth) / 100 !important; } }
+    
+    @each $minWidth in $size { .min-width-#{$minWidth}vw--d { min-width: #{$minWidth}vw !important; } }
+    @each $width in $size { .width-#{$width}vw--d { width: #{$width}vw !important; } }
+    @each $maxWidth in $size { .max-width-#{$maxWidth}vw--d { max-width: #{$maxWidth}vw !important; } }
+    
+    @each $minHeight in $size { .min-height-#{$minHeight}--d { min-height: percentage($minHeight) / 100 !important; } }
+    @each $height in $size { .height-#{$height}--d { height: percentage($height) / 100 !important; } }
+    @each $maxHeight in $size { .max-height-#{$maxHeight}--d { max-height: percentage($maxHeight) / 100 !important; } }
+    
+    @each $minHeight in $size { .min-height-#{$minHeight}vw--d { min-height: #{$minHeight}vh !important; } }
+    @each $height in $size { .height-#{$height}vh--d { height: #{$height}vh !important; } }
+    @each $maxHeight in $size { .max-height-#{$maxHeight}vh--d { max-height: #{$maxHeight}vh !important; } }
+}

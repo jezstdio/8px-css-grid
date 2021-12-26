@@ -1,0 +1,9 @@
+@each $index in $order { .zindex-#{$index} { z-index: #{$index}; } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    @each $index in $order { .zindex-#{$index}--m { z-index: #{$index}; } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    @each $index in $order { .zindex-#{$index}--d { z-index: #{$index}; } }
+}

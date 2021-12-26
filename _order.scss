@@ -1,0 +1,9 @@
+@each $or in $order { .order-#{$or} { order: #{$or}; } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    @each $or in $order { .order-#{$or}--m { order: #{$or}; } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    @each $or in $order { .order-#{$or}--d { order: #{$or}; } }
+}

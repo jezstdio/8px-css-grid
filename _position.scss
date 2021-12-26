@@ -1,0 +1,69 @@
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.relative { position: relative; }
+.static { position: static; }
+.sticky { position: sticky; }
+
+@each $top in $negative { .top--#{$top} { top: -#{$top}px; } }
+@each $top in $positive { .top-#{$top} { top: #{$top}px; } }
+
+@each $right in $negative { .right--#{$right} { right: -#{$right}px; } }
+@each $right in $positive { .right-#{$right} { right: #{$right}px; } }
+@each $right in $negative { .right-a-#{$right} { right: autoIndent(-#{$right}px); } }
+@each $right in $positive { .right-a#{$right} { right: autoIndent(#{$right}px); } }
+
+@each $bottom in $negative { .bottom--#{$bottom} { bottom: -#{$bottom}px; } }
+@each $bottom in $positive { .bottom-#{$bottom} { bottom: #{$bottom}px; } }
+
+@each $left in $negative { .left--#{$left} { left: -#{$left}px; } }
+@each $left in $positive { .left-#{$left} { left: #{$left}px; } }
+@each $left in $negative { .left-a-#{$left} { left: autoIndent(-#{$left}px); } }
+@each $left in $positive { .left-a#{$left} { left: autoIndent(#{$left}px); } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    .absolute--m { position: absolute; }
+    .fixed--m { position: fixed; }
+    .relative--m { position: relative; }
+    .static--m { position: static; }
+    .sticky--m { position: sticky; }
+
+    @each $top in $negative { .top--#{$top}--m { top: -#{$top}px; } }
+    @each $top in $positive { .top-#{$top}--m { top: #{$top}px; } }
+    
+    @each $right in $negative { .right--#{$right}--m { right: -#{$right}px; } }
+    @each $right in $positive { .right-#{$right}--m { right: #{$right}px; } }
+    @each $right in $negative { .right-a-#{$right}--m { right: autoIndent(-#{$right}px); } }
+    @each $right in $positive { .right-a#{$right}--m { right: autoIndent(#{$right}px); } }
+    
+    @each $bottom in $negative { .bottom--#{$bottom}--m { bottom: -#{$bottom}px; } }
+    @each $bottom in $positive { .bottom-#{$bottom}--m { bottom: #{$bottom}px; } }
+    
+    @each $left in $negative { .left--#{$left}--m { left: -#{$left}px; } }
+    @each $left in $positive { .left-#{$left}--m { left: #{$left}px; } }
+    @each $left in $negative { .left-a-#{$left}--m { left: autoIndent(-#{$left}px); } }
+    @each $left in $positive { .left-a#{$left}--m { left: autoIndent(#{$left}px); } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .absolute--d { position: absolute; }
+    .fixed--d { position: fixed; }
+    .relative--d { position: relative; }
+    .static--d { position: static; }
+    .sticky--d { position: sticky; }
+
+    @each $top in $negative { .top--#{$top}--d { top: -#{$top}px; } }
+    @each $top in $positive { .top-#{$top}--d { top: #{$top}px; } }
+    
+    @each $right in $negative { .right--#{$right}--d { right: -#{$right}px; } }
+    @each $right in $positive { .right-#{$right}--d { right: #{$right}px; } }
+    @each $right in $negative { .right-a-#{$right}--d { right: autoIndent(-#{$right}px); } }
+    @each $right in $positive { .right-a#{$right}--d { right: autoIndent(#{$right}px); } }
+    
+    @each $bottom in $negative { .bottom--#{$bottom}--d { bottom: -#{$bottom}px; } }
+    @each $bottom in $positive { .bottom-#{$bottom}--d { bottom: #{$bottom}px; } }
+    
+    @each $left in $negative { .left--#{$left}--d { left: -#{$left}px; } }
+    @each $left in $positive { .left-#{$left}--d { left: #{$left}px; } }
+    @each $left in $negative { .left-a-#{$left}--d { left: autoIndent(-#{$left}px); } }
+    @each $left in $positive { .left-a#{$left}--d { left: autoIndent(#{$left}px); } }
+}

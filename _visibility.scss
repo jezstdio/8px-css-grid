@@ -1,0 +1,12 @@
+.hidden { visibility: hidden; }
+.visible { visibility: visible; }
+
+@media screen and (max-width: $desktop-width - 1) {
+    .hidden--m { visibility: hidden; }
+    .visible--m { visibility: visible; }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .hidden--d { visibility: hidden; }
+    .visible--d { visibility: visible; }
+}

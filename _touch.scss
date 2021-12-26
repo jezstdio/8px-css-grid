@@ -1,0 +1,36 @@
+.touch-auto { touch-action: auto; }
+.touch-none { touch-action: none; }
+.touch-x { touch-action: pan-x; }
+.touch-l { touch-action: pan-left; }
+.touch-r { touch-action: pan-right; }
+.touch-y { touch-action: pan-y; }
+.touch-up { touch-action: pan-up; }
+.touch-down { touch-action: pan-down; }
+.touch-pinch { touch-action: pinch-zoom; }
+.touch-manipulation { touch-action: manipulation; }
+
+@media screen and (max-width: $desktop-width - 1) {
+    .touch-auto--m { touch-action: auto; }
+    .touch-none--m { touch-action: none; }
+    .touch-x--m { touch-action: pan-x; }
+    .touch-l--m { touch-action: pan-left; }
+    .touch-r--m { touch-action: pan-right; }
+    .touch-y--m { touch-action: pan-y; }
+    .touch-up--m { touch-action: pan-up; }
+    .touch-down--m { touch-action: pan-down; }
+    .touch-pinch--m { touch-action: pinch-zoom; }
+    .touch-manipulation--m { touch-action: manipulation; }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .touch-auto--d { touch-action: auto; }
+    .touch-none--d { touch-action: none; }
+    .touch-x--d { touch-action: pan-x; }
+    .touch-l--d { touch-action: pan-left; }
+    .touch-r--d { touch-action: pan-right; }
+    .touch-y--d { touch-action: pan-y; }
+    .touch-up--d { touch-action: pan-up; }
+    .touch-down--d { touch-action: pan-down; }
+    .touch-pinch--d { touch-action: pinch-zoom; }
+    .touch-manipulation--d { touch-action: manipulation; }
+}

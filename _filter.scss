@@ -1,0 +1,12 @@
+@each $blur in $filter { .blur-#{$blur} { filter: blur(#{$blur}px); } }
+@each $blur in $filter { .blur-bg-#{$blur} { backdrop-filter: blur(#{$blur}px); } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    @each $blur in $filter { .blur-#{$blur}--m { filter: blur(#{$blur}px); } }
+    @each $blur in $filter { .blur-bg-#{$blur}--m { backdrop-filter: blur(#{$blur}px); } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    @each $blur in $filter { .blur-#{$blur}--d { filter: blur(#{$blur}px); } }
+    @each $blur in $filter { .blur-bg-#{$blur}--d { backdrop-filter: blur(#{$blur}px); } }
+}

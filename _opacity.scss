@@ -1,0 +1,9 @@
+@each $op in $opacity { .opacity-#{$op} { opacity: #{$op/100}; } }
+
+@media screen and (max-width: $desktop-width - 1) {
+    @each $op in $opacity { .opacity-#{$op}--m { opacity: #{$op/100}; } }
+}
+
+@media screen and (min-width: $desktop-width) {
+    @each $op in $opacity { .opacity-#{$op}--d { opacity: #{$op/100}; } }
+}
