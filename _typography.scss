@@ -1,12 +1,14 @@
-.font-size-10 { @include fontSize(10px); }
-.font-size-14 { @include fontSize(14px); }
-.font-size-16 { @include fontSize(16px); }
-.font-size-24 { @include fontSize(24px); }
-.font-size-32 { @include fontSize(32px); }
-.font-size-40 { @include fontSize(40px); }
-.font-size-48 { @include fontSize(48px); }
-.font-size-88 { @include fontSize(88px); } 
-.font-size-96 { @include fontSize(96px); }
+.font-size {
+    &-10 { @include fontSize(10px); }
+    &-14 { @include fontSize(14px); }
+    &-16 { @include fontSize(16px); }
+    &-24 { @include fontSize(24px); }
+    &-32 { @include fontSize(32px); }
+    &-40 { @include fontSize(40px); }
+    &-48 { @include fontSize(48px); }
+    &-88 { @include fontSize(88px); } 
+    &-96 { @include fontSize(96px); }
+}
 
 .nodecoration { text-decoration: none; }
 .underline { text-decoration: underline; }
@@ -17,48 +19,58 @@
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
-.line-height-0 { line-height: 0px; }
-.line-height-4 { line-height: 4px; }
-.line-height-8 { line-height: 8px; }
-.line-height-16 { line-height: 16px; }
-.line-height-24 { line-height: 24px; }
-.line-height-32 { line-height: 32px; }
-.line-height-40 { line-height: 40px; }
-.line-height-48 { line-height: 48px; }
-.line-height-56 { line-height: 56px; }
-.line-height-64 { line-height: 64px; }
+.line-height {
+    &-0 { line-height: 0px; }
+    &-4 { line-height: 4px; }
+    &-8 { line-height: 8px; }
+    &-16 { line-height: 16px; }
+    &-24 { line-height: 24px; }
+    &-32 { line-height: 32px; }
+    &-40 { line-height: 40px; }
+    &-48 { line-height: 48px; }
+    &-56 { line-height: 56px; }
+    &-64 { line-height: 64px; }
+}
 
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.text {
+    &-left { text-align: left; }
+    &-center { text-align: center; }
+    &-right { text-align: right; }
+}
 
-.font-weight-lighter { font-weight: lighter; }
-.font-weight-normal { font-weight: normal; }
-.font-weight-bolder { font-weight: bolder; }
-.font-weight-bold { font-weight: bold; }
-.font-weight-100 { font-weight: 100; }
-.font-weight-200 { font-weight: 200; }
-.font-weight-300 { font-weight: 300; }
-.font-weight-400 { font-weight: 400; }
-.font-weight-500 { font-weight: 500; }
-.font-weight-600 { font-weight: 600; }
-.font-weight-700 { font-weight: 700; }
-.font-weight-800 { font-weight: 800; }
-.font-weight-900 { font-weight: 900; }
+.font-weight {
+    &-lighter { font-weight: lighter; }
+    &-normal { font-weight: normal; }
+    &-bolder { font-weight: bolder; }
+    &-bold { font-weight: bold; }
+    &-100 { font-weight: 100; }
+    &-200 { font-weight: 200; }
+    &-300 { font-weight: 300; }
+    &-400 { font-weight: 400; }
+    &-500 { font-weight: 500; }
+    &-600 { font-weight: 600; }
+    &-700 { font-weight: 700; }
+    &-800 { font-weight: 800; }
+    &-900 { font-weight: 900; }
+}
 
-.whitespace-wrap { white-space: normal; }
-.whitespace-nowrap { white-space: nowrap; }
+.whitespace {
+    &-wrap { white-space: normal; }
+    &-nowrap { white-space: nowrap; }
+}
 
 @media screen and (max-width: $desktop-width - 1) {
-    .font-size-10--m { @include fontSize(10px); }
-    .font-size-14--m { @include fontSize(14px); }
-    .font-size-16--m { @include fontSize(16px); }
-    .font-size-24--m { @include fontSize(24px); }
-    .font-size-32--m { @include fontSize(32px); }
-    .font-size-40--m { @include fontSize(40px); }
-    .font-size-48--m { @include fontSize(48px); }
-    .font-size-88--m { @include fontSize(88px); }
-    .font-size-96--m { @include fontSize(96px); }
+    .font-size {
+        &-10--m { @include fontSize(10px); }
+        &-14--m { @include fontSize(14px); }
+        &-16--m { @include fontSize(16px); }
+        &-24--m { @include fontSize(24px); }
+        &-32--m { @include fontSize(32px); }
+        &-40--m { @include fontSize(40px); }
+        &-48--m { @include fontSize(48px); }
+        &-88--m { @include fontSize(88px); }
+        &-96--m { @include fontSize(96px); }
+    }
 
     .nodecoration--m { text-decoration: none; }
     .underline--m { text-decoration: underline; }
@@ -69,49 +81,59 @@
     .lowercase--m { text-transform: lowercase; }
     .capitalize--m { text-transform: capitalize; }
 
-    .line-height-0--m { line-height: 0px; }
-    .line-height-4--m { line-height: 4px; }
-    .line-height-8--m { line-height: 8px; }
-    .line-height-16--m { line-height: 16px; }
-    .line-height-24--m { line-height: 24px; }
-    .line-height-32--m { line-height: 32px; }
-    .line-height-40--m { line-height: 40px; }
-    .line-height-48--m { line-height: 48px; }
-    .line-height-56--m { line-height: 56px; }
-    .line-height-64--m { line-height: 64px; }
+    .line-height {
+        &-0--m { line-height: 0px; }
+        &-4--m { line-height: 4px; }
+        &-8--m { line-height: 8px; }
+        &-16--m { line-height: 16px; }
+        &-24--m { line-height: 24px; }
+        &-32--m { line-height: 32px; }
+        &-40--m { line-height: 40px; }
+        &-48--m { line-height: 48px; }
+        &-56--m { line-height: 56px; }
+        &-64--m { line-height: 64px; }
+    }
 
-    .text-left--m { text-align: left; }
-    .text-center--m { text-align: center; }
-    .text-right--m { text-align: right; }
+    .text {
+        &-left--m { text-align: left; }
+        &-center--m { text-align: center; }
+        &-right--m { text-align: right; }
+    }
 
-    .font-weight-lighter--m { font-weight: lighter; }
-    .font-weight-normal--m { font-weight: normal; }
-    .font-weight-bolder--m { font-weight: bolder; }
-    .font-weight-bold--m { font-weight: bold; }
-    .font-weight-100--m { font-weight: 100; }
-    .font-weight-200--m { font-weight: 200; }
-    .font-weight-300--m { font-weight: 300; }
-    .font-weight-400--m { font-weight: 400; }
-    .font-weight-500--m { font-weight: 500; }
-    .font-weight-600--m { font-weight: 600; }
-    .font-weight-700--m { font-weight: 700; }
-    .font-weight-800--m { font-weight: 800; }
-    .font-weight-900--m { font-weight: 900; }
+    .font-weight {
+        &-lighter--m { font-weight: lighter; }
+        &-normal--m { font-weight: normal; }
+        &-bolder--m { font-weight: bolder; }
+        &-bold--m { font-weight: bold; }
+        &-100--m { font-weight: 100; }
+        &-200--m { font-weight: 200; }
+        &-300--m { font-weight: 300; }
+        &-400--m { font-weight: 400; }
+        &-500--m { font-weight: 500; }
+        &-600--m { font-weight: 600; }
+        &-700--m { font-weight: 700; }
+        &-800--m { font-weight: 800; }
+        &-900--m { font-weight: 900; }
+    }
 
-    .whitespace-wrap--m { white-space: normal; }
-    .whitespace-nowrap--m { white-space: nowrap; }
+    .whitespace {
+        &-wrap--m { white-space: normal; }
+        &-nowrap--m { white-space: nowrap; }
+    }
 }
 
 @media screen and (min-width: $desktop-width) {
-    .font-size-10--d { @include fontSize(10px); }
-    .font-size-14--d { @include fontSize(14px); }
-    .font-size-16--d { @include fontSize(16px); }
-    .font-size-24--d { @include fontSize(24px); }
-    .font-size-32--d { @include fontSize(32px); }
-    .font-size-40--d { @include fontSize(40px); }
-    .font-size-48--d { @include fontSize(48px); }
-    .font-size-88--d { @include fontSize(88px); }
-    .font-size-96--d { @include fontSize(96px); }
+    .font-size {
+        &-10--d { @include fontSize(10px); }
+        &-14--d { @include fontSize(14px); }
+        &-16--d { @include fontSize(16px); }
+        &-24--d { @include fontSize(24px); }
+        &-32--d { @include fontSize(32px); }
+        &-40--d { @include fontSize(40px); }
+        &-48--d { @include fontSize(48px); }
+        &-88--d { @include fontSize(88px); }
+        &-96--d { @include fontSize(96px); }
+    }
 
     .nodecoration--d { text-decoration: none; }
     .underline--d { text-decoration: underline; }
@@ -122,35 +144,43 @@
     .lowercase--d { text-transform: lowercase; }
     .capitalize--d { text-transform: capitalize; }
 
-    .line-height-0--d { line-height: 0px; }
-    .line-height-4--d { line-height: 4px; }
-    .line-height-8--d { line-height: 8px; }
-    .line-height-16--d { line-height: 16px; }
-    .line-height-24--d { line-height: 24px; }
-    .line-height-32--d { line-height: 32px; }
-    .line-height-40--d { line-height: 40px; }
-    .line-height-48--d { line-height: 48px; }
-    .line-height-56--d { line-height: 56px; }
-    .line-height-64--d { line-height: 64px; }
+    .line-height {
+        &-0--d { line-height: 0px; }
+        &-4--d { line-height: 4px; }
+        &-8--d { line-height: 8px; }
+        &-16--d { line-height: 16px; }
+        &-24--d { line-height: 24px; }
+        &-32--d { line-height: 32px; }
+        &-40--d { line-height: 40px; }
+        &-48--d { line-height: 48px; }
+        &-56--d { line-height: 56px; }
+        &-64--d { line-height: 64px; }
+    }
 
-    .text-left--d { text-align: left; }
-    .text-center--d { text-align: center; }
-    .text-right--d { text-align: right; }
+    .text {
+        &-left--d { text-align: left; }
+        &-center--d { text-align: center; }
+        &-right--d { text-align: right; }
+    }
 
-    .font-weight-lighter--d { font-weight: lighter; }
-    .font-weight-normal--d { font-weight: normal; }
-    .font-weight-bolder--d { font-weight: bolder; }
-    .font-weight-bold--d { font-weight: bold; }
-    .font-weight-100--d { font-weight: 100; }
-    .font-weight-200--d { font-weight: 200; }
-    .font-weight-300--d { font-weight: 300; }
-    .font-weight-400--d { font-weight: 400; }
-    .font-weight-500--d { font-weight: 500; }
-    .font-weight-600--d { font-weight: 600; }
-    .font-weight-700--d { font-weight: 700; }
-    .font-weight-800--d { font-weight: 800; }
-    .font-weight-900--d { font-weight: 900; }
+    .font-weight {
+        &-lighter--d { font-weight: lighter; }
+        &-normal--d { font-weight: normal; }
+        &-bolder--d { font-weight: bolder; }
+        &-bold--d { font-weight: bold; }
+        &-100--d { font-weight: 100; }
+        &-200--d { font-weight: 200; }
+        &-300--d { font-weight: 300; }
+        &-400--d { font-weight: 400; }
+        &-500--d { font-weight: 500; }
+        &-600--d { font-weight: 600; }
+        &-700--d { font-weight: 700; }
+        &-800--d { font-weight: 800; }
+        &-900--d { font-weight: 900; }
+    }
 
-    .whitespace-wrap--d { white-space: normal; }
-    .whitespace-nowrap--d { white-space: nowrap; }
+    .whitespace {
+        &-wrap--d { white-space: normal; }
+        &-nowrap--d { white-space: nowrap; }
+    }
 }

@@ -1,48 +1,54 @@
-.overflow-auto { overflow: auto; }
-.overflow-hidden { overflow: hidden; }
-.overflow-scroll { overflow: scroll; }
-.overflow-visible { overflow: visible; }
-
-.overflow-x-auto { overflow-x: auto; }
-.overflow-x-hidden { overflow-x: hidden; }
-.overflow-x-scroll { overflow-x: scroll; }
-.overflow-x-visible { overflow-x: visible; }
-
-.overflow-y-auto { overflow-y: auto; }
-.overflow-y-hidden { overflow-y: hidden; }
-.overflow-y-scroll { overflow-y: scroll; }
-.overflow-y-visible { overflow-y: visible; }
+.overflow {
+    &-auto { overflow: auto; }
+    &-hidden { overflow: hidden; }
+    &-scroll { overflow: scroll; }
+    &-visible { overflow: visible; }
+    
+    &-x-auto { overflow-x: auto; }
+    &-x-hidden { overflow-x: hidden; }
+    &-x-scroll { overflow-x: scroll; }
+    &-x-visible { overflow-x: visible; }
+    
+    &-y-auto { overflow-y: auto; }
+    &-y-hidden { overflow-y: hidden; }
+    &-y-scroll { overflow-y: scroll; }
+    &-y-visible { overflow-y: visible; }
+}
 
 @media screen and (max-width: $desktop-width - 1) {
-    .overflow-auto--m { overflow: auto; }
-    .overflow-hidden--m { overflow: hidden; }
-    .overflow-scroll--m { overflow: scroll; }
-    .overflow-visible--m { overflow: visible; }
-
-    .overflow-x-auto--m { overflow-x: auto; }
-    .overflow-x-hidden--m { overflow-x: hidden; }
-    .overflow-x-scroll--m { overflow-x: scroll; }
-    .overflow-x-visible--m { overflow-x: visible; }
-
-    .overflow-y-auto--m { overflow-y: auto; }
-    .overflow-y-hidden--m { overflow-y: hidden; }
-    .overflow-y-scroll--m { overflow-y: scroll; }
-    .overflow-y-visible--m { overflow-y: visible; }
+    .overflow {
+        &-auto--m { overflow: auto; }
+        &-hidden--m { overflow: hidden; }
+        &-scroll--m { overflow: scroll; }
+        &-visible--m { overflow: visible; }
+    
+        &-x-auto--m { overflow-x: auto; }
+        &-x-hidden--m { overflow-x: hidden; }
+        &-x-scroll--m { overflow-x: scroll; }
+        &-x-visible--m { overflow-x: visible; }
+    
+        &-y-auto--m { overflow-y: auto; }
+        &-y-hidden--m { overflow-y: hidden; }
+        &-y-scroll--m { overflow-y: scroll; }
+        &-y-visible--m { overflow-y: visible; }
+    }
 }
 
 @media screen and (min-width: $desktop-width) {
-    .overflow-auto--d { overflow: auto; }
-    .overflow-hidden--d { overflow: hidden; }
-    .overflow-scroll--d { overflow: scroll; }
-    .overflow-visible--d { overflow: visible; }
-
-    .overflow-x-auto--d { overflow-x: auto; }
-    .overflow-x-hidden--d { overflow-x: hidden; }
-    .overflow-x-scroll--d { overflow-x: scroll; }
-    .overflow-x-visible--d { overflow-x: visible; }
-
-    .overflow-y-auto--d { overflow-y: auto; }
-    .overflow-y-hidden--d { overflow-y: hidden; }
-    .overflow-y-scroll--d { overflow-y: scroll; }
-    .overflow-y-visible--d { overflow-y: visible; }
+    .overflow {
+        &-auto--d { overflow: auto; }
+        &-hidden--d { overflow: hidden; }
+        &-scroll--d { overflow: scroll; }
+        &-visible--d { overflow: visible; }
+    
+        &-x-auto--d { overflow-x: auto; }
+        &-x-hidden--d { overflow-x: hidden; }
+        &-x-scroll--d { overflow-x: scroll; }
+        &-x-visible--d { overflow-x: visible; }
+    
+        &-y-auto--d { overflow-y: auto; }
+        &-y-hidden--d { overflow-y: hidden; }
+        &-y-scroll--d { overflow-y: scroll; }
+        &-y-visible--d { overflow-y: visible; }
+    }
 }
