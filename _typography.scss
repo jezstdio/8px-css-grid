@@ -1,4 +1,4 @@
-.font-size {
+.font_size {
     &-10 { @include fontSize(10px); }
     &-14 { @include fontSize(14px); }
     &-16 { @include fontSize(16px); }
@@ -19,7 +19,7 @@
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
-.line-height {
+.line_height {
     &-0 { line-height: 0px; }
     &-4 { line-height: 4px; }
     &-8 { line-height: 8px; }
@@ -38,7 +38,7 @@
     &-right { text-align: right; }
 }
 
-.font-weight {
+.font_weight {
     &-lighter { font-weight: lighter; }
     &-normal { font-weight: normal; }
     &-bolder { font-weight: bolder; }
@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: $desktop-width - 1) {
-    .font-size {
+    .font_size {
         &-10--m { @include fontSize(10px); }
         &-14--m { @include fontSize(14px); }
         &-16--m { @include fontSize(16px); }
@@ -81,7 +81,7 @@
     .lowercase--m { text-transform: lowercase; }
     .capitalize--m { text-transform: capitalize; }
 
-    .line-height {
+    .line_height {
         &-0--m { line-height: 0px; }
         &-4--m { line-height: 4px; }
         &-8--m { line-height: 8px; }
@@ -100,7 +100,7 @@
         &-right--m { text-align: right; }
     }
 
-    .font-weight {
+    .font_weight {
         &-lighter--m { font-weight: lighter; }
         &-normal--m { font-weight: normal; }
         &-bolder--m { font-weight: bolder; }
@@ -123,7 +123,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-    .font-size {
+    .font_size {
         &-10--d { @include fontSize(10px); }
         &-14--d { @include fontSize(14px); }
         &-16--d { @include fontSize(16px); }
@@ -144,7 +144,7 @@
     .lowercase--d { text-transform: lowercase; }
     .capitalize--d { text-transform: capitalize; }
 
-    .line-height {
+    .line_height {
         &-0--d { line-height: 0px; }
         &-4--d { line-height: 4px; }
         &-8--d { line-height: 8px; }
@@ -163,7 +163,7 @@
         &-right--d { text-align: right; }
     }
 
-    .font-weight {
+    .font_weight {
         &-lighter--d { font-weight: lighter; }
         &-normal--d { font-weight: normal; }
         &-bolder--d { font-weight: bolder; }
