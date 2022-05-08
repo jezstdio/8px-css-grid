@@ -1,22 +1,22 @@
 .margin-x-auto { margin-left: auto; margin-right: auto; }
 
-@each $margin in $negative { .margin--#{$margin} { margin: -#{$margin}px; } }
+@each $margin in $negative { .margin-n#{$margin} { margin: -#{$margin}px; } }
 @each $margin in $positive { .margin-#{$margin} { margin: #{$margin}px; } }
 
-@each $margin in $negative { .margin-t--#{$margin} { margin-top: -#{$margin}px; } }
+@each $margin in $negative { .margin-t-n#{$margin} { margin-top: -#{$margin}px; } }
 @each $margin in $positive { .margin-t-#{$margin} { margin-top: #{$margin}px; } }
 
-@each $margin in $negative { .margin-r--#{$margin} { margin-right: -#{$margin}px; } }
+@each $margin in $negative { .margin-r-n#{$margin} { margin-right: -#{$margin}px; } }
 @each $margin in $positive { .margin-r-#{$margin} { margin-right: #{$margin}px; } }
 
-@each $margin in $negative { .margin-b--#{$margin} { margin-bottom: -#{$margin}px; } }
+@each $margin in $negative { .margin-b-n#{$margin} { margin-bottom: -#{$margin}px; } }
 @each $margin in $positive { .margin-b-#{$margin} { margin-bottom: #{$margin}px; } }
 
-@each $margin in $negative { .margin-l--#{$margin} { margin-left: -#{$margin}px; } }
+@each $margin in $negative { .margin-l-n#{$margin} { margin-left: -#{$margin}px; } }
 @each $margin in $positive { .margin-l-#{$margin} { margin-left: #{$margin}px; } }
 
 @each $margin in $negative {
-    .margin-x--#{$margin} {
+    .margin-x-n#{$margin} {
         margin-left: -#{$margin}px;
         margin-right: -#{$margin}px;
     }
@@ -30,7 +30,7 @@
 }
 
 @each $margin in $negative {
-    .margin-y--#{$margin} {
+    .margin-y-n#{$margin} {
         margin-bottom: -#{$margin}px;
         margin-top: -#{$margin}px;
     }
@@ -46,23 +46,23 @@
 @media screen and (max-width: $desktop-width - 1) {
     .margin-x-auto--m { margin-left: auto; margin-right: auto; }
 
-    @each $margin in $negative { .margin--#{$margin}--m { margin: -#{$margin}px; } }
+    @each $margin in $negative { .margin-n#{$margin}--m { margin: -#{$margin}px; } }
     @each $margin in $positive { .margin-#{$margin}--m { margin: #{$margin}px; } }
     
-    @each $margin in $negative { .margin-t--#{$margin}--m { margin-top: -#{$margin}px; } }
+    @each $margin in $negative { .margin-t-n#{$margin}--m { margin-top: -#{$margin}px; } }
     @each $margin in $positive { .margin-t-#{$margin}--m { margin-top: #{$margin}px; } }
     
-    @each $margin in $negative { .margin-r--#{$margin}--m { margin-right: -#{$margin}px; } }
+    @each $margin in $negative { .margin-r-n#{$margin}--m { margin-right: -#{$margin}px; } }
     @each $margin in $positive { .margin-r-#{$margin}--m { margin-right: #{$margin}px; } }
     
-    @each $margin in $negative { .margin-b--#{$margin}--m { margin-bottom: -#{$margin}px; } }
+    @each $margin in $negative { .margin-b-n#{$margin}--m { margin-bottom: -#{$margin}px; } }
     @each $margin in $positive { .margin-b-#{$margin}--m { margin-bottom: #{$margin}px; } }
     
-    @each $margin in $negative { .margin-l--#{$margin}--m { margin-left: -#{$margin}px; } }
+    @each $margin in $negative { .margin-l-n#{$margin}--m { margin-left: -#{$margin}px; } }
     @each $margin in $positive { .margin-l-#{$margin}--m { margin-left: #{$margin}px; } }
     
     @each $margin in $negative {
-        .margin-x--#{$margin}--m {
+        .margin-x-n#{$margin}--m {
             margin-left: -#{$margin}px;
             margin-right: -#{$margin}px;
         }
@@ -76,7 +76,7 @@
     }
     
     @each $margin in $negative {
-        .margin-y--#{$margin}--m {
+        .margin-y-n#{$margin}--m {
             margin-bottom: -#{$margin}px;
             margin-top: -#{$margin}px;
         }
@@ -93,23 +93,23 @@
 @media screen and (min-width: $desktop-width) {
     .margin-x-auto--d { margin-left: auto; margin-right: auto; }
 
-    @each $margin in $negative { .margin--#{$margin}--d { margin: -#{$margin}px; } }
+    @each $margin in $negative { .margin-n#{$margin}--d { margin: -#{$margin}px; } }
     @each $margin in $positive { .margin-#{$margin}--d { margin: #{$margin}px; } }
 
-    @each $margin in $negative { .margin-t--#{$margin}--d { margin-top: -#{$margin}px; } }
+    @each $margin in $negative { .margin-t-n#{$margin}--d { margin-top: -#{$margin}px; } }
     @each $margin in $positive { .margin-t-#{$margin}--d { margin-top: #{$margin}px; } }
 
-    @each $margin in $negative { .margin-r--#{$margin}--d { margin-right: -#{$margin}px; } }
+    @each $margin in $negative { .margin-r-n#{$margin}--d { margin-right: -#{$margin}px; } }
     @each $margin in $positive { .margin-r-#{$margin}--d { margin-right: #{$margin}px; } }
 
-    @each $margin in $negative { .margin-b--#{$margin}--d { margin-bottom: -#{$margin}px; } }
+    @each $margin in $negative { .margin-b-n#{$margin}--d { margin-bottom: -#{$margin}px; } }
     @each $margin in $positive { .margin-b-#{$margin}--d { margin-bottom: #{$margin}px; } }
 
-    @each $margin in $negative { .margin-l--#{$margin}--d { margin-left: -#{$margin}px; } }
+    @each $margin in $negative { .margin-l-n#{$margin}--d { margin-left: -#{$margin}px; } }
     @each $margin in $positive { .margin-l-#{$margin}--d { margin-left: #{$margin}px; } }
 
     @each $margin in $negative {
-        .margin-x--#{$margin}--d {
+        .margin-x-n#{$margin}--d {
             margin-left: -#{$margin}px;
             margin-right: -#{$margin}px;
         }
@@ -123,7 +123,7 @@
     }
 
     @each $margin in $negative {
-        .margin-y--#{$margin}--d {
+        .margin-y-n#{$margin}--d {
             margin-bottom: -#{$margin}px;
             margin-top: -#{$margin}px;
         }
