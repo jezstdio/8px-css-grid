@@ -4,5 +4,5 @@
 }
 
 @function autoIndent($padding) {
-    @return calc(((100% - #{$max-width}) / 2) + #{$padding});
+    @return calc(((100% - #{$large-desktop-width}) / 2) + #{$padding});
 }

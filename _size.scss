@@ -1,5 +1,5 @@
 .desktop_width { max-width: $desktop-width; }
-.max_width { max-width: $max-width; }
+.max_width { max-width: $large-desktop-width; }
 .text_width { max-width: $text-width; }
 
 .height-0 { height: 0 !important; }
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: $desktop-width - 1) {
     .desktop_width--m { max-width: $desktop-width; }
-    .max_width--m { max-width: $max-width; }
+    .max_width--m { max-width: $large-desktop-width; }
     .text_width--m { max-width: $text-width; }
 
     .height-0--m { height: 0 !important; }
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: $desktop-width) {
     .desktop_width--d { max-width: $desktop-width; }
-    .max_width--d { max-width: $max-width; }
+    .max_width--d { max-width: $large-desktop-width; }
     .text_width--d { max-width: $text-width; }
 
     .height-0--d { height: 0 !important; }
