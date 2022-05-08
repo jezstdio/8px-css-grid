@@ -4,6 +4,7 @@
 
 .height-0 { height: 0 !important; }
 .width-0 { width: 0 !important; }
+.width-auto { width: auto !important; }
 
 @each $minWidth in $size { .min-width-#{$minWidth} { min-width: percentage($minWidth) / 100 !important; } }
 @each $width in $size { .width-#{$width} { width: percentage($width) / 100 !important; } }
@@ -28,6 +29,7 @@
 
     .height-0--m { height: 0 !important; }
     .width-0--m { width: 0 !important; }
+    .width-auto--m { width: auto !important; }
 
     @each $minWidth in $size { .min-width-#{$minWidth}--m { min-width: percentage($minWidth) / 100 !important; } }
     @each $width in $size { .width-#{$width}--m { width: percentage($width) / 100 !important; } }
@@ -53,6 +55,7 @@
 
     .height-0--d { height: 0 !important; }
     .width-0--d { width: 0 !important; }
+    .width-auto--d { width: auto !important; }
 
     @each $minWidth in $size { .min-width-#{$minWidth}--d { min-width: percentage($minWidth) / 100 !important; } }
     @each $width in $size { .width-#{$width}--d { width: percentage($width) / 100 !important; } }
