@@ -1,3 +1,32 @@
+a, .a {
+    color: $primary-48;
+    font-weight: normal;
+    text-decoration: underline;
+    @include fontSize(16px);
+
+    &-bold { font-weight: bold; }
+}
+
+h1, .h1, h2, .h2, h3, .h3 { font-weight: bold; }
+
+h1, .h1 { @include fontSize(40px); }
+h2, .h2 { @include fontSize(32px); }
+h3, .h3 { @include fontSize(24px); }
+
+p, .p {
+    font-weight: normal;
+    @include fontSize(16px);
+
+    &-bold { font-weight: bold; }
+}
+
+small, .small {
+    font-weight: normal;
+    @include fontSize(14px);
+
+    &-bold { font-weight: bold; }
+}
+
 .font_size {
     &-10 { @include fontSize(10px); }
     &-14 { @include fontSize(14px); }
@@ -60,6 +89,35 @@
 }
 
 @media screen and (max-width: $desktop-width - 1) {
+    .a--m {
+        color: $primary-48;
+        font-weight: normal;
+        text-decoration: underline;
+        @include fontSize(16px);
+    
+        &-bold { font-weight: bold; }
+    }
+
+    .h1--m, .h2--m, .h3--m { font-weight: bold; }
+
+    .h1--m { @include fontSize(40px); }
+    .h2--m { @include fontSize(32px); }
+    .h3--m { @include fontSize(24px); }
+
+    .p--m {
+        font-weight: normal;
+        @include fontSize(16px);
+    
+        &-bold { font-weight: bold; }
+    }
+
+    .small--m {
+        font-weight: normal;
+        @include fontSize(14px);
+    
+        &-bold { font-weight: bold; }
+    }
+
     .font_size {
         &-10--m { @include fontSize(10px); }
         &-14--m { @include fontSize(14px); }
@@ -123,6 +181,35 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+    .a--d {
+        color: $primary-48;
+        font-weight: normal;
+        text-decoration: underline;
+        @include fontSize(16px);
+    
+        &-bold { font-weight: bold; }
+    }
+
+    .h1--d, .h2--d, .h3--d { font-weight: bold; }
+
+    .h1--d { @include fontSize(40px); }
+    .h2--d { @include fontSize(32px); }
+    .h3--d { @include fontSize(24px); }
+
+    .p--d {
+        font-weight: normal;
+        @include fontSize(16px);
+    
+        &-bold { font-weight: bold; }
+    }
+
+    .small--d {
+        font-weight: normal;
+        @include fontSize(14px);
+    
+        &-bold { font-weight: bold; }
+    }
+
     .font_size {
         &-10--d { @include fontSize(10px); }
         &-14--d { @include fontSize(14px); }
