@@ -2127,238 +2127,2285 @@ ul {
     display: block;
   }
 }
-.blur-0 {
+.filter-none {
+  filter: none;
+}
+
+.filter-brightness-0 {
+  filter: brightness(0%);
+}
+
+.filter-brightness-8 {
+  filter: brightness(8%);
+}
+
+.filter-brightness-16 {
+  filter: brightness(16%);
+}
+
+.filter-brightness-24 {
+  filter: brightness(24%);
+}
+
+.filter-brightness-32 {
+  filter: brightness(32%);
+}
+
+.filter-brightness-40 {
+  filter: brightness(40%);
+}
+
+.filter-brightness-48 {
+  filter: brightness(48%);
+}
+
+.filter-brightness-56 {
+  filter: brightness(56%);
+}
+
+.filter-brightness-64 {
+  filter: brightness(64%);
+}
+
+.filter-brightness-72 {
+  filter: brightness(72%);
+}
+
+.filter-brightness-80 {
+  filter: brightness(80%);
+}
+
+.filter-brightness-88 {
+  filter: brightness(88%);
+}
+
+.filter-brightness-96 {
+  filter: brightness(96%);
+}
+
+.filter-brightness-100 {
+  filter: brightness(100%);
+}
+
+.filter-blur-0 {
   filter: blur(0px);
 }
 
-.blur-1 {
-  filter: blur(1px);
-}
-
-.blur-2 {
-  filter: blur(2px);
-}
-
-.blur-3 {
-  filter: blur(3px);
-}
-
-.blur-4 {
-  filter: blur(4px);
-}
-
-.blur-5 {
-  filter: blur(5px);
-}
-
-.blur-6 {
-  filter: blur(6px);
-}
-
-.blur-7 {
-  filter: blur(7px);
-}
-
-.blur-8 {
+.filter-blur-8 {
   filter: blur(8px);
 }
 
-.blur-9 {
-  filter: blur(9px);
+.filter-blur-16 {
+  filter: blur(16px);
 }
 
-.blur-bg-0 {
+.filter-blur-24 {
+  filter: blur(24px);
+}
+
+.filter-blur-32 {
+  filter: blur(32px);
+}
+
+.filter-blur-40 {
+  filter: blur(40px);
+}
+
+.filter-blur-48 {
+  filter: blur(48px);
+}
+
+.filter-blur-56 {
+  filter: blur(56px);
+}
+
+.filter-blur-64 {
+  filter: blur(64px);
+}
+
+.filter-blur-72 {
+  filter: blur(72px);
+}
+
+.filter-blur-80 {
+  filter: blur(80px);
+}
+
+.filter-blur-88 {
+  filter: blur(88px);
+}
+
+.filter-blur-96 {
+  filter: blur(96px);
+}
+
+.filter-blur-100 {
+  filter: blur(100px);
+}
+
+.filter-contrast-0 {
+  filter: contrast(0%);
+}
+
+.filter-contrast-8 {
+  filter: contrast(8%);
+}
+
+.filter-contrast-16 {
+  filter: contrast(16%);
+}
+
+.filter-contrast-24 {
+  filter: contrast(24%);
+}
+
+.filter-contrast-32 {
+  filter: contrast(32%);
+}
+
+.filter-contrast-40 {
+  filter: contrast(40%);
+}
+
+.filter-contrast-48 {
+  filter: contrast(48%);
+}
+
+.filter-contrast-56 {
+  filter: contrast(56%);
+}
+
+.filter-contrast-64 {
+  filter: contrast(64%);
+}
+
+.filter-contrast-72 {
+  filter: contrast(72%);
+}
+
+.filter-contrast-80 {
+  filter: contrast(80%);
+}
+
+.filter-contrast-88 {
+  filter: contrast(88%);
+}
+
+.filter-contrast-96 {
+  filter: contrast(96%);
+}
+
+.filter-contrast-100 {
+  filter: contrast(100%);
+}
+
+.filter-grayscale-0 {
+  filter: grayscale(0%);
+}
+
+.filter-grayscale-8 {
+  filter: grayscale(8%);
+}
+
+.filter-grayscale-16 {
+  filter: grayscale(16%);
+}
+
+.filter-grayscale-24 {
+  filter: grayscale(24%);
+}
+
+.filter-grayscale-32 {
+  filter: grayscale(32%);
+}
+
+.filter-grayscale-40 {
+  filter: grayscale(40%);
+}
+
+.filter-grayscale-48 {
+  filter: grayscale(48%);
+}
+
+.filter-grayscale-56 {
+  filter: grayscale(56%);
+}
+
+.filter-grayscale-64 {
+  filter: grayscale(64%);
+}
+
+.filter-grayscale-72 {
+  filter: grayscale(72%);
+}
+
+.filter-grayscale-80 {
+  filter: grayscale(80%);
+}
+
+.filter-grayscale-88 {
+  filter: grayscale(88%);
+}
+
+.filter-grayscale-96 {
+  filter: grayscale(96%);
+}
+
+.filter-grayscale-100 {
+  filter: grayscale(100%);
+}
+
+.filter-invert-0 {
+  filter: invert(0%);
+}
+
+.filter-invert-8 {
+  filter: invert(8%);
+}
+
+.filter-invert-16 {
+  filter: invert(16%);
+}
+
+.filter-invert-24 {
+  filter: invert(24%);
+}
+
+.filter-invert-32 {
+  filter: invert(32%);
+}
+
+.filter-invert-40 {
+  filter: invert(40%);
+}
+
+.filter-invert-48 {
+  filter: invert(48%);
+}
+
+.filter-invert-56 {
+  filter: invert(56%);
+}
+
+.filter-invert-64 {
+  filter: invert(64%);
+}
+
+.filter-invert-72 {
+  filter: invert(72%);
+}
+
+.filter-invert-80 {
+  filter: invert(80%);
+}
+
+.filter-invert-88 {
+  filter: invert(88%);
+}
+
+.filter-invert-96 {
+  filter: invert(96%);
+}
+
+.filter-invert-100 {
+  filter: invert(100%);
+}
+
+.filter-opacity-0 {
+  filter: opacity(0%);
+}
+
+.filter-opacity-8 {
+  filter: opacity(8%);
+}
+
+.filter-opacity-16 {
+  filter: opacity(16%);
+}
+
+.filter-opacity-24 {
+  filter: opacity(24%);
+}
+
+.filter-opacity-32 {
+  filter: opacity(32%);
+}
+
+.filter-opacity-40 {
+  filter: opacity(40%);
+}
+
+.filter-opacity-48 {
+  filter: opacity(48%);
+}
+
+.filter-opacity-56 {
+  filter: opacity(56%);
+}
+
+.filter-opacity-64 {
+  filter: opacity(64%);
+}
+
+.filter-opacity-72 {
+  filter: opacity(72%);
+}
+
+.filter-opacity-80 {
+  filter: opacity(80%);
+}
+
+.filter-opacity-88 {
+  filter: opacity(88%);
+}
+
+.filter-opacity-96 {
+  filter: opacity(96%);
+}
+
+.filter-opacity-100 {
+  filter: opacity(100%);
+}
+
+.filter-sepia-0 {
+  filter: sepia(0%);
+}
+
+.filter-sepia-8 {
+  filter: sepia(8%);
+}
+
+.filter-sepia-16 {
+  filter: sepia(16%);
+}
+
+.filter-sepia-24 {
+  filter: sepia(24%);
+}
+
+.filter-sepia-32 {
+  filter: sepia(32%);
+}
+
+.filter-sepia-40 {
+  filter: sepia(40%);
+}
+
+.filter-sepia-48 {
+  filter: sepia(48%);
+}
+
+.filter-sepia-56 {
+  filter: sepia(56%);
+}
+
+.filter-sepia-64 {
+  filter: sepia(64%);
+}
+
+.filter-sepia-72 {
+  filter: sepia(72%);
+}
+
+.filter-sepia-80 {
+  filter: sepia(80%);
+}
+
+.filter-sepia-88 {
+  filter: sepia(88%);
+}
+
+.filter-sepia-96 {
+  filter: sepia(96%);
+}
+
+.filter-sepia-100 {
+  filter: sepia(100%);
+}
+
+.filter-none-bg {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+
+.filter-brightness-bg-0 {
+  -webkit-backdrop-filter: brightness(0%);
+          backdrop-filter: brightness(0%);
+}
+
+.filter-brightness-bg-8 {
+  -webkit-backdrop-filter: brightness(8%);
+          backdrop-filter: brightness(8%);
+}
+
+.filter-brightness-bg-16 {
+  -webkit-backdrop-filter: brightness(16%);
+          backdrop-filter: brightness(16%);
+}
+
+.filter-brightness-bg-24 {
+  -webkit-backdrop-filter: brightness(24%);
+          backdrop-filter: brightness(24%);
+}
+
+.filter-brightness-bg-32 {
+  -webkit-backdrop-filter: brightness(32%);
+          backdrop-filter: brightness(32%);
+}
+
+.filter-brightness-bg-40 {
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+}
+
+.filter-brightness-bg-48 {
+  -webkit-backdrop-filter: brightness(48%);
+          backdrop-filter: brightness(48%);
+}
+
+.filter-brightness-bg-56 {
+  -webkit-backdrop-filter: brightness(56%);
+          backdrop-filter: brightness(56%);
+}
+
+.filter-brightness-bg-64 {
+  -webkit-backdrop-filter: brightness(64%);
+          backdrop-filter: brightness(64%);
+}
+
+.filter-brightness-bg-72 {
+  -webkit-backdrop-filter: brightness(72%);
+          backdrop-filter: brightness(72%);
+}
+
+.filter-brightness-bg-80 {
+  -webkit-backdrop-filter: brightness(80%);
+          backdrop-filter: brightness(80%);
+}
+
+.filter-brightness-bg-88 {
+  -webkit-backdrop-filter: brightness(88%);
+          backdrop-filter: brightness(88%);
+}
+
+.filter-brightness-bg-96 {
+  -webkit-backdrop-filter: brightness(96%);
+          backdrop-filter: brightness(96%);
+}
+
+.filter-brightness-bg-100 {
+  -webkit-backdrop-filter: brightness(100%);
+          backdrop-filter: brightness(100%);
+}
+
+.filter-blur-bg-0 {
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
 }
 
-.blur-bg-1 {
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-}
-
-.blur-bg-2 {
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-}
-
-.blur-bg-3 {
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-
-.blur-bg-4 {
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-
-.blur-bg-5 {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-
-.blur-bg-6 {
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-}
-
-.blur-bg-7 {
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
-}
-
-.blur-bg-8 {
+.filter-blur-bg-8 {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
 
-.blur-bg-9 {
-  -webkit-backdrop-filter: blur(9px);
-          backdrop-filter: blur(9px);
+.filter-blur-bg-16 {
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+
+.filter-blur-bg-24 {
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+}
+
+.filter-blur-bg-32 {
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+}
+
+.filter-blur-bg-40 {
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+.filter-blur-bg-48 {
+  -webkit-backdrop-filter: blur(48px);
+          backdrop-filter: blur(48px);
+}
+
+.filter-blur-bg-56 {
+  -webkit-backdrop-filter: blur(56px);
+          backdrop-filter: blur(56px);
+}
+
+.filter-blur-bg-64 {
+  -webkit-backdrop-filter: blur(64px);
+          backdrop-filter: blur(64px);
+}
+
+.filter-blur-bg-72 {
+  -webkit-backdrop-filter: blur(72px);
+          backdrop-filter: blur(72px);
+}
+
+.filter-blur-bg-80 {
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+}
+
+.filter-blur-bg-88 {
+  -webkit-backdrop-filter: blur(88px);
+          backdrop-filter: blur(88px);
+}
+
+.filter-blur-bg-96 {
+  -webkit-backdrop-filter: blur(96px);
+          backdrop-filter: blur(96px);
+}
+
+.filter-blur-bg-100 {
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+.filter-contrast-bg-0 {
+  -webkit-backdrop-filter: contrast(0%);
+          backdrop-filter: contrast(0%);
+}
+
+.filter-contrast-bg-8 {
+  -webkit-backdrop-filter: contrast(8%);
+          backdrop-filter: contrast(8%);
+}
+
+.filter-contrast-bg-16 {
+  -webkit-backdrop-filter: contrast(16%);
+          backdrop-filter: contrast(16%);
+}
+
+.filter-contrast-bg-24 {
+  -webkit-backdrop-filter: contrast(24%);
+          backdrop-filter: contrast(24%);
+}
+
+.filter-contrast-bg-32 {
+  -webkit-backdrop-filter: contrast(32%);
+          backdrop-filter: contrast(32%);
+}
+
+.filter-contrast-bg-40 {
+  -webkit-backdrop-filter: contrast(40%);
+          backdrop-filter: contrast(40%);
+}
+
+.filter-contrast-bg-48 {
+  -webkit-backdrop-filter: contrast(48%);
+          backdrop-filter: contrast(48%);
+}
+
+.filter-contrast-bg-56 {
+  -webkit-backdrop-filter: contrast(56%);
+          backdrop-filter: contrast(56%);
+}
+
+.filter-contrast-bg-64 {
+  -webkit-backdrop-filter: contrast(64%);
+          backdrop-filter: contrast(64%);
+}
+
+.filter-contrast-bg-72 {
+  -webkit-backdrop-filter: contrast(72%);
+          backdrop-filter: contrast(72%);
+}
+
+.filter-contrast-bg-80 {
+  -webkit-backdrop-filter: contrast(80%);
+          backdrop-filter: contrast(80%);
+}
+
+.filter-contrast-bg-88 {
+  -webkit-backdrop-filter: contrast(88%);
+          backdrop-filter: contrast(88%);
+}
+
+.filter-contrast-bg-96 {
+  -webkit-backdrop-filter: contrast(96%);
+          backdrop-filter: contrast(96%);
+}
+
+.filter-contrast-bg-100 {
+  -webkit-backdrop-filter: contrast(100%);
+          backdrop-filter: contrast(100%);
+}
+
+.filter-grayscale-bg-0 {
+  -webkit-backdrop-filter: grayscale(0%);
+          backdrop-filter: grayscale(0%);
+}
+
+.filter-grayscale-bg-8 {
+  -webkit-backdrop-filter: grayscale(8%);
+          backdrop-filter: grayscale(8%);
+}
+
+.filter-grayscale-bg-16 {
+  -webkit-backdrop-filter: grayscale(16%);
+          backdrop-filter: grayscale(16%);
+}
+
+.filter-grayscale-bg-24 {
+  -webkit-backdrop-filter: grayscale(24%);
+          backdrop-filter: grayscale(24%);
+}
+
+.filter-grayscale-bg-32 {
+  -webkit-backdrop-filter: grayscale(32%);
+          backdrop-filter: grayscale(32%);
+}
+
+.filter-grayscale-bg-40 {
+  -webkit-backdrop-filter: grayscale(40%);
+          backdrop-filter: grayscale(40%);
+}
+
+.filter-grayscale-bg-48 {
+  -webkit-backdrop-filter: grayscale(48%);
+          backdrop-filter: grayscale(48%);
+}
+
+.filter-grayscale-bg-56 {
+  -webkit-backdrop-filter: grayscale(56%);
+          backdrop-filter: grayscale(56%);
+}
+
+.filter-grayscale-bg-64 {
+  -webkit-backdrop-filter: grayscale(64%);
+          backdrop-filter: grayscale(64%);
+}
+
+.filter-grayscale-bg-72 {
+  -webkit-backdrop-filter: grayscale(72%);
+          backdrop-filter: grayscale(72%);
+}
+
+.filter-grayscale-bg-80 {
+  -webkit-backdrop-filter: grayscale(80%);
+          backdrop-filter: grayscale(80%);
+}
+
+.filter-grayscale-bg-88 {
+  -webkit-backdrop-filter: grayscale(88%);
+          backdrop-filter: grayscale(88%);
+}
+
+.filter-grayscale-bg-96 {
+  -webkit-backdrop-filter: grayscale(96%);
+          backdrop-filter: grayscale(96%);
+}
+
+.filter-grayscale-bg-100 {
+  -webkit-backdrop-filter: grayscale(100%);
+          backdrop-filter: grayscale(100%);
+}
+
+.filter-invert-bg-0 {
+  -webkit-backdrop-filter: invert(0%);
+          backdrop-filter: invert(0%);
+}
+
+.filter-invert-bg-8 {
+  -webkit-backdrop-filter: invert(8%);
+          backdrop-filter: invert(8%);
+}
+
+.filter-invert-bg-16 {
+  -webkit-backdrop-filter: invert(16%);
+          backdrop-filter: invert(16%);
+}
+
+.filter-invert-bg-24 {
+  -webkit-backdrop-filter: invert(24%);
+          backdrop-filter: invert(24%);
+}
+
+.filter-invert-bg-32 {
+  -webkit-backdrop-filter: invert(32%);
+          backdrop-filter: invert(32%);
+}
+
+.filter-invert-bg-40 {
+  -webkit-backdrop-filter: invert(40%);
+          backdrop-filter: invert(40%);
+}
+
+.filter-invert-bg-48 {
+  -webkit-backdrop-filter: invert(48%);
+          backdrop-filter: invert(48%);
+}
+
+.filter-invert-bg-56 {
+  -webkit-backdrop-filter: invert(56%);
+          backdrop-filter: invert(56%);
+}
+
+.filter-invert-bg-64 {
+  -webkit-backdrop-filter: invert(64%);
+          backdrop-filter: invert(64%);
+}
+
+.filter-invert-bg-72 {
+  -webkit-backdrop-filter: invert(72%);
+          backdrop-filter: invert(72%);
+}
+
+.filter-invert-bg-80 {
+  -webkit-backdrop-filter: invert(80%);
+          backdrop-filter: invert(80%);
+}
+
+.filter-invert-bg-88 {
+  -webkit-backdrop-filter: invert(88%);
+          backdrop-filter: invert(88%);
+}
+
+.filter-invert-bg-96 {
+  -webkit-backdrop-filter: invert(96%);
+          backdrop-filter: invert(96%);
+}
+
+.filter-invert-bg-100 {
+  -webkit-backdrop-filter: invert(100%);
+          backdrop-filter: invert(100%);
+}
+
+.filter-opacity-bg-0 {
+  -webkit-backdrop-filter: opacity(0%);
+          backdrop-filter: opacity(0%);
+}
+
+.filter-opacity-bg-8 {
+  -webkit-backdrop-filter: opacity(8%);
+          backdrop-filter: opacity(8%);
+}
+
+.filter-opacity-bg-16 {
+  -webkit-backdrop-filter: opacity(16%);
+          backdrop-filter: opacity(16%);
+}
+
+.filter-opacity-bg-24 {
+  -webkit-backdrop-filter: opacity(24%);
+          backdrop-filter: opacity(24%);
+}
+
+.filter-opacity-bg-32 {
+  -webkit-backdrop-filter: opacity(32%);
+          backdrop-filter: opacity(32%);
+}
+
+.filter-opacity-bg-40 {
+  -webkit-backdrop-filter: opacity(40%);
+          backdrop-filter: opacity(40%);
+}
+
+.filter-opacity-bg-48 {
+  -webkit-backdrop-filter: opacity(48%);
+          backdrop-filter: opacity(48%);
+}
+
+.filter-opacity-bg-56 {
+  -webkit-backdrop-filter: opacity(56%);
+          backdrop-filter: opacity(56%);
+}
+
+.filter-opacity-bg-64 {
+  -webkit-backdrop-filter: opacity(64%);
+          backdrop-filter: opacity(64%);
+}
+
+.filter-opacity-bg-72 {
+  -webkit-backdrop-filter: opacity(72%);
+          backdrop-filter: opacity(72%);
+}
+
+.filter-opacity-bg-80 {
+  -webkit-backdrop-filter: opacity(80%);
+          backdrop-filter: opacity(80%);
+}
+
+.filter-opacity-bg-88 {
+  -webkit-backdrop-filter: opacity(88%);
+          backdrop-filter: opacity(88%);
+}
+
+.filter-opacity-bg-96 {
+  -webkit-backdrop-filter: opacity(96%);
+          backdrop-filter: opacity(96%);
+}
+
+.filter-opacity-bg-100 {
+  -webkit-backdrop-filter: opacity(100%);
+          backdrop-filter: opacity(100%);
+}
+
+.filter-sepia-bg-0 {
+  -webkit-backdrop-filter: sepia(0%);
+          backdrop-filter: sepia(0%);
+}
+
+.filter-sepia-bg-8 {
+  -webkit-backdrop-filter: sepia(8%);
+          backdrop-filter: sepia(8%);
+}
+
+.filter-sepia-bg-16 {
+  -webkit-backdrop-filter: sepia(16%);
+          backdrop-filter: sepia(16%);
+}
+
+.filter-sepia-bg-24 {
+  -webkit-backdrop-filter: sepia(24%);
+          backdrop-filter: sepia(24%);
+}
+
+.filter-sepia-bg-32 {
+  -webkit-backdrop-filter: sepia(32%);
+          backdrop-filter: sepia(32%);
+}
+
+.filter-sepia-bg-40 {
+  -webkit-backdrop-filter: sepia(40%);
+          backdrop-filter: sepia(40%);
+}
+
+.filter-sepia-bg-48 {
+  -webkit-backdrop-filter: sepia(48%);
+          backdrop-filter: sepia(48%);
+}
+
+.filter-sepia-bg-56 {
+  -webkit-backdrop-filter: sepia(56%);
+          backdrop-filter: sepia(56%);
+}
+
+.filter-sepia-bg-64 {
+  -webkit-backdrop-filter: sepia(64%);
+          backdrop-filter: sepia(64%);
+}
+
+.filter-sepia-bg-72 {
+  -webkit-backdrop-filter: sepia(72%);
+          backdrop-filter: sepia(72%);
+}
+
+.filter-sepia-bg-80 {
+  -webkit-backdrop-filter: sepia(80%);
+          backdrop-filter: sepia(80%);
+}
+
+.filter-sepia-bg-88 {
+  -webkit-backdrop-filter: sepia(88%);
+          backdrop-filter: sepia(88%);
+}
+
+.filter-sepia-bg-96 {
+  -webkit-backdrop-filter: sepia(96%);
+          backdrop-filter: sepia(96%);
+}
+
+.filter-sepia-bg-100 {
+  -webkit-backdrop-filter: sepia(100%);
+          backdrop-filter: sepia(100%);
 }
 
 @media screen and (max-width: 767px) {
-  .blur-0--m {
+  .filter-none {
+    filter: none;
+  }
+  .filter-brightness-0--m {
+    filter: brightness(0%);
+  }
+  .filter-brightness-8--m {
+    filter: brightness(8%);
+  }
+  .filter-brightness-16--m {
+    filter: brightness(16%);
+  }
+  .filter-brightness-24--m {
+    filter: brightness(24%);
+  }
+  .filter-brightness-32--m {
+    filter: brightness(32%);
+  }
+  .filter-brightness-40--m {
+    filter: brightness(40%);
+  }
+  .filter-brightness-48--m {
+    filter: brightness(48%);
+  }
+  .filter-brightness-56--m {
+    filter: brightness(56%);
+  }
+  .filter-brightness-64--m {
+    filter: brightness(64%);
+  }
+  .filter-brightness-72--m {
+    filter: brightness(72%);
+  }
+  .filter-brightness-80--m {
+    filter: brightness(80%);
+  }
+  .filter-brightness-88--m {
+    filter: brightness(88%);
+  }
+  .filter-brightness-96--m {
+    filter: brightness(96%);
+  }
+  .filter-brightness-100--m {
+    filter: brightness(100%);
+  }
+  .filter-blur-0--m {
     filter: blur(0px);
   }
-  .blur-1--m {
-    filter: blur(1px);
-  }
-  .blur-2--m {
-    filter: blur(2px);
-  }
-  .blur-3--m {
-    filter: blur(3px);
-  }
-  .blur-4--m {
-    filter: blur(4px);
-  }
-  .blur-5--m {
-    filter: blur(5px);
-  }
-  .blur-6--m {
-    filter: blur(6px);
-  }
-  .blur-7--m {
-    filter: blur(7px);
-  }
-  .blur-8--m {
+  .filter-blur-8--m {
     filter: blur(8px);
   }
-  .blur-9--m {
-    filter: blur(9px);
+  .filter-blur-16--m {
+    filter: blur(16px);
   }
-  .blur-bg-0--m {
+  .filter-blur-24--m {
+    filter: blur(24px);
+  }
+  .filter-blur-32--m {
+    filter: blur(32px);
+  }
+  .filter-blur-40--m {
+    filter: blur(40px);
+  }
+  .filter-blur-48--m {
+    filter: blur(48px);
+  }
+  .filter-blur-56--m {
+    filter: blur(56px);
+  }
+  .filter-blur-64--m {
+    filter: blur(64px);
+  }
+  .filter-blur-72--m {
+    filter: blur(72px);
+  }
+  .filter-blur-80--m {
+    filter: blur(80px);
+  }
+  .filter-blur-88--m {
+    filter: blur(88px);
+  }
+  .filter-blur-96--m {
+    filter: blur(96px);
+  }
+  .filter-blur-100--m {
+    filter: blur(100px);
+  }
+  .filter-contrast-0--m {
+    filter: contrast(0%);
+  }
+  .filter-contrast-8--m {
+    filter: contrast(8%);
+  }
+  .filter-contrast-16--m {
+    filter: contrast(16%);
+  }
+  .filter-contrast-24--m {
+    filter: contrast(24%);
+  }
+  .filter-contrast-32--m {
+    filter: contrast(32%);
+  }
+  .filter-contrast-40--m {
+    filter: contrast(40%);
+  }
+  .filter-contrast-48--m {
+    filter: contrast(48%);
+  }
+  .filter-contrast-56--m {
+    filter: contrast(56%);
+  }
+  .filter-contrast-64--m {
+    filter: contrast(64%);
+  }
+  .filter-contrast-72--m {
+    filter: contrast(72%);
+  }
+  .filter-contrast-80--m {
+    filter: contrast(80%);
+  }
+  .filter-contrast-88--m {
+    filter: contrast(88%);
+  }
+  .filter-contrast-96--m {
+    filter: contrast(96%);
+  }
+  .filter-contrast-100--m {
+    filter: contrast(100%);
+  }
+  .filter-grayscale-0--m {
+    filter: grayscale(0%);
+  }
+  .filter-grayscale-8--m {
+    filter: grayscale(8%);
+  }
+  .filter-grayscale-16--m {
+    filter: grayscale(16%);
+  }
+  .filter-grayscale-24--m {
+    filter: grayscale(24%);
+  }
+  .filter-grayscale-32--m {
+    filter: grayscale(32%);
+  }
+  .filter-grayscale-40--m {
+    filter: grayscale(40%);
+  }
+  .filter-grayscale-48--m {
+    filter: grayscale(48%);
+  }
+  .filter-grayscale-56--m {
+    filter: grayscale(56%);
+  }
+  .filter-grayscale-64--m {
+    filter: grayscale(64%);
+  }
+  .filter-grayscale-72--m {
+    filter: grayscale(72%);
+  }
+  .filter-grayscale-80--m {
+    filter: grayscale(80%);
+  }
+  .filter-grayscale-88--m {
+    filter: grayscale(88%);
+  }
+  .filter-grayscale-96--m {
+    filter: grayscale(96%);
+  }
+  .filter-grayscale-100--m {
+    filter: grayscale(100%);
+  }
+  .filter-invert-0--m {
+    filter: invert(0%);
+  }
+  .filter-invert-8--m {
+    filter: invert(8%);
+  }
+  .filter-invert-16--m {
+    filter: invert(16%);
+  }
+  .filter-invert-24--m {
+    filter: invert(24%);
+  }
+  .filter-invert-32--m {
+    filter: invert(32%);
+  }
+  .filter-invert-40--m {
+    filter: invert(40%);
+  }
+  .filter-invert-48--m {
+    filter: invert(48%);
+  }
+  .filter-invert-56--m {
+    filter: invert(56%);
+  }
+  .filter-invert-64--m {
+    filter: invert(64%);
+  }
+  .filter-invert-72--m {
+    filter: invert(72%);
+  }
+  .filter-invert-80--m {
+    filter: invert(80%);
+  }
+  .filter-invert-88--m {
+    filter: invert(88%);
+  }
+  .filter-invert-96--m {
+    filter: invert(96%);
+  }
+  .filter-invert-100--m {
+    filter: invert(100%);
+  }
+  .filter-opacity-0--m {
+    filter: opacity(0%);
+  }
+  .filter-opacity-8--m {
+    filter: opacity(8%);
+  }
+  .filter-opacity-16--m {
+    filter: opacity(16%);
+  }
+  .filter-opacity-24--m {
+    filter: opacity(24%);
+  }
+  .filter-opacity-32--m {
+    filter: opacity(32%);
+  }
+  .filter-opacity-40--m {
+    filter: opacity(40%);
+  }
+  .filter-opacity-48--m {
+    filter: opacity(48%);
+  }
+  .filter-opacity-56--m {
+    filter: opacity(56%);
+  }
+  .filter-opacity-64--m {
+    filter: opacity(64%);
+  }
+  .filter-opacity-72--m {
+    filter: opacity(72%);
+  }
+  .filter-opacity-80--m {
+    filter: opacity(80%);
+  }
+  .filter-opacity-88--m {
+    filter: opacity(88%);
+  }
+  .filter-opacity-96--m {
+    filter: opacity(96%);
+  }
+  .filter-opacity-100--m {
+    filter: opacity(100%);
+  }
+  .filter-sepia-0--m {
+    filter: sepia(0%);
+  }
+  .filter-sepia-8--m {
+    filter: sepia(8%);
+  }
+  .filter-sepia-16--m {
+    filter: sepia(16%);
+  }
+  .filter-sepia-24--m {
+    filter: sepia(24%);
+  }
+  .filter-sepia-32--m {
+    filter: sepia(32%);
+  }
+  .filter-sepia-40--m {
+    filter: sepia(40%);
+  }
+  .filter-sepia-48--m {
+    filter: sepia(48%);
+  }
+  .filter-sepia-56--m {
+    filter: sepia(56%);
+  }
+  .filter-sepia-64--m {
+    filter: sepia(64%);
+  }
+  .filter-sepia-72--m {
+    filter: sepia(72%);
+  }
+  .filter-sepia-80--m {
+    filter: sepia(80%);
+  }
+  .filter-sepia-88--m {
+    filter: sepia(88%);
+  }
+  .filter-sepia-96--m {
+    filter: sepia(96%);
+  }
+  .filter-sepia-100--m {
+    filter: sepia(100%);
+  }
+  .filter-none-bg {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .filter-brightness-bg-0--m {
+    -webkit-backdrop-filter: brightness(0%);
+            backdrop-filter: brightness(0%);
+  }
+  .filter-brightness-bg-8--m {
+    -webkit-backdrop-filter: brightness(8%);
+            backdrop-filter: brightness(8%);
+  }
+  .filter-brightness-bg-16--m {
+    -webkit-backdrop-filter: brightness(16%);
+            backdrop-filter: brightness(16%);
+  }
+  .filter-brightness-bg-24--m {
+    -webkit-backdrop-filter: brightness(24%);
+            backdrop-filter: brightness(24%);
+  }
+  .filter-brightness-bg-32--m {
+    -webkit-backdrop-filter: brightness(32%);
+            backdrop-filter: brightness(32%);
+  }
+  .filter-brightness-bg-40--m {
+    -webkit-backdrop-filter: brightness(40%);
+            backdrop-filter: brightness(40%);
+  }
+  .filter-brightness-bg-48--m {
+    -webkit-backdrop-filter: brightness(48%);
+            backdrop-filter: brightness(48%);
+  }
+  .filter-brightness-bg-56--m {
+    -webkit-backdrop-filter: brightness(56%);
+            backdrop-filter: brightness(56%);
+  }
+  .filter-brightness-bg-64--m {
+    -webkit-backdrop-filter: brightness(64%);
+            backdrop-filter: brightness(64%);
+  }
+  .filter-brightness-bg-72--m {
+    -webkit-backdrop-filter: brightness(72%);
+            backdrop-filter: brightness(72%);
+  }
+  .filter-brightness-bg-80--m {
+    -webkit-backdrop-filter: brightness(80%);
+            backdrop-filter: brightness(80%);
+  }
+  .filter-brightness-bg-88--m {
+    -webkit-backdrop-filter: brightness(88%);
+            backdrop-filter: brightness(88%);
+  }
+  .filter-brightness-bg-96--m {
+    -webkit-backdrop-filter: brightness(96%);
+            backdrop-filter: brightness(96%);
+  }
+  .filter-brightness-bg-100--m {
+    -webkit-backdrop-filter: brightness(100%);
+            backdrop-filter: brightness(100%);
+  }
+  .filter-blur-bg-0--m {
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
   }
-  .blur-bg-1--m {
-    -webkit-backdrop-filter: blur(1px);
-            backdrop-filter: blur(1px);
-  }
-  .blur-bg-2--m {
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-  }
-  .blur-bg-3--m {
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-  }
-  .blur-bg-4--m {
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
-  }
-  .blur-bg-5--m {
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-  .blur-bg-6--m {
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
-  }
-  .blur-bg-7--m {
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
-  }
-  .blur-bg-8--m {
+  .filter-blur-bg-8--m {
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
   }
-  .blur-bg-9--m {
-    -webkit-backdrop-filter: blur(9px);
-            backdrop-filter: blur(9px);
+  .filter-blur-bg-16--m {
+    -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+  }
+  .filter-blur-bg-24--m {
+    -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+  }
+  .filter-blur-bg-32--m {
+    -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+  }
+  .filter-blur-bg-40--m {
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+  }
+  .filter-blur-bg-48--m {
+    -webkit-backdrop-filter: blur(48px);
+            backdrop-filter: blur(48px);
+  }
+  .filter-blur-bg-56--m {
+    -webkit-backdrop-filter: blur(56px);
+            backdrop-filter: blur(56px);
+  }
+  .filter-blur-bg-64--m {
+    -webkit-backdrop-filter: blur(64px);
+            backdrop-filter: blur(64px);
+  }
+  .filter-blur-bg-72--m {
+    -webkit-backdrop-filter: blur(72px);
+            backdrop-filter: blur(72px);
+  }
+  .filter-blur-bg-80--m {
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+  }
+  .filter-blur-bg-88--m {
+    -webkit-backdrop-filter: blur(88px);
+            backdrop-filter: blur(88px);
+  }
+  .filter-blur-bg-96--m {
+    -webkit-backdrop-filter: blur(96px);
+            backdrop-filter: blur(96px);
+  }
+  .filter-blur-bg-100--m {
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+  }
+  .filter-contrast-bg-0--m {
+    -webkit-backdrop-filter: contrast(0%);
+            backdrop-filter: contrast(0%);
+  }
+  .filter-contrast-bg-8--m {
+    -webkit-backdrop-filter: contrast(8%);
+            backdrop-filter: contrast(8%);
+  }
+  .filter-contrast-bg-16--m {
+    -webkit-backdrop-filter: contrast(16%);
+            backdrop-filter: contrast(16%);
+  }
+  .filter-contrast-bg-24--m {
+    -webkit-backdrop-filter: contrast(24%);
+            backdrop-filter: contrast(24%);
+  }
+  .filter-contrast-bg-32--m {
+    -webkit-backdrop-filter: contrast(32%);
+            backdrop-filter: contrast(32%);
+  }
+  .filter-contrast-bg-40--m {
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+  }
+  .filter-contrast-bg-48--m {
+    -webkit-backdrop-filter: contrast(48%);
+            backdrop-filter: contrast(48%);
+  }
+  .filter-contrast-bg-56--m {
+    -webkit-backdrop-filter: contrast(56%);
+            backdrop-filter: contrast(56%);
+  }
+  .filter-contrast-bg-64--m {
+    -webkit-backdrop-filter: contrast(64%);
+            backdrop-filter: contrast(64%);
+  }
+  .filter-contrast-bg-72--m {
+    -webkit-backdrop-filter: contrast(72%);
+            backdrop-filter: contrast(72%);
+  }
+  .filter-contrast-bg-80--m {
+    -webkit-backdrop-filter: contrast(80%);
+            backdrop-filter: contrast(80%);
+  }
+  .filter-contrast-bg-88--m {
+    -webkit-backdrop-filter: contrast(88%);
+            backdrop-filter: contrast(88%);
+  }
+  .filter-contrast-bg-96--m {
+    -webkit-backdrop-filter: contrast(96%);
+            backdrop-filter: contrast(96%);
+  }
+  .filter-contrast-bg-100--m {
+    -webkit-backdrop-filter: contrast(100%);
+            backdrop-filter: contrast(100%);
+  }
+  .filter-grayscale-bg-0--m {
+    -webkit-backdrop-filter: grayscale(0%);
+            backdrop-filter: grayscale(0%);
+  }
+  .filter-grayscale-bg-8--m {
+    -webkit-backdrop-filter: grayscale(8%);
+            backdrop-filter: grayscale(8%);
+  }
+  .filter-grayscale-bg-16--m {
+    -webkit-backdrop-filter: grayscale(16%);
+            backdrop-filter: grayscale(16%);
+  }
+  .filter-grayscale-bg-24--m {
+    -webkit-backdrop-filter: grayscale(24%);
+            backdrop-filter: grayscale(24%);
+  }
+  .filter-grayscale-bg-32--m {
+    -webkit-backdrop-filter: grayscale(32%);
+            backdrop-filter: grayscale(32%);
+  }
+  .filter-grayscale-bg-40--m {
+    -webkit-backdrop-filter: grayscale(40%);
+            backdrop-filter: grayscale(40%);
+  }
+  .filter-grayscale-bg-48--m {
+    -webkit-backdrop-filter: grayscale(48%);
+            backdrop-filter: grayscale(48%);
+  }
+  .filter-grayscale-bg-56--m {
+    -webkit-backdrop-filter: grayscale(56%);
+            backdrop-filter: grayscale(56%);
+  }
+  .filter-grayscale-bg-64--m {
+    -webkit-backdrop-filter: grayscale(64%);
+            backdrop-filter: grayscale(64%);
+  }
+  .filter-grayscale-bg-72--m {
+    -webkit-backdrop-filter: grayscale(72%);
+            backdrop-filter: grayscale(72%);
+  }
+  .filter-grayscale-bg-80--m {
+    -webkit-backdrop-filter: grayscale(80%);
+            backdrop-filter: grayscale(80%);
+  }
+  .filter-grayscale-bg-88--m {
+    -webkit-backdrop-filter: grayscale(88%);
+            backdrop-filter: grayscale(88%);
+  }
+  .filter-grayscale-bg-96--m {
+    -webkit-backdrop-filter: grayscale(96%);
+            backdrop-filter: grayscale(96%);
+  }
+  .filter-grayscale-bg-100--m {
+    -webkit-backdrop-filter: grayscale(100%);
+            backdrop-filter: grayscale(100%);
+  }
+  .filter-invert-bg-0--m {
+    -webkit-backdrop-filter: invert(0%);
+            backdrop-filter: invert(0%);
+  }
+  .filter-invert-bg-8--m {
+    -webkit-backdrop-filter: invert(8%);
+            backdrop-filter: invert(8%);
+  }
+  .filter-invert-bg-16--m {
+    -webkit-backdrop-filter: invert(16%);
+            backdrop-filter: invert(16%);
+  }
+  .filter-invert-bg-24--m {
+    -webkit-backdrop-filter: invert(24%);
+            backdrop-filter: invert(24%);
+  }
+  .filter-invert-bg-32--m {
+    -webkit-backdrop-filter: invert(32%);
+            backdrop-filter: invert(32%);
+  }
+  .filter-invert-bg-40--m {
+    -webkit-backdrop-filter: invert(40%);
+            backdrop-filter: invert(40%);
+  }
+  .filter-invert-bg-48--m {
+    -webkit-backdrop-filter: invert(48%);
+            backdrop-filter: invert(48%);
+  }
+  .filter-invert-bg-56--m {
+    -webkit-backdrop-filter: invert(56%);
+            backdrop-filter: invert(56%);
+  }
+  .filter-invert-bg-64--m {
+    -webkit-backdrop-filter: invert(64%);
+            backdrop-filter: invert(64%);
+  }
+  .filter-invert-bg-72--m {
+    -webkit-backdrop-filter: invert(72%);
+            backdrop-filter: invert(72%);
+  }
+  .filter-invert-bg-80--m {
+    -webkit-backdrop-filter: invert(80%);
+            backdrop-filter: invert(80%);
+  }
+  .filter-invert-bg-88--m {
+    -webkit-backdrop-filter: invert(88%);
+            backdrop-filter: invert(88%);
+  }
+  .filter-invert-bg-96--m {
+    -webkit-backdrop-filter: invert(96%);
+            backdrop-filter: invert(96%);
+  }
+  .filter-invert-bg-100--m {
+    -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%);
+  }
+  .filter-opacity-bg-0--m {
+    -webkit-backdrop-filter: opacity(0%);
+            backdrop-filter: opacity(0%);
+  }
+  .filter-opacity-bg-8--m {
+    -webkit-backdrop-filter: opacity(8%);
+            backdrop-filter: opacity(8%);
+  }
+  .filter-opacity-bg-16--m {
+    -webkit-backdrop-filter: opacity(16%);
+            backdrop-filter: opacity(16%);
+  }
+  .filter-opacity-bg-24--m {
+    -webkit-backdrop-filter: opacity(24%);
+            backdrop-filter: opacity(24%);
+  }
+  .filter-opacity-bg-32--m {
+    -webkit-backdrop-filter: opacity(32%);
+            backdrop-filter: opacity(32%);
+  }
+  .filter-opacity-bg-40--m {
+    -webkit-backdrop-filter: opacity(40%);
+            backdrop-filter: opacity(40%);
+  }
+  .filter-opacity-bg-48--m {
+    -webkit-backdrop-filter: opacity(48%);
+            backdrop-filter: opacity(48%);
+  }
+  .filter-opacity-bg-56--m {
+    -webkit-backdrop-filter: opacity(56%);
+            backdrop-filter: opacity(56%);
+  }
+  .filter-opacity-bg-64--m {
+    -webkit-backdrop-filter: opacity(64%);
+            backdrop-filter: opacity(64%);
+  }
+  .filter-opacity-bg-72--m {
+    -webkit-backdrop-filter: opacity(72%);
+            backdrop-filter: opacity(72%);
+  }
+  .filter-opacity-bg-80--m {
+    -webkit-backdrop-filter: opacity(80%);
+            backdrop-filter: opacity(80%);
+  }
+  .filter-opacity-bg-88--m {
+    -webkit-backdrop-filter: opacity(88%);
+            backdrop-filter: opacity(88%);
+  }
+  .filter-opacity-bg-96--m {
+    -webkit-backdrop-filter: opacity(96%);
+            backdrop-filter: opacity(96%);
+  }
+  .filter-opacity-bg-100--m {
+    -webkit-backdrop-filter: opacity(100%);
+            backdrop-filter: opacity(100%);
+  }
+  .filter-sepia-bg-0--m {
+    -webkit-backdrop-filter: sepia(0%);
+            backdrop-filter: sepia(0%);
+  }
+  .filter-sepia-bg-8--m {
+    -webkit-backdrop-filter: sepia(8%);
+            backdrop-filter: sepia(8%);
+  }
+  .filter-sepia-bg-16--m {
+    -webkit-backdrop-filter: sepia(16%);
+            backdrop-filter: sepia(16%);
+  }
+  .filter-sepia-bg-24--m {
+    -webkit-backdrop-filter: sepia(24%);
+            backdrop-filter: sepia(24%);
+  }
+  .filter-sepia-bg-32--m {
+    -webkit-backdrop-filter: sepia(32%);
+            backdrop-filter: sepia(32%);
+  }
+  .filter-sepia-bg-40--m {
+    -webkit-backdrop-filter: sepia(40%);
+            backdrop-filter: sepia(40%);
+  }
+  .filter-sepia-bg-48--m {
+    -webkit-backdrop-filter: sepia(48%);
+            backdrop-filter: sepia(48%);
+  }
+  .filter-sepia-bg-56--m {
+    -webkit-backdrop-filter: sepia(56%);
+            backdrop-filter: sepia(56%);
+  }
+  .filter-sepia-bg-64--m {
+    -webkit-backdrop-filter: sepia(64%);
+            backdrop-filter: sepia(64%);
+  }
+  .filter-sepia-bg-72--m {
+    -webkit-backdrop-filter: sepia(72%);
+            backdrop-filter: sepia(72%);
+  }
+  .filter-sepia-bg-80--m {
+    -webkit-backdrop-filter: sepia(80%);
+            backdrop-filter: sepia(80%);
+  }
+  .filter-sepia-bg-88--m {
+    -webkit-backdrop-filter: sepia(88%);
+            backdrop-filter: sepia(88%);
+  }
+  .filter-sepia-bg-96--m {
+    -webkit-backdrop-filter: sepia(96%);
+            backdrop-filter: sepia(96%);
+  }
+  .filter-sepia-bg-100--m {
+    -webkit-backdrop-filter: sepia(100%);
+            backdrop-filter: sepia(100%);
   }
 }
 @media screen and (min-width: 768px) {
-  .blur-0--d {
+  .filter-none {
+    filter: none;
+  }
+  .filter-brightness-0--d {
+    filter: brightness(0%);
+  }
+  .filter-brightness-8--d {
+    filter: brightness(8%);
+  }
+  .filter-brightness-16--d {
+    filter: brightness(16%);
+  }
+  .filter-brightness-24--d {
+    filter: brightness(24%);
+  }
+  .filter-brightness-32--d {
+    filter: brightness(32%);
+  }
+  .filter-brightness-40--d {
+    filter: brightness(40%);
+  }
+  .filter-brightness-48--d {
+    filter: brightness(48%);
+  }
+  .filter-brightness-56--d {
+    filter: brightness(56%);
+  }
+  .filter-brightness-64--d {
+    filter: brightness(64%);
+  }
+  .filter-brightness-72--d {
+    filter: brightness(72%);
+  }
+  .filter-brightness-80--d {
+    filter: brightness(80%);
+  }
+  .filter-brightness-88--d {
+    filter: brightness(88%);
+  }
+  .filter-brightness-96--d {
+    filter: brightness(96%);
+  }
+  .filter-brightness-100--d {
+    filter: brightness(100%);
+  }
+  .filter-blur-0--d {
     filter: blur(0px);
   }
-  .blur-1--d {
-    filter: blur(1px);
-  }
-  .blur-2--d {
-    filter: blur(2px);
-  }
-  .blur-3--d {
-    filter: blur(3px);
-  }
-  .blur-4--d {
-    filter: blur(4px);
-  }
-  .blur-5--d {
-    filter: blur(5px);
-  }
-  .blur-6--d {
-    filter: blur(6px);
-  }
-  .blur-7--d {
-    filter: blur(7px);
-  }
-  .blur-8--d {
+  .filter-blur-8--d {
     filter: blur(8px);
   }
-  .blur-9--d {
-    filter: blur(9px);
+  .filter-blur-16--d {
+    filter: blur(16px);
   }
-  .blur-bg-0--d {
+  .filter-blur-24--d {
+    filter: blur(24px);
+  }
+  .filter-blur-32--d {
+    filter: blur(32px);
+  }
+  .filter-blur-40--d {
+    filter: blur(40px);
+  }
+  .filter-blur-48--d {
+    filter: blur(48px);
+  }
+  .filter-blur-56--d {
+    filter: blur(56px);
+  }
+  .filter-blur-64--d {
+    filter: blur(64px);
+  }
+  .filter-blur-72--d {
+    filter: blur(72px);
+  }
+  .filter-blur-80--d {
+    filter: blur(80px);
+  }
+  .filter-blur-88--d {
+    filter: blur(88px);
+  }
+  .filter-blur-96--d {
+    filter: blur(96px);
+  }
+  .filter-blur-100--d {
+    filter: blur(100px);
+  }
+  .filter-contrast-0--d {
+    filter: contrast(0%);
+  }
+  .filter-contrast-8--d {
+    filter: contrast(8%);
+  }
+  .filter-contrast-16--d {
+    filter: contrast(16%);
+  }
+  .filter-contrast-24--d {
+    filter: contrast(24%);
+  }
+  .filter-contrast-32--d {
+    filter: contrast(32%);
+  }
+  .filter-contrast-40--d {
+    filter: contrast(40%);
+  }
+  .filter-contrast-48--d {
+    filter: contrast(48%);
+  }
+  .filter-contrast-56--d {
+    filter: contrast(56%);
+  }
+  .filter-contrast-64--d {
+    filter: contrast(64%);
+  }
+  .filter-contrast-72--d {
+    filter: contrast(72%);
+  }
+  .filter-contrast-80--d {
+    filter: contrast(80%);
+  }
+  .filter-contrast-88--d {
+    filter: contrast(88%);
+  }
+  .filter-contrast-96--d {
+    filter: contrast(96%);
+  }
+  .filter-contrast-100--d {
+    filter: contrast(100%);
+  }
+  .filter-grayscale-0--d {
+    filter: grayscale(0%);
+  }
+  .filter-grayscale-8--d {
+    filter: grayscale(8%);
+  }
+  .filter-grayscale-16--d {
+    filter: grayscale(16%);
+  }
+  .filter-grayscale-24--d {
+    filter: grayscale(24%);
+  }
+  .filter-grayscale-32--d {
+    filter: grayscale(32%);
+  }
+  .filter-grayscale-40--d {
+    filter: grayscale(40%);
+  }
+  .filter-grayscale-48--d {
+    filter: grayscale(48%);
+  }
+  .filter-grayscale-56--d {
+    filter: grayscale(56%);
+  }
+  .filter-grayscale-64--d {
+    filter: grayscale(64%);
+  }
+  .filter-grayscale-72--d {
+    filter: grayscale(72%);
+  }
+  .filter-grayscale-80--d {
+    filter: grayscale(80%);
+  }
+  .filter-grayscale-88--d {
+    filter: grayscale(88%);
+  }
+  .filter-grayscale-96--d {
+    filter: grayscale(96%);
+  }
+  .filter-grayscale-100--d {
+    filter: grayscale(100%);
+  }
+  .filter-invert-0--d {
+    filter: invert(0%);
+  }
+  .filter-invert-8--d {
+    filter: invert(8%);
+  }
+  .filter-invert-16--d {
+    filter: invert(16%);
+  }
+  .filter-invert-24--d {
+    filter: invert(24%);
+  }
+  .filter-invert-32--d {
+    filter: invert(32%);
+  }
+  .filter-invert-40--d {
+    filter: invert(40%);
+  }
+  .filter-invert-48--d {
+    filter: invert(48%);
+  }
+  .filter-invert-56--d {
+    filter: invert(56%);
+  }
+  .filter-invert-64--d {
+    filter: invert(64%);
+  }
+  .filter-invert-72--d {
+    filter: invert(72%);
+  }
+  .filter-invert-80--d {
+    filter: invert(80%);
+  }
+  .filter-invert-88--d {
+    filter: invert(88%);
+  }
+  .filter-invert-96--d {
+    filter: invert(96%);
+  }
+  .filter-invert-100--d {
+    filter: invert(100%);
+  }
+  .filter-opacity-0--d {
+    filter: opacity(0%);
+  }
+  .filter-opacity-8--d {
+    filter: opacity(8%);
+  }
+  .filter-opacity-16--d {
+    filter: opacity(16%);
+  }
+  .filter-opacity-24--d {
+    filter: opacity(24%);
+  }
+  .filter-opacity-32--d {
+    filter: opacity(32%);
+  }
+  .filter-opacity-40--d {
+    filter: opacity(40%);
+  }
+  .filter-opacity-48--d {
+    filter: opacity(48%);
+  }
+  .filter-opacity-56--d {
+    filter: opacity(56%);
+  }
+  .filter-opacity-64--d {
+    filter: opacity(64%);
+  }
+  .filter-opacity-72--d {
+    filter: opacity(72%);
+  }
+  .filter-opacity-80--d {
+    filter: opacity(80%);
+  }
+  .filter-opacity-88--d {
+    filter: opacity(88%);
+  }
+  .filter-opacity-96--d {
+    filter: opacity(96%);
+  }
+  .filter-opacity-100--d {
+    filter: opacity(100%);
+  }
+  .filter-sepia-0--d {
+    filter: sepia(0%);
+  }
+  .filter-sepia-8--d {
+    filter: sepia(8%);
+  }
+  .filter-sepia-16--d {
+    filter: sepia(16%);
+  }
+  .filter-sepia-24--d {
+    filter: sepia(24%);
+  }
+  .filter-sepia-32--d {
+    filter: sepia(32%);
+  }
+  .filter-sepia-40--d {
+    filter: sepia(40%);
+  }
+  .filter-sepia-48--d {
+    filter: sepia(48%);
+  }
+  .filter-sepia-56--d {
+    filter: sepia(56%);
+  }
+  .filter-sepia-64--d {
+    filter: sepia(64%);
+  }
+  .filter-sepia-72--d {
+    filter: sepia(72%);
+  }
+  .filter-sepia-80--d {
+    filter: sepia(80%);
+  }
+  .filter-sepia-88--d {
+    filter: sepia(88%);
+  }
+  .filter-sepia-96--d {
+    filter: sepia(96%);
+  }
+  .filter-sepia-100--d {
+    filter: sepia(100%);
+  }
+  .filter-none-bg {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .filter-brightness-bg-0--d {
+    -webkit-backdrop-filter: brightness(0%);
+            backdrop-filter: brightness(0%);
+  }
+  .filter-brightness-bg-8--d {
+    -webkit-backdrop-filter: brightness(8%);
+            backdrop-filter: brightness(8%);
+  }
+  .filter-brightness-bg-16--d {
+    -webkit-backdrop-filter: brightness(16%);
+            backdrop-filter: brightness(16%);
+  }
+  .filter-brightness-bg-24--d {
+    -webkit-backdrop-filter: brightness(24%);
+            backdrop-filter: brightness(24%);
+  }
+  .filter-brightness-bg-32--d {
+    -webkit-backdrop-filter: brightness(32%);
+            backdrop-filter: brightness(32%);
+  }
+  .filter-brightness-bg-40--d {
+    -webkit-backdrop-filter: brightness(40%);
+            backdrop-filter: brightness(40%);
+  }
+  .filter-brightness-bg-48--d {
+    -webkit-backdrop-filter: brightness(48%);
+            backdrop-filter: brightness(48%);
+  }
+  .filter-brightness-bg-56--d {
+    -webkit-backdrop-filter: brightness(56%);
+            backdrop-filter: brightness(56%);
+  }
+  .filter-brightness-bg-64--d {
+    -webkit-backdrop-filter: brightness(64%);
+            backdrop-filter: brightness(64%);
+  }
+  .filter-brightness-bg-72--d {
+    -webkit-backdrop-filter: brightness(72%);
+            backdrop-filter: brightness(72%);
+  }
+  .filter-brightness-bg-80--d {
+    -webkit-backdrop-filter: brightness(80%);
+            backdrop-filter: brightness(80%);
+  }
+  .filter-brightness-bg-88--d {
+    -webkit-backdrop-filter: brightness(88%);
+            backdrop-filter: brightness(88%);
+  }
+  .filter-brightness-bg-96--d {
+    -webkit-backdrop-filter: brightness(96%);
+            backdrop-filter: brightness(96%);
+  }
+  .filter-brightness-bg-100--d {
+    -webkit-backdrop-filter: brightness(100%);
+            backdrop-filter: brightness(100%);
+  }
+  .filter-blur-bg-0--d {
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
   }
-  .blur-bg-1--d {
-    -webkit-backdrop-filter: blur(1px);
-            backdrop-filter: blur(1px);
-  }
-  .blur-bg-2--d {
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-  }
-  .blur-bg-3--d {
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-  }
-  .blur-bg-4--d {
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
-  }
-  .blur-bg-5--d {
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-  .blur-bg-6--d {
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
-  }
-  .blur-bg-7--d {
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
-  }
-  .blur-bg-8--d {
+  .filter-blur-bg-8--d {
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
   }
-  .blur-bg-9--d {
-    -webkit-backdrop-filter: blur(9px);
-            backdrop-filter: blur(9px);
+  .filter-blur-bg-16--d {
+    -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+  }
+  .filter-blur-bg-24--d {
+    -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+  }
+  .filter-blur-bg-32--d {
+    -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+  }
+  .filter-blur-bg-40--d {
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+  }
+  .filter-blur-bg-48--d {
+    -webkit-backdrop-filter: blur(48px);
+            backdrop-filter: blur(48px);
+  }
+  .filter-blur-bg-56--d {
+    -webkit-backdrop-filter: blur(56px);
+            backdrop-filter: blur(56px);
+  }
+  .filter-blur-bg-64--d {
+    -webkit-backdrop-filter: blur(64px);
+            backdrop-filter: blur(64px);
+  }
+  .filter-blur-bg-72--d {
+    -webkit-backdrop-filter: blur(72px);
+            backdrop-filter: blur(72px);
+  }
+  .filter-blur-bg-80--d {
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+  }
+  .filter-blur-bg-88--d {
+    -webkit-backdrop-filter: blur(88px);
+            backdrop-filter: blur(88px);
+  }
+  .filter-blur-bg-96--d {
+    -webkit-backdrop-filter: blur(96px);
+            backdrop-filter: blur(96px);
+  }
+  .filter-blur-bg-100--d {
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+  }
+  .filter-contrast-bg-0--d {
+    -webkit-backdrop-filter: contrast(0%);
+            backdrop-filter: contrast(0%);
+  }
+  .filter-contrast-bg-8--d {
+    -webkit-backdrop-filter: contrast(8%);
+            backdrop-filter: contrast(8%);
+  }
+  .filter-contrast-bg-16--d {
+    -webkit-backdrop-filter: contrast(16%);
+            backdrop-filter: contrast(16%);
+  }
+  .filter-contrast-bg-24--d {
+    -webkit-backdrop-filter: contrast(24%);
+            backdrop-filter: contrast(24%);
+  }
+  .filter-contrast-bg-32--d {
+    -webkit-backdrop-filter: contrast(32%);
+            backdrop-filter: contrast(32%);
+  }
+  .filter-contrast-bg-40--d {
+    -webkit-backdrop-filter: contrast(40%);
+            backdrop-filter: contrast(40%);
+  }
+  .filter-contrast-bg-48--d {
+    -webkit-backdrop-filter: contrast(48%);
+            backdrop-filter: contrast(48%);
+  }
+  .filter-contrast-bg-56--d {
+    -webkit-backdrop-filter: contrast(56%);
+            backdrop-filter: contrast(56%);
+  }
+  .filter-contrast-bg-64--d {
+    -webkit-backdrop-filter: contrast(64%);
+            backdrop-filter: contrast(64%);
+  }
+  .filter-contrast-bg-72--d {
+    -webkit-backdrop-filter: contrast(72%);
+            backdrop-filter: contrast(72%);
+  }
+  .filter-contrast-bg-80--d {
+    -webkit-backdrop-filter: contrast(80%);
+            backdrop-filter: contrast(80%);
+  }
+  .filter-contrast-bg-88--d {
+    -webkit-backdrop-filter: contrast(88%);
+            backdrop-filter: contrast(88%);
+  }
+  .filter-contrast-bg-96--d {
+    -webkit-backdrop-filter: contrast(96%);
+            backdrop-filter: contrast(96%);
+  }
+  .filter-contrast-bg-100--d {
+    -webkit-backdrop-filter: contrast(100%);
+            backdrop-filter: contrast(100%);
+  }
+  .filter-grayscale-bg-0--d {
+    -webkit-backdrop-filter: grayscale(0%);
+            backdrop-filter: grayscale(0%);
+  }
+  .filter-grayscale-bg-8--d {
+    -webkit-backdrop-filter: grayscale(8%);
+            backdrop-filter: grayscale(8%);
+  }
+  .filter-grayscale-bg-16--d {
+    -webkit-backdrop-filter: grayscale(16%);
+            backdrop-filter: grayscale(16%);
+  }
+  .filter-grayscale-bg-24--d {
+    -webkit-backdrop-filter: grayscale(24%);
+            backdrop-filter: grayscale(24%);
+  }
+  .filter-grayscale-bg-32--d {
+    -webkit-backdrop-filter: grayscale(32%);
+            backdrop-filter: grayscale(32%);
+  }
+  .filter-grayscale-bg-40--d {
+    -webkit-backdrop-filter: grayscale(40%);
+            backdrop-filter: grayscale(40%);
+  }
+  .filter-grayscale-bg-48--d {
+    -webkit-backdrop-filter: grayscale(48%);
+            backdrop-filter: grayscale(48%);
+  }
+  .filter-grayscale-bg-56--d {
+    -webkit-backdrop-filter: grayscale(56%);
+            backdrop-filter: grayscale(56%);
+  }
+  .filter-grayscale-bg-64--d {
+    -webkit-backdrop-filter: grayscale(64%);
+            backdrop-filter: grayscale(64%);
+  }
+  .filter-grayscale-bg-72--d {
+    -webkit-backdrop-filter: grayscale(72%);
+            backdrop-filter: grayscale(72%);
+  }
+  .filter-grayscale-bg-80--d {
+    -webkit-backdrop-filter: grayscale(80%);
+            backdrop-filter: grayscale(80%);
+  }
+  .filter-grayscale-bg-88--d {
+    -webkit-backdrop-filter: grayscale(88%);
+            backdrop-filter: grayscale(88%);
+  }
+  .filter-grayscale-bg-96--d {
+    -webkit-backdrop-filter: grayscale(96%);
+            backdrop-filter: grayscale(96%);
+  }
+  .filter-grayscale-bg-100--d {
+    -webkit-backdrop-filter: grayscale(100%);
+            backdrop-filter: grayscale(100%);
+  }
+  .filter-invert-bg-0--d {
+    -webkit-backdrop-filter: invert(0%);
+            backdrop-filter: invert(0%);
+  }
+  .filter-invert-bg-8--d {
+    -webkit-backdrop-filter: invert(8%);
+            backdrop-filter: invert(8%);
+  }
+  .filter-invert-bg-16--d {
+    -webkit-backdrop-filter: invert(16%);
+            backdrop-filter: invert(16%);
+  }
+  .filter-invert-bg-24--d {
+    -webkit-backdrop-filter: invert(24%);
+            backdrop-filter: invert(24%);
+  }
+  .filter-invert-bg-32--d {
+    -webkit-backdrop-filter: invert(32%);
+            backdrop-filter: invert(32%);
+  }
+  .filter-invert-bg-40--d {
+    -webkit-backdrop-filter: invert(40%);
+            backdrop-filter: invert(40%);
+  }
+  .filter-invert-bg-48--d {
+    -webkit-backdrop-filter: invert(48%);
+            backdrop-filter: invert(48%);
+  }
+  .filter-invert-bg-56--d {
+    -webkit-backdrop-filter: invert(56%);
+            backdrop-filter: invert(56%);
+  }
+  .filter-invert-bg-64--d {
+    -webkit-backdrop-filter: invert(64%);
+            backdrop-filter: invert(64%);
+  }
+  .filter-invert-bg-72--d {
+    -webkit-backdrop-filter: invert(72%);
+            backdrop-filter: invert(72%);
+  }
+  .filter-invert-bg-80--d {
+    -webkit-backdrop-filter: invert(80%);
+            backdrop-filter: invert(80%);
+  }
+  .filter-invert-bg-88--d {
+    -webkit-backdrop-filter: invert(88%);
+            backdrop-filter: invert(88%);
+  }
+  .filter-invert-bg-96--d {
+    -webkit-backdrop-filter: invert(96%);
+            backdrop-filter: invert(96%);
+  }
+  .filter-invert-bg-100--d {
+    -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%);
+  }
+  .filter-opacity-bg-0--d {
+    -webkit-backdrop-filter: opacity(0%);
+            backdrop-filter: opacity(0%);
+  }
+  .filter-opacity-bg-8--d {
+    -webkit-backdrop-filter: opacity(8%);
+            backdrop-filter: opacity(8%);
+  }
+  .filter-opacity-bg-16--d {
+    -webkit-backdrop-filter: opacity(16%);
+            backdrop-filter: opacity(16%);
+  }
+  .filter-opacity-bg-24--d {
+    -webkit-backdrop-filter: opacity(24%);
+            backdrop-filter: opacity(24%);
+  }
+  .filter-opacity-bg-32--d {
+    -webkit-backdrop-filter: opacity(32%);
+            backdrop-filter: opacity(32%);
+  }
+  .filter-opacity-bg-40--d {
+    -webkit-backdrop-filter: opacity(40%);
+            backdrop-filter: opacity(40%);
+  }
+  .filter-opacity-bg-48--d {
+    -webkit-backdrop-filter: opacity(48%);
+            backdrop-filter: opacity(48%);
+  }
+  .filter-opacity-bg-56--d {
+    -webkit-backdrop-filter: opacity(56%);
+            backdrop-filter: opacity(56%);
+  }
+  .filter-opacity-bg-64--d {
+    -webkit-backdrop-filter: opacity(64%);
+            backdrop-filter: opacity(64%);
+  }
+  .filter-opacity-bg-72--d {
+    -webkit-backdrop-filter: opacity(72%);
+            backdrop-filter: opacity(72%);
+  }
+  .filter-opacity-bg-80--d {
+    -webkit-backdrop-filter: opacity(80%);
+            backdrop-filter: opacity(80%);
+  }
+  .filter-opacity-bg-88--d {
+    -webkit-backdrop-filter: opacity(88%);
+            backdrop-filter: opacity(88%);
+  }
+  .filter-opacity-bg-96--d {
+    -webkit-backdrop-filter: opacity(96%);
+            backdrop-filter: opacity(96%);
+  }
+  .filter-opacity-bg-100--d {
+    -webkit-backdrop-filter: opacity(100%);
+            backdrop-filter: opacity(100%);
+  }
+  .filter-sepia-bg-0--d {
+    -webkit-backdrop-filter: sepia(0%);
+            backdrop-filter: sepia(0%);
+  }
+  .filter-sepia-bg-8--d {
+    -webkit-backdrop-filter: sepia(8%);
+            backdrop-filter: sepia(8%);
+  }
+  .filter-sepia-bg-16--d {
+    -webkit-backdrop-filter: sepia(16%);
+            backdrop-filter: sepia(16%);
+  }
+  .filter-sepia-bg-24--d {
+    -webkit-backdrop-filter: sepia(24%);
+            backdrop-filter: sepia(24%);
+  }
+  .filter-sepia-bg-32--d {
+    -webkit-backdrop-filter: sepia(32%);
+            backdrop-filter: sepia(32%);
+  }
+  .filter-sepia-bg-40--d {
+    -webkit-backdrop-filter: sepia(40%);
+            backdrop-filter: sepia(40%);
+  }
+  .filter-sepia-bg-48--d {
+    -webkit-backdrop-filter: sepia(48%);
+            backdrop-filter: sepia(48%);
+  }
+  .filter-sepia-bg-56--d {
+    -webkit-backdrop-filter: sepia(56%);
+            backdrop-filter: sepia(56%);
+  }
+  .filter-sepia-bg-64--d {
+    -webkit-backdrop-filter: sepia(64%);
+            backdrop-filter: sepia(64%);
+  }
+  .filter-sepia-bg-72--d {
+    -webkit-backdrop-filter: sepia(72%);
+            backdrop-filter: sepia(72%);
+  }
+  .filter-sepia-bg-80--d {
+    -webkit-backdrop-filter: sepia(80%);
+            backdrop-filter: sepia(80%);
+  }
+  .filter-sepia-bg-88--d {
+    -webkit-backdrop-filter: sepia(88%);
+            backdrop-filter: sepia(88%);
+  }
+  .filter-sepia-bg-96--d {
+    -webkit-backdrop-filter: sepia(96%);
+            backdrop-filter: sepia(96%);
+  }
+  .filter-sepia-bg-100--d {
+    -webkit-backdrop-filter: sepia(100%);
+            backdrop-filter: sepia(100%);
   }
 }
 .margin-x-automedia {
