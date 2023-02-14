@@ -1,5 +1,5 @@
 @mixin opacity($media) {
-    @each $op in $seq-percent { .opacity-#{$op}#{media} { opacity: calc($op / 100); } }
+    @each $op in $seq-percent { .opacity-#{$op}#{$media} { opacity: calc($op / 100); } }
 }
 
 @include opacity('');

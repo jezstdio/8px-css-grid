@@ -1,19 +1,19 @@
 @mixin overflow($media) {
     .overflow {
-        &-auto#{media} { overflow: auto; }
-        &-hidden#{media} { overflow: hidden; }
-        &-scroll#{media} { overflow: scroll; }
-        &-visible#{media} { overflow: visible; }
+        &-auto#{$media} { overflow: auto; }
+        &-hidden#{$media} { overflow: hidden; }
+        &-scroll#{$media} { overflow: scroll; }
+        &-visible#{$media} { overflow: visible; }
         
-        &-x-auto#{media} { overflow-x: auto; }
-        &-x-hidden#{media} { overflow-x: hidden; }
-        &-x-scroll#{media} { overflow-x: scroll; }
-        &-x-visible#{media} { overflow-x: visible; }
+        &-x-auto#{$media} { overflow-x: auto; }
+        &-x-hidden#{$media} { overflow-x: hidden; }
+        &-x-scroll#{$media} { overflow-x: scroll; }
+        &-x-visible#{$media} { overflow-x: visible; }
         
-        &-y-auto#{media} { overflow-y: auto; }
-        &-y-hidden#{media} { overflow-y: hidden; }
-        &-y-scroll#{media} { overflow-y: scroll; }
-        &-y-visible#{media} { overflow-y: visible; }
+        &-y-auto#{$media} { overflow-y: auto; }
+        &-y-hidden#{$media} { overflow-y: hidden; }
+        &-y-scroll#{$media} { overflow-y: scroll; }
+        &-y-visible#{$media} { overflow-y: visible; }
     }
 }
 

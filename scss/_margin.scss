@@ -1,5 +1,5 @@
 @mixin margin($media) {
-    .margin-x-auto#{media} { margin-left: auto; margin-right: auto; }
+    .margin-x-auto#{$media} { margin-left: auto; margin-right: auto; }
 
     @each $margin in $seq-8px {
         .margin-#{$margin}#{$media} { margin: #{$margin}px; };
