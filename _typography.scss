@@ -75,6 +75,28 @@
         &-wrap#{$media} { white-space: normal; }
         &-nowrap#{$media} { white-space: nowrap; }
     }
+
+    .word-break {
+        &-normal#{$media} { word-break: normal; }
+        &-break-all#{$media} { word-break: break-all; }
+        &-keep-all#{$media} { word-break: keep-all; }
+        &-break-word#{$media} { word-break: break-word; }
+    }
+
+    .word-spacing {
+        &-normal#{$media} { word-spacing: normal; }
+
+        @each $length in $seq-8px {
+            &-#{$length}#{$media} { word-spacing: #{$length}px; };
+            &-n#{$length}#{$media} { word-spacing: -#{$length}px; };
+        }
+    }
+
+    .word-wrap {
+        &-normal#{$media} { word-wrap: normal; }
+        &-break-word#{$media} { word-wrap: break-word; }
+    }
+    
 }
 
 @include typography('');

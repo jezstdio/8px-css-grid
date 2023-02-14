@@ -10428,6 +10428,108 @@ small, .small {
   white-space: nowrap;
 }
 
+.word-break-normal {
+  word-break: normal;
+}
+.word-break-break-all {
+  word-break: break-all;
+}
+.word-break-keep-all {
+  word-break: keep-all;
+}
+.word-break-break-word {
+  word-break: break-word;
+}
+
+.word-spacing-normal {
+  word-spacing: normal;
+}
+.word-spacing-0 {
+  word-spacing: 0px;
+}
+.word-spacing-n0 {
+  word-spacing: -0px;
+}
+.word-spacing-2 {
+  word-spacing: 2px;
+}
+.word-spacing-n2 {
+  word-spacing: -2px;
+}
+.word-spacing-4 {
+  word-spacing: 4px;
+}
+.word-spacing-n4 {
+  word-spacing: -4px;
+}
+.word-spacing-8 {
+  word-spacing: 8px;
+}
+.word-spacing-n8 {
+  word-spacing: -8px;
+}
+.word-spacing-16 {
+  word-spacing: 16px;
+}
+.word-spacing-n16 {
+  word-spacing: -16px;
+}
+.word-spacing-24 {
+  word-spacing: 24px;
+}
+.word-spacing-n24 {
+  word-spacing: -24px;
+}
+.word-spacing-32 {
+  word-spacing: 32px;
+}
+.word-spacing-n32 {
+  word-spacing: -32px;
+}
+.word-spacing-40 {
+  word-spacing: 40px;
+}
+.word-spacing-n40 {
+  word-spacing: -40px;
+}
+.word-spacing-48 {
+  word-spacing: 48px;
+}
+.word-spacing-n48 {
+  word-spacing: -48px;
+}
+.word-spacing-56 {
+  word-spacing: 56px;
+}
+.word-spacing-n56 {
+  word-spacing: -56px;
+}
+.word-spacing-64 {
+  word-spacing: 64px;
+}
+.word-spacing-n64 {
+  word-spacing: -64px;
+}
+.word-spacing-72 {
+  word-spacing: 72px;
+}
+.word-spacing-n72 {
+  word-spacing: -72px;
+}
+.word-spacing-80 {
+  word-spacing: 80px;
+}
+.word-spacing-n80 {
+  word-spacing: -80px;
+}
+
+.word-wrap-normal {
+  word-wrap: normal;
+}
+.word-wrap-break-word {
+  word-wrap: break-word;
+}
+
 @media screen and (max-width: 767px) {
   a, .a--m {
     font-weight: normal;
@@ -10580,6 +10682,105 @@ small, .small {
   }
   .whitespace-nowrap--m {
     white-space: nowrap;
+  }
+  .word-break-normal--m {
+    word-break: normal;
+  }
+  .word-break-break-all--m {
+    word-break: break-all;
+  }
+  .word-break-keep-all--m {
+    word-break: keep-all;
+  }
+  .word-break-break-word--m {
+    word-break: break-word;
+  }
+  .word-spacing-normal--m {
+    word-spacing: normal;
+  }
+  .word-spacing-0--m {
+    word-spacing: 0px;
+  }
+  .word-spacing-n0--m {
+    word-spacing: -0px;
+  }
+  .word-spacing-2--m {
+    word-spacing: 2px;
+  }
+  .word-spacing-n2--m {
+    word-spacing: -2px;
+  }
+  .word-spacing-4--m {
+    word-spacing: 4px;
+  }
+  .word-spacing-n4--m {
+    word-spacing: -4px;
+  }
+  .word-spacing-8--m {
+    word-spacing: 8px;
+  }
+  .word-spacing-n8--m {
+    word-spacing: -8px;
+  }
+  .word-spacing-16--m {
+    word-spacing: 16px;
+  }
+  .word-spacing-n16--m {
+    word-spacing: -16px;
+  }
+  .word-spacing-24--m {
+    word-spacing: 24px;
+  }
+  .word-spacing-n24--m {
+    word-spacing: -24px;
+  }
+  .word-spacing-32--m {
+    word-spacing: 32px;
+  }
+  .word-spacing-n32--m {
+    word-spacing: -32px;
+  }
+  .word-spacing-40--m {
+    word-spacing: 40px;
+  }
+  .word-spacing-n40--m {
+    word-spacing: -40px;
+  }
+  .word-spacing-48--m {
+    word-spacing: 48px;
+  }
+  .word-spacing-n48--m {
+    word-spacing: -48px;
+  }
+  .word-spacing-56--m {
+    word-spacing: 56px;
+  }
+  .word-spacing-n56--m {
+    word-spacing: -56px;
+  }
+  .word-spacing-64--m {
+    word-spacing: 64px;
+  }
+  .word-spacing-n64--m {
+    word-spacing: -64px;
+  }
+  .word-spacing-72--m {
+    word-spacing: 72px;
+  }
+  .word-spacing-n72--m {
+    word-spacing: -72px;
+  }
+  .word-spacing-80--m {
+    word-spacing: 80px;
+  }
+  .word-spacing-n80--m {
+    word-spacing: -80px;
+  }
+  .word-wrap-normal--m {
+    word-wrap: normal;
+  }
+  .word-wrap-break-word--m {
+    word-wrap: break-word;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10734,6 +10935,105 @@ small, .small {
   }
   .whitespace-nowrap--d {
     white-space: nowrap;
+  }
+  .word-break-normal--d {
+    word-break: normal;
+  }
+  .word-break-break-all--d {
+    word-break: break-all;
+  }
+  .word-break-keep-all--d {
+    word-break: keep-all;
+  }
+  .word-break-break-word--d {
+    word-break: break-word;
+  }
+  .word-spacing-normal--d {
+    word-spacing: normal;
+  }
+  .word-spacing-0--d {
+    word-spacing: 0px;
+  }
+  .word-spacing-n0--d {
+    word-spacing: -0px;
+  }
+  .word-spacing-2--d {
+    word-spacing: 2px;
+  }
+  .word-spacing-n2--d {
+    word-spacing: -2px;
+  }
+  .word-spacing-4--d {
+    word-spacing: 4px;
+  }
+  .word-spacing-n4--d {
+    word-spacing: -4px;
+  }
+  .word-spacing-8--d {
+    word-spacing: 8px;
+  }
+  .word-spacing-n8--d {
+    word-spacing: -8px;
+  }
+  .word-spacing-16--d {
+    word-spacing: 16px;
+  }
+  .word-spacing-n16--d {
+    word-spacing: -16px;
+  }
+  .word-spacing-24--d {
+    word-spacing: 24px;
+  }
+  .word-spacing-n24--d {
+    word-spacing: -24px;
+  }
+  .word-spacing-32--d {
+    word-spacing: 32px;
+  }
+  .word-spacing-n32--d {
+    word-spacing: -32px;
+  }
+  .word-spacing-40--d {
+    word-spacing: 40px;
+  }
+  .word-spacing-n40--d {
+    word-spacing: -40px;
+  }
+  .word-spacing-48--d {
+    word-spacing: 48px;
+  }
+  .word-spacing-n48--d {
+    word-spacing: -48px;
+  }
+  .word-spacing-56--d {
+    word-spacing: 56px;
+  }
+  .word-spacing-n56--d {
+    word-spacing: -56px;
+  }
+  .word-spacing-64--d {
+    word-spacing: 64px;
+  }
+  .word-spacing-n64--d {
+    word-spacing: -64px;
+  }
+  .word-spacing-72--d {
+    word-spacing: 72px;
+  }
+  .word-spacing-n72--d {
+    word-spacing: -72px;
+  }
+  .word-spacing-80--d {
+    word-spacing: 80px;
+  }
+  .word-spacing-n80--d {
+    word-spacing: -80px;
+  }
+  .word-wrap-normal--d {
+    word-wrap: normal;
+  }
+  .word-wrap-break-word--d {
+    word-wrap: break-word;
   }
 }
 .hidden {
