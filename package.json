@@ -2,7 +2,7 @@
   "name": "8px-css-grid",
   "version": "0.1.0",
   "description": "8px css grid for custom things",
-  "main": "index.js",
+  "main": "./scss/8px-css-grid.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
