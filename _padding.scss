@@ -1,18 +1,18 @@
 @mixin padding($media) {
-    @each $padding in $sequence { .padding-#{$padding}#{media} { padding: #{$padding}px; } }
-    @each $padding in $sequence { .padding-t-#{$padding}#{media} { padding-top: #{$padding}px; } }
-    @each $padding in $sequence { .padding-r-#{$padding}#{media} { padding-right: #{$padding}px; } }
-    @each $padding in $sequence { .padding-b-#{$padding}#{media} { padding-bottom: #{$padding}px; } }
-    @each $padding in $sequence { .padding-l-#{$padding}#{media} { padding-left: #{$padding}px; } }
+    @each $padding in $seq-8px { .padding-#{$padding}#{media} { padding: #{$padding}px; } }
+    @each $padding in $seq-8px { .padding-t-#{$padding}#{media} { padding-top: #{$padding}px; } }
+    @each $padding in $seq-8px { .padding-r-#{$padding}#{media} { padding-right: #{$padding}px; } }
+    @each $padding in $seq-8px { .padding-b-#{$padding}#{media} { padding-bottom: #{$padding}px; } }
+    @each $padding in $seq-8px { .padding-l-#{$padding}#{media} { padding-left: #{$padding}px; } }
     
-    @each $padding in $sequence {
+    @each $padding in $seq-8px {
         .padding-x-#{$padding}#{media} {
             padding-left: #{$padding}px;
             padding-right: #{$padding}px;
         }
     }
     
-    @each $padding in $sequence {
+    @each $padding in $seq-8px {
         .padding-y-#{$padding}#{media} {
             padding-bottom: #{$padding}px;
             padding-top: #{$padding}px;

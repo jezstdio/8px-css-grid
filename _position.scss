@@ -5,32 +5,32 @@
     .static#{$media} { position: static; }
     .sticky#{$media} { position: sticky; }
     
-    @each $top in $sequence {
+    @each $top in $seq-8px {
         .top-#{$top}#{$media} { top: #{$top}px; }
         .top-n#{$top}#{$media} { top: -#{$top}px; }
     }
 
-    @each $right in $sequence { 
+    @each $right in $seq-8px { 
         .right-#{$right}#{$media} { right: #{$right}px; }
         .right-n#{$right}#{$media} { right: -#{$right}px; }
     }
     
-    @each $right in $sequence {
+    @each $right in $seq-8px {
         .right-auto#{$right}#{$media} { right: autoIndent(#{$right}px); }
         .right-auto-#{$right}#{$media} { right: autoIndent(-#{$right}px); }
     }
     
-    @each $bottom in $sequence { 
+    @each $bottom in $seq-8px { 
         .bottom-#{$bottom}#{$media} { bottom: #{$bottom}px; }
         .bottom-n#{$bottom}#{$media} { bottom: -#{$bottom}px; }
     }
     
-    @each $left in $sequence { 
+    @each $left in $seq-8px { 
         .left-#{$left}#{$media} { left: #{$left}px; }
         .left-n#{$left}#{$media} { left: -#{$left}px; }
     }
 
-    @each $left in $sequence { 
+    @each $left in $seq-8px { 
         .left-auto#{$left}#{$media} { left: autoIndent(#{$left}px); }
         .left-auto-#{$left}#{$media} { left: autoIndent(-#{$left}px); }
     }

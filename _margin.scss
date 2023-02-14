@@ -1,32 +1,32 @@
 @mixin margin($media) {
     .margin-x-auto#{media} { margin-left: auto; margin-right: auto; }
 
-    @each $margin in $sequence {
+    @each $margin in $seq-8px {
         .margin-#{$margin}#{$media} { margin: #{$margin}px; };
         .margin-n#{$margin}#{$media} { margin: -#{$margin}px; };
     }
     
-    @each $margin in $sequence {
+    @each $margin in $seq-8px {
         .margin-t-#{$margin}#{$media} { margin-top: #{$margin}px; }
         .margin-t-n#{$margin}#{$media} { margin-top: -#{$margin}px; }
     }
     
-    @each $margin in $sequence { 
+    @each $margin in $seq-8px { 
         .margin-r-#{$margin}#{$media} { margin-right: #{$margin}px; } 
         .margin-r-n#{$margin}#{$media} { margin-right: -#{$margin}px; } 
     }
     
-    @each $margin in $sequence { 
+    @each $margin in $seq-8px { 
         .margin-b-#{$margin}#{$media} { margin-bottom: #{$margin}px; } 
         .margin-b-n#{$margin}#{$media} { margin-bottom: -#{$margin}px; } 
     }
     
-    @each $margin in $sequence { 
+    @each $margin in $seq-8px { 
         .margin-l-#{$margin}#{$media} { margin-left: #{$margin}px; } 
         .margin-l-n#{$margin}#{$media} { margin-left: -#{$margin}px; } 
     }
     
-    @each $margin in $sequence {
+    @each $margin in $seq-8px {
         .margin-x-#{$margin}#{$media} {
             margin-left: #{$margin}px;
             margin-right: #{$margin}px;
@@ -38,7 +38,7 @@
         }
     }
     
-    @each $margin in $sequence {
+    @each $margin in $seq-8px {
         .margin-y#{$margin}#{$media} {
             margin-bottom: #{$margin}px;
             margin-top: #{$margin}px;
