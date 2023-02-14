@@ -2355,6 +2355,62 @@ ul {
   filter: grayscale(100%);
 }
 
+.filter-hue-rotate-0 {
+  filter: hue-rotate(0%);
+}
+
+.filter-hue-rotate-8 {
+  filter: hue-rotate(8%);
+}
+
+.filter-hue-rotate-16 {
+  filter: hue-rotate(16%);
+}
+
+.filter-hue-rotate-24 {
+  filter: hue-rotate(24%);
+}
+
+.filter-hue-rotate-32 {
+  filter: hue-rotate(32%);
+}
+
+.filter-hue-rotate-40 {
+  filter: hue-rotate(40%);
+}
+
+.filter-hue-rotate-48 {
+  filter: hue-rotate(48%);
+}
+
+.filter-hue-rotate-56 {
+  filter: hue-rotate(56%);
+}
+
+.filter-hue-rotate-64 {
+  filter: hue-rotate(64%);
+}
+
+.filter-hue-rotate-72 {
+  filter: hue-rotate(72%);
+}
+
+.filter-hue-rotate-80 {
+  filter: hue-rotate(80%);
+}
+
+.filter-hue-rotate-88 {
+  filter: hue-rotate(88%);
+}
+
+.filter-hue-rotate-96 {
+  filter: hue-rotate(96%);
+}
+
+.filter-hue-rotate-100 {
+  filter: hue-rotate(100%);
+}
+
 .filter-invert-0 {
   filter: invert(0%);
 }
@@ -2808,6 +2864,76 @@ ul {
           backdrop-filter: grayscale(100%);
 }
 
+.filter-hue-rotate-bg-0 {
+  -webkit-backdrop-filter: hue-rotate(0%);
+          backdrop-filter: hue-rotate(0%);
+}
+
+.filter-hue-rotate-bg-8 {
+  -webkit-backdrop-filter: hue-rotate(8%);
+          backdrop-filter: hue-rotate(8%);
+}
+
+.filter-hue-rotate-bg-16 {
+  -webkit-backdrop-filter: hue-rotate(16%);
+          backdrop-filter: hue-rotate(16%);
+}
+
+.filter-hue-rotate-bg-24 {
+  -webkit-backdrop-filter: hue-rotate(24%);
+          backdrop-filter: hue-rotate(24%);
+}
+
+.filter-hue-rotate-bg-32 {
+  -webkit-backdrop-filter: hue-rotate(32%);
+          backdrop-filter: hue-rotate(32%);
+}
+
+.filter-hue-rotate-bg-40 {
+  -webkit-backdrop-filter: hue-rotate(40%);
+          backdrop-filter: hue-rotate(40%);
+}
+
+.filter-hue-rotate-bg-48 {
+  -webkit-backdrop-filter: hue-rotate(48%);
+          backdrop-filter: hue-rotate(48%);
+}
+
+.filter-hue-rotate-bg-56 {
+  -webkit-backdrop-filter: hue-rotate(56%);
+          backdrop-filter: hue-rotate(56%);
+}
+
+.filter-hue-rotate-bg-64 {
+  -webkit-backdrop-filter: hue-rotate(64%);
+          backdrop-filter: hue-rotate(64%);
+}
+
+.filter-hue-rotate-bg-72 {
+  -webkit-backdrop-filter: hue-rotate(72%);
+          backdrop-filter: hue-rotate(72%);
+}
+
+.filter-hue-rotate-bg-80 {
+  -webkit-backdrop-filter: hue-rotate(80%);
+          backdrop-filter: hue-rotate(80%);
+}
+
+.filter-hue-rotate-bg-88 {
+  -webkit-backdrop-filter: hue-rotate(88%);
+          backdrop-filter: hue-rotate(88%);
+}
+
+.filter-hue-rotate-bg-96 {
+  -webkit-backdrop-filter: hue-rotate(96%);
+          backdrop-filter: hue-rotate(96%);
+}
+
+.filter-hue-rotate-bg-100 {
+  -webkit-backdrop-filter: hue-rotate(100%);
+          backdrop-filter: hue-rotate(100%);
+}
+
 .filter-invert-bg-0 {
   -webkit-backdrop-filter: invert(0%);
           backdrop-filter: invert(0%);
@@ -3190,6 +3316,48 @@ ul {
   .filter-grayscale-100--m {
     filter: grayscale(100%);
   }
+  .filter-hue-rotate-0--m {
+    filter: hue-rotate(0%);
+  }
+  .filter-hue-rotate-8--m {
+    filter: hue-rotate(8%);
+  }
+  .filter-hue-rotate-16--m {
+    filter: hue-rotate(16%);
+  }
+  .filter-hue-rotate-24--m {
+    filter: hue-rotate(24%);
+  }
+  .filter-hue-rotate-32--m {
+    filter: hue-rotate(32%);
+  }
+  .filter-hue-rotate-40--m {
+    filter: hue-rotate(40%);
+  }
+  .filter-hue-rotate-48--m {
+    filter: hue-rotate(48%);
+  }
+  .filter-hue-rotate-56--m {
+    filter: hue-rotate(56%);
+  }
+  .filter-hue-rotate-64--m {
+    filter: hue-rotate(64%);
+  }
+  .filter-hue-rotate-72--m {
+    filter: hue-rotate(72%);
+  }
+  .filter-hue-rotate-80--m {
+    filter: hue-rotate(80%);
+  }
+  .filter-hue-rotate-88--m {
+    filter: hue-rotate(88%);
+  }
+  .filter-hue-rotate-96--m {
+    filter: hue-rotate(96%);
+  }
+  .filter-hue-rotate-100--m {
+    filter: hue-rotate(100%);
+  }
   .filter-invert-0--m {
     filter: invert(0%);
   }
@@ -3544,6 +3712,62 @@ ul {
     -webkit-backdrop-filter: grayscale(100%);
             backdrop-filter: grayscale(100%);
   }
+  .filter-hue-rotate-bg-0--m {
+    -webkit-backdrop-filter: hue-rotate(0%);
+            backdrop-filter: hue-rotate(0%);
+  }
+  .filter-hue-rotate-bg-8--m {
+    -webkit-backdrop-filter: hue-rotate(8%);
+            backdrop-filter: hue-rotate(8%);
+  }
+  .filter-hue-rotate-bg-16--m {
+    -webkit-backdrop-filter: hue-rotate(16%);
+            backdrop-filter: hue-rotate(16%);
+  }
+  .filter-hue-rotate-bg-24--m {
+    -webkit-backdrop-filter: hue-rotate(24%);
+            backdrop-filter: hue-rotate(24%);
+  }
+  .filter-hue-rotate-bg-32--m {
+    -webkit-backdrop-filter: hue-rotate(32%);
+            backdrop-filter: hue-rotate(32%);
+  }
+  .filter-hue-rotate-bg-40--m {
+    -webkit-backdrop-filter: hue-rotate(40%);
+            backdrop-filter: hue-rotate(40%);
+  }
+  .filter-hue-rotate-bg-48--m {
+    -webkit-backdrop-filter: hue-rotate(48%);
+            backdrop-filter: hue-rotate(48%);
+  }
+  .filter-hue-rotate-bg-56--m {
+    -webkit-backdrop-filter: hue-rotate(56%);
+            backdrop-filter: hue-rotate(56%);
+  }
+  .filter-hue-rotate-bg-64--m {
+    -webkit-backdrop-filter: hue-rotate(64%);
+            backdrop-filter: hue-rotate(64%);
+  }
+  .filter-hue-rotate-bg-72--m {
+    -webkit-backdrop-filter: hue-rotate(72%);
+            backdrop-filter: hue-rotate(72%);
+  }
+  .filter-hue-rotate-bg-80--m {
+    -webkit-backdrop-filter: hue-rotate(80%);
+            backdrop-filter: hue-rotate(80%);
+  }
+  .filter-hue-rotate-bg-88--m {
+    -webkit-backdrop-filter: hue-rotate(88%);
+            backdrop-filter: hue-rotate(88%);
+  }
+  .filter-hue-rotate-bg-96--m {
+    -webkit-backdrop-filter: hue-rotate(96%);
+            backdrop-filter: hue-rotate(96%);
+  }
+  .filter-hue-rotate-bg-100--m {
+    -webkit-backdrop-filter: hue-rotate(100%);
+            backdrop-filter: hue-rotate(100%);
+  }
   .filter-invert-bg-0--m {
     -webkit-backdrop-filter: invert(0%);
             backdrop-filter: invert(0%);
@@ -3884,6 +4108,48 @@ ul {
   }
   .filter-grayscale-100--d {
     filter: grayscale(100%);
+  }
+  .filter-hue-rotate-0--d {
+    filter: hue-rotate(0%);
+  }
+  .filter-hue-rotate-8--d {
+    filter: hue-rotate(8%);
+  }
+  .filter-hue-rotate-16--d {
+    filter: hue-rotate(16%);
+  }
+  .filter-hue-rotate-24--d {
+    filter: hue-rotate(24%);
+  }
+  .filter-hue-rotate-32--d {
+    filter: hue-rotate(32%);
+  }
+  .filter-hue-rotate-40--d {
+    filter: hue-rotate(40%);
+  }
+  .filter-hue-rotate-48--d {
+    filter: hue-rotate(48%);
+  }
+  .filter-hue-rotate-56--d {
+    filter: hue-rotate(56%);
+  }
+  .filter-hue-rotate-64--d {
+    filter: hue-rotate(64%);
+  }
+  .filter-hue-rotate-72--d {
+    filter: hue-rotate(72%);
+  }
+  .filter-hue-rotate-80--d {
+    filter: hue-rotate(80%);
+  }
+  .filter-hue-rotate-88--d {
+    filter: hue-rotate(88%);
+  }
+  .filter-hue-rotate-96--d {
+    filter: hue-rotate(96%);
+  }
+  .filter-hue-rotate-100--d {
+    filter: hue-rotate(100%);
   }
   .filter-invert-0--d {
     filter: invert(0%);
@@ -4238,6 +4504,62 @@ ul {
   .filter-grayscale-bg-100--d {
     -webkit-backdrop-filter: grayscale(100%);
             backdrop-filter: grayscale(100%);
+  }
+  .filter-hue-rotate-bg-0--d {
+    -webkit-backdrop-filter: hue-rotate(0%);
+            backdrop-filter: hue-rotate(0%);
+  }
+  .filter-hue-rotate-bg-8--d {
+    -webkit-backdrop-filter: hue-rotate(8%);
+            backdrop-filter: hue-rotate(8%);
+  }
+  .filter-hue-rotate-bg-16--d {
+    -webkit-backdrop-filter: hue-rotate(16%);
+            backdrop-filter: hue-rotate(16%);
+  }
+  .filter-hue-rotate-bg-24--d {
+    -webkit-backdrop-filter: hue-rotate(24%);
+            backdrop-filter: hue-rotate(24%);
+  }
+  .filter-hue-rotate-bg-32--d {
+    -webkit-backdrop-filter: hue-rotate(32%);
+            backdrop-filter: hue-rotate(32%);
+  }
+  .filter-hue-rotate-bg-40--d {
+    -webkit-backdrop-filter: hue-rotate(40%);
+            backdrop-filter: hue-rotate(40%);
+  }
+  .filter-hue-rotate-bg-48--d {
+    -webkit-backdrop-filter: hue-rotate(48%);
+            backdrop-filter: hue-rotate(48%);
+  }
+  .filter-hue-rotate-bg-56--d {
+    -webkit-backdrop-filter: hue-rotate(56%);
+            backdrop-filter: hue-rotate(56%);
+  }
+  .filter-hue-rotate-bg-64--d {
+    -webkit-backdrop-filter: hue-rotate(64%);
+            backdrop-filter: hue-rotate(64%);
+  }
+  .filter-hue-rotate-bg-72--d {
+    -webkit-backdrop-filter: hue-rotate(72%);
+            backdrop-filter: hue-rotate(72%);
+  }
+  .filter-hue-rotate-bg-80--d {
+    -webkit-backdrop-filter: hue-rotate(80%);
+            backdrop-filter: hue-rotate(80%);
+  }
+  .filter-hue-rotate-bg-88--d {
+    -webkit-backdrop-filter: hue-rotate(88%);
+            backdrop-filter: hue-rotate(88%);
+  }
+  .filter-hue-rotate-bg-96--d {
+    -webkit-backdrop-filter: hue-rotate(96%);
+            backdrop-filter: hue-rotate(96%);
+  }
+  .filter-hue-rotate-bg-100--d {
+    -webkit-backdrop-filter: hue-rotate(100%);
+            backdrop-filter: hue-rotate(100%);
   }
   .filter-invert-bg-0--d {
     -webkit-backdrop-filter: invert(0%);
