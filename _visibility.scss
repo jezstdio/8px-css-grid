@@ -1,12 +1,14 @@
-.hidden { visibility: hidden; }
-.visible { visibility: visible; }
-
-@media screen and (max-width: $desktop-width - 1) {
-    .hidden--m { visibility: hidden; }
-    .visible--m { visibility: visible; }
+@mixin visibility($media) {
+    .hidden#{$media} { visibility: hidden; }
+    .visible#{$media} { visibility: visible; }
 }
 
-@media screen and (min-width: $desktop-width) {
-    .hidden--d { visibility: hidden; }
-    .visible--d { visibility: visible; }
+@include visibility('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include visibility('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include visibility('--d');
 }

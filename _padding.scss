@@ -1,63 +1,31 @@
-@each $padding in $positive { .padding-#{$padding} { padding: #{$padding}px !important; } }
-@each $padding in $positive { .padding-t-#{$padding} { padding-top: #{$padding}px !important; } }
-@each $padding in $positive { .padding-r-#{$padding} { padding-right: #{$padding}px !important; } }
-@each $padding in $positive { .padding-b-#{$padding} { padding-bottom: #{$padding}px !important; } }
-@each $padding in $positive { .padding-l-#{$padding} { padding-left: #{$padding}px !important; } }
-
-@each $padding in $positive {
-    .padding-x-#{$padding} {
-        padding-left: #{$padding}px !important;
-        padding-right: #{$padding}px !important;
-    }
-}
-
-@each $padding in $positive {
-    .padding-y-#{$padding} {
-        padding-bottom: #{$padding}px !important;
-        padding-top: #{$padding}px !important;
-    }
-}
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $padding in $positive { .padding-#{$padding}--m { padding: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-t-#{$padding}--m { padding-top: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-r-#{$padding}--m { padding-right: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-b-#{$padding}--m { padding-bottom: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-l-#{$padding}--m { padding-left: #{$padding}px !important; } }
+@mixin padding($media) {
+    @each $padding in $sequence { .padding-#{$padding}#{media} { padding: #{$padding}px; } }
+    @each $padding in $sequence { .padding-t-#{$padding}#{media} { padding-top: #{$padding}px; } }
+    @each $padding in $sequence { .padding-r-#{$padding}#{media} { padding-right: #{$padding}px; } }
+    @each $padding in $sequence { .padding-b-#{$padding}#{media} { padding-bottom: #{$padding}px; } }
+    @each $padding in $sequence { .padding-l-#{$padding}#{media} { padding-left: #{$padding}px; } }
     
-    @each $padding in $positive {
-        .padding-x-#{$padding}--m {
-            padding-left: #{$padding}px !important;
-            padding-right: #{$padding}px !important;
+    @each $padding in $sequence {
+        .padding-x-#{$padding}#{media} {
+            padding-left: #{$padding}px;
+            padding-right: #{$padding}px;
         }
     }
     
-    @each $padding in $positive {
-        .padding-y-#{$padding}--m {
-            padding-bottom: #{$padding}px !important;
-            padding-top: #{$padding}px !important;
+    @each $padding in $sequence {
+        .padding-y-#{$padding}#{media} {
+            padding-bottom: #{$padding}px;
+            padding-top: #{$padding}px;
         }
     }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $padding in $positive { .padding-#{$padding}--d { padding: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-t-#{$padding}--d { padding-top: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-r-#{$padding}--d { padding-right: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-b-#{$padding}--d { padding-bottom: #{$padding}px !important; } }
-    @each $padding in $positive { .padding-l-#{$padding}--d { padding-left: #{$padding}px !important; } }
-    
-    @each $padding in $positive {
-        .padding-x-#{$padding}--d {
-            padding-left: #{$padding}px !important;
-            padding-right: #{$padding}px !important;
-        }
-    }
-    
-    @each $padding in $positive {
-        .padding-y-#{$padding}--d {
-            padding-bottom: #{$padding}px !important;
-            padding-top: #{$padding}px !important;
-        }
-    }
+@include padding('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include padding('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include padding('--d');
 }

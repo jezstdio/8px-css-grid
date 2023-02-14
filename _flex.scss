@@ -41,33 +41,23 @@ $flex: (
 
 );
 
-@each $name, $key, $value, $key2, $value2 in $flex {
-    .#{$name} {
-        #{$key}: #{$value} !important;
-        @if $key2 and $value2 {
-            #{$key2}: #{$value2} !important
-        };
-    }
-}
-
-@media screen and (max-width: $desktop-width - 1) {
+@mixin flex($media) {
     @each $name, $key, $value, $key2, $value2 in $flex {
-        .#{$name}--m {
-            #{$key}: #{$value} !important;
+        .#{$name}#{$media} {
+            #{$key}: #{$value};
             @if $key2 and $value2 {
-                #{$key2}: #{$value2} !important
+                #{$key2}: #{$value2}
             };
         }
     }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $name, $key, $value, $key2, $value2 in $flex {
-        .#{$name}--d {
-            #{$key}: #{$value} !important;
-            @if $key2 and $value2 {
-                #{$key2}: #{$value2} !important
-            };
-        }
-    }
+@include flex('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include flex('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include flex('--d');
 }

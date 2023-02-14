@@ -1,9 +1,13 @@
-@each $index in $order { .zindex-#{$index} { z-index: #{$index}; } }
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $index in $order { .zindex-#{$index}--m { z-index: #{$index}; } }
+@mixin zindex($media) {
+    @each $index in $order { .zindex-#{$index}#{$media} { z-index: #{$index}; } }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $index in $order { .zindex-#{$index}--d { z-index: #{$index}; } }
+@include zindex('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include zindex('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include zindex('--d');
 }

@@ -1,9 +1,13 @@
-@each $or in $order { .order-#{$or} { order: #{$or}; } }
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $or in $order { .order-#{$or}--m { order: #{$or}; } }
+@mixin order($media) {
+    @each $or in $order { .order-#{$or}#{$media} { order: #{$or}; } }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $or in $order { .order-#{$or}--d { order: #{$or}; } }
+@include order('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include order('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include order('--d');
 }

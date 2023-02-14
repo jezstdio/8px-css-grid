@@ -1,12 +1,14 @@
-@each $blur in $filter { .blur-#{$blur} { filter: blur(#{$blur}px); } }
-@each $blur in $filter { .bg_blur-#{$blur} { backdrop-filter: blur(#{$blur}px); } }
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $blur in $filter { .blur-#{$blur}--m { filter: blur(#{$blur}px); } }
-    @each $blur in $filter { .bg_blur-#{$blur}--m { backdrop-filter: blur(#{$blur}px); } }
+@mixin filter($media) {
+    @each $blur in $filter { .blur-#{$blur}#{$media} { filter: blur(#{$blur}px); } }
+    @each $blur in $filter { .blur-bg-#{$blur}#{$media} { backdrop-filter: blur(#{$blur}px); } }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $blur in $filter { .blur-#{$blur}--d { filter: blur(#{$blur}px); } }
-    @each $blur in $filter { .bg_blur-#{$blur}--d { backdrop-filter: blur(#{$blur}px); } }
+@include filter('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include filter('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include filter('--d');
 }

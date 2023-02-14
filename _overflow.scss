@@ -1,54 +1,28 @@
-.overflow {
-    &-auto { overflow: auto; }
-    &-hidden { overflow: hidden; }
-    &-scroll { overflow: scroll; }
-    &-visible { overflow: visible; }
-    
-    &-x-auto { overflow-x: auto; }
-    &-x-hidden { overflow-x: hidden; }
-    &-x-scroll { overflow-x: scroll; }
-    &-x-visible { overflow-x: visible; }
-    
-    &-y-auto { overflow-y: auto; }
-    &-y-hidden { overflow-y: hidden; }
-    &-y-scroll { overflow-y: scroll; }
-    &-y-visible { overflow-y: visible; }
-}
-
-@media screen and (max-width: $desktop-width - 1) {
+@mixin overflow($media) {
     .overflow {
-        &-auto--m { overflow: auto; }
-        &-hidden--m { overflow: hidden; }
-        &-scroll--m { overflow: scroll; }
-        &-visible--m { overflow: visible; }
-    
-        &-x-auto--m { overflow-x: auto; }
-        &-x-hidden--m { overflow-x: hidden; }
-        &-x-scroll--m { overflow-x: scroll; }
-        &-x-visible--m { overflow-x: visible; }
-    
-        &-y-auto--m { overflow-y: auto; }
-        &-y-hidden--m { overflow-y: hidden; }
-        &-y-scroll--m { overflow-y: scroll; }
-        &-y-visible--m { overflow-y: visible; }
+        &-auto#{media} { overflow: auto; }
+        &-hidden#{media} { overflow: hidden; }
+        &-scroll#{media} { overflow: scroll; }
+        &-visible#{media} { overflow: visible; }
+        
+        &-x-auto#{media} { overflow-x: auto; }
+        &-x-hidden#{media} { overflow-x: hidden; }
+        &-x-scroll#{media} { overflow-x: scroll; }
+        &-x-visible#{media} { overflow-x: visible; }
+        
+        &-y-auto#{media} { overflow-y: auto; }
+        &-y-hidden#{media} { overflow-y: hidden; }
+        &-y-scroll#{media} { overflow-y: scroll; }
+        &-y-visible#{media} { overflow-y: visible; }
     }
 }
 
-@media screen and (min-width: $desktop-width) {
-    .overflow {
-        &-auto--d { overflow: auto; }
-        &-hidden--d { overflow: hidden; }
-        &-scroll--d { overflow: scroll; }
-        &-visible--d { overflow: visible; }
-    
-        &-x-auto--d { overflow-x: auto; }
-        &-x-hidden--d { overflow-x: hidden; }
-        &-x-scroll--d { overflow-x: scroll; }
-        &-x-visible--d { overflow-x: visible; }
-    
-        &-y-auto--d { overflow-y: auto; }
-        &-y-hidden--d { overflow-y: hidden; }
-        &-y-scroll--d { overflow-y: scroll; }
-        &-y-visible--d { overflow-y: visible; }
-    }
+@include overflow('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include overflow('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include overflow('--d');
 }

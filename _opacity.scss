@@ -1,9 +1,13 @@
-@each $op in $opacity { .opacity-#{$op} { opacity: #{$op/100}; } }
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $op in $opacity { .opacity-#{$op}--m { opacity: #{$op/100}; } }
+@mixin opacity($media) {
+    @each $op in $opacity { .opacity-#{$op}#{media} { opacity: calc($op / 100); } }
 }
 
-@media screen and (min-width: $desktop-width) {
-    @each $op in $opacity { .opacity-#{$op}--d { opacity: #{$op/100}; } }
+@include opacity('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include opacity('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include opacity('--d');
 }

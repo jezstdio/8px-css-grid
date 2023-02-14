@@ -1,273 +1,88 @@
-a, .a {
-    color: $primary-48;
-    font-weight: normal;
-    text-decoration: underline;
-    @include fontSize(16px);
-
-    &-bold { font-weight: bold; }
-}
-
-h1, .h1, h2, .h2, h3, .h3 { font-weight: bold; }
-
-h1, .h1 { @include fontSize(40px); }
-h2, .h2 { @include fontSize(32px); }
-h3, .h3 { @include fontSize(24px); }
-
-p, .p {
-    font-weight: normal;
-    @include fontSize(16px);
-
-    &-bold { font-weight: bold; }
-}
-
-small, .small {
-    font-weight: normal;
-    @include fontSize(14px);
-
-    &-bold { font-weight: bold; }
-}
-
-.font_size {
-    &-10 { @include fontSize(10px); }
-    &-14 { @include fontSize(14px); }
-    &-16 { @include fontSize(16px); }
-    &-24 { @include fontSize(24px); }
-    &-32 { @include fontSize(32px); }
-    &-40 { @include fontSize(40px); }
-    &-48 { @include fontSize(48px); }
-    &-88 { @include fontSize(88px); } 
-    &-96 { @include fontSize(96px); }
-}
-
-.nodecoration { text-decoration: none; }
-.underline { text-decoration: underline; }
-.linethrough { text-decoration: line-through; }
-.overline { text-decoration: overline; }
-
-.uppercase { text-transform: uppercase; }
-.lowercase { text-transform: lowercase; }
-.capitalize { text-transform: capitalize; }
-
-.line_height {
-    &-0 { line-height: 0px; }
-    &-4 { line-height: 4px; }
-    &-8 { line-height: 8px; }
-    &-16 { line-height: 16px; }
-    &-24 { line-height: 24px; }
-    &-32 { line-height: 32px; }
-    &-40 { line-height: 40px; }
-    &-48 { line-height: 48px; }
-    &-56 { line-height: 56px; }
-    &-64 { line-height: 64px; }
-}
-
-.text {
-    &-left { text-align: left; }
-    &-center { text-align: center; }
-    &-right { text-align: right; }
-}
-
-.font_weight {
-    &-lighter { font-weight: lighter; }
-    &-normal { font-weight: normal; }
-    &-bolder { font-weight: bolder; }
-    &-bold { font-weight: bold; }
-    &-100 { font-weight: 100; }
-    &-200 { font-weight: 200; }
-    &-300 { font-weight: 300; }
-    &-400 { font-weight: 400; }
-    &-500 { font-weight: 500; }
-    &-600 { font-weight: 600; }
-    &-700 { font-weight: 700; }
-    &-800 { font-weight: 800; }
-    &-900 { font-weight: 900; }
-}
-
-.whitespace {
-    &-wrap { white-space: normal; }
-    &-nowrap { white-space: nowrap; }
-}
-
-@media screen and (max-width: $desktop-width - 1) {
-    .a--m {
-        color: $primary-48;
+@mixin typography($media) {
+    a, .a#{$media} {
         font-weight: normal;
         text-decoration: underline;
         @include fontSize(16px);
-    
-        &-bold { font-weight: bold; }
     }
-
-    .h1--m, .h2--m, .h3--m { font-weight: bold; }
-
-    .h1--m { @include fontSize(40px); }
-    .h2--m { @include fontSize(32px); }
-    .h3--m { @include fontSize(24px); }
-
-    .p--m {
+    
+    h1, .h1#{$media}, h2, .h2#{$media}, h3, .h3#{$media} { font-weight: bold; }
+    
+    h1, .h1#{$media} { @include fontSize(40px); }
+    h2, .h2#{$media} { @include fontSize(32px); }
+    h3, .h3#{$media} { @include fontSize(24px); }
+    
+    p, .p#{$media} {
         font-weight: normal;
         @include fontSize(16px);
-    
-        &-bold { font-weight: bold; }
     }
-
-    .small--m {
+    
+    small, .small#{$media} {
         font-weight: normal;
         @include fontSize(14px);
+    }
     
-        &-bold { font-weight: bold; }
+    .font-size {
+        &-12#{$media} { @include fontSize(12px); }
+        &-14#{$media} { @include fontSize(14px); }
+        &-16#{$media} { @include fontSize(16px); }
+        &-24#{$media} { @include fontSize(24px); }
+        &-32#{$media} { @include fontSize(32px); }
+        &-40#{$media} { @include fontSize(40px); }
+        &-48#{$media} { @include fontSize(48px); }
     }
-
-    .font_size {
-        &-10--m { @include fontSize(10px); }
-        &-14--m { @include fontSize(14px); }
-        &-16--m { @include fontSize(16px); }
-        &-24--m { @include fontSize(24px); }
-        &-32--m { @include fontSize(32px); }
-        &-40--m { @include fontSize(40px); }
-        &-48--m { @include fontSize(48px); }
-        &-88--m { @include fontSize(88px); }
-        &-96--m { @include fontSize(96px); }
+    
+    .nodecoration#{$media} { text-decoration: none; }
+    .underline#{$media} { text-decoration: underline; }
+    .linethrough#{$media} { text-decoration: line-through; }
+    .overline#{$media} { text-decoration: overline; }
+    
+    .uppercase#{$media} { text-transform: uppercase; }
+    .lowercase#{$media} { text-transform: lowercase; }
+    .capitalize#{$media} { text-transform: capitalize; }
+    
+    .line-height {
+        &-16#{$media} { line-height: 16px; }
+        &-24#{$media} { line-height: 24px; }
+        &-32#{$media} { line-height: 32px; }
+        &-40#{$media} { line-height: 40px; }
+        &-48#{$media} { line-height: 48px; }
+        &-56#{$media} { line-height: 56px; }
     }
-
-    .nodecoration--m { text-decoration: none; }
-    .underline--m { text-decoration: underline; }
-    .linethrough--m { text-decoration: line-through; }
-    .overline--m { text-decoration: overline; }
-
-    .uppercase--m { text-transform: uppercase; }
-    .lowercase--m { text-transform: lowercase; }
-    .capitalize--m { text-transform: capitalize; }
-
-    .line_height {
-        &-0--m { line-height: 0px; }
-        &-4--m { line-height: 4px; }
-        &-8--m { line-height: 8px; }
-        &-16--m { line-height: 16px; }
-        &-24--m { line-height: 24px; }
-        &-32--m { line-height: 32px; }
-        &-40--m { line-height: 40px; }
-        &-48--m { line-height: 48px; }
-        &-56--m { line-height: 56px; }
-        &-64--m { line-height: 64px; }
-    }
-
+    
     .text {
-        &-left--m { text-align: left; }
-        &-center--m { text-align: center; }
-        &-right--m { text-align: right; }
+        &-left#{$media} { text-align: left; }
+        &-center#{$media} { text-align: center; }
+        &-right#{$media} { text-align: right; }
     }
-
-    .font_weight {
-        &-lighter--m { font-weight: lighter; }
-        &-normal--m { font-weight: normal; }
-        &-bolder--m { font-weight: bolder; }
-        &-bold--m { font-weight: bold; }
-        &-100--m { font-weight: 100; }
-        &-200--m { font-weight: 200; }
-        &-300--m { font-weight: 300; }
-        &-400--m { font-weight: 400; }
-        &-500--m { font-weight: 500; }
-        &-600--m { font-weight: 600; }
-        &-700--m { font-weight: 700; }
-        &-800--m { font-weight: 800; }
-        &-900--m { font-weight: 900; }
+    
+    .font-weight {
+        &-lighter#{$media} { font-weight: lighter; }
+        &-normal#{$media} { font-weight: normal; }
+        &-bolder#{$media} { font-weight: bolder; }
+        &-bold#{$media} { font-weight: bold; }
+        &-100#{$media} { font-weight: 100; }
+        &-200#{$media} { font-weight: 200; }
+        &-300#{$media} { font-weight: 300; }
+        &-400#{$media} { font-weight: 400; }
+        &-500#{$media} { font-weight: 500; }
+        &-600#{$media} { font-weight: 600; }
+        &-700#{$media} { font-weight: 700; }
+        &-800#{$media} { font-weight: 800; }
+        &-900#{$media} { font-weight: 900; }
     }
-
+    
     .whitespace {
-        &-wrap--m { white-space: normal; }
-        &-nowrap--m { white-space: nowrap; }
+        &-wrap#{$media} { white-space: normal; }
+        &-nowrap#{$media} { white-space: nowrap; }
     }
 }
 
-@media screen and (min-width: $desktop-width) {
-    .a--d {
-        color: $primary-48;
-        font-weight: normal;
-        text-decoration: underline;
-        @include fontSize(16px);
-    
-        &-bold { font-weight: bold; }
-    }
+@include typography('');
 
-    .h1--d, .h2--d, .h3--d { font-weight: bold; }
+@media screen and (max-width: $width-media--d - 1) {
+    @include typography('--m');
+}
 
-    .h1--d { @include fontSize(40px); }
-    .h2--d { @include fontSize(32px); }
-    .h3--d { @include fontSize(24px); }
-
-    .p--d {
-        font-weight: normal;
-        @include fontSize(16px);
-    
-        &-bold { font-weight: bold; }
-    }
-
-    .small--d {
-        font-weight: normal;
-        @include fontSize(14px);
-    
-        &-bold { font-weight: bold; }
-    }
-
-    .font_size {
-        &-10--d { @include fontSize(10px); }
-        &-14--d { @include fontSize(14px); }
-        &-16--d { @include fontSize(16px); }
-        &-24--d { @include fontSize(24px); }
-        &-32--d { @include fontSize(32px); }
-        &-40--d { @include fontSize(40px); }
-        &-48--d { @include fontSize(48px); }
-        &-88--d { @include fontSize(88px); }
-        &-96--d { @include fontSize(96px); }
-    }
-
-    .nodecoration--d { text-decoration: none; }
-    .underline--d { text-decoration: underline; }
-    .linethrough--d { text-decoration: line-through; }
-    .overline--d { text-decoration: overline; }
-
-    .uppercase--d { text-transform: uppercase; }
-    .lowercase--d { text-transform: lowercase; }
-    .capitalize--d { text-transform: capitalize; }
-
-    .line_height {
-        &-0--d { line-height: 0px; }
-        &-4--d { line-height: 4px; }
-        &-8--d { line-height: 8px; }
-        &-16--d { line-height: 16px; }
-        &-24--d { line-height: 24px; }
-        &-32--d { line-height: 32px; }
-        &-40--d { line-height: 40px; }
-        &-48--d { line-height: 48px; }
-        &-56--d { line-height: 56px; }
-        &-64--d { line-height: 64px; }
-    }
-
-    .text {
-        &-left--d { text-align: left; }
-        &-center--d { text-align: center; }
-        &-right--d { text-align: right; }
-    }
-
-    .font_weight {
-        &-lighter--d { font-weight: lighter; }
-        &-normal--d { font-weight: normal; }
-        &-bolder--d { font-weight: bolder; }
-        &-bold--d { font-weight: bold; }
-        &-100--d { font-weight: 100; }
-        &-200--d { font-weight: 200; }
-        &-300--d { font-weight: 300; }
-        &-400--d { font-weight: 400; }
-        &-500--d { font-weight: 500; }
-        &-600--d { font-weight: 600; }
-        &-700--d { font-weight: 700; }
-        &-800--d { font-weight: 800; }
-        &-900--d { font-weight: 900; }
-    }
-
-    .whitespace {
-        &-wrap--d { white-space: normal; }
-        &-nowrap--d { white-space: nowrap; }
-    }
+@media screen and (min-width: $width-media--d) {
+    @include typography('--d');
 }

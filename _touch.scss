@@ -1,42 +1,28 @@
-.touch {
-    &-auto { touch-action: auto; }
-    &-none { touch-action: none; }
-    &-x { touch-action: pan-x; }
-    &-l { touch-action: pan-left; }
-    &-r { touch-action: pan-right; }
-    &-y { touch-action: pan-y; }
-    &-up { touch-action: pan-up; }
-    &-down { touch-action: pan-down; }
-    &-pinch { touch-action: pinch-zoom; }
-    &-manipulation { touch-action: manipulation; }
+@mixin touch($media) {
+    &-auto#{$media} { touch-action: auto; }
+    &-none#{$media} { touch-action: none; }
+    &-x#{$media} { touch-action: pan-x; }
+    &-l#{$media} { touch-action: pan-left; }
+    &-r#{$media} { touch-action: pan-right; }
+    &-y#{$media} { touch-action: pan-y; }
+    &-up#{$media} { touch-action: pan-up; }
+    &-down#{$media} { touch-action: pan-down; }
+    &-pinch#{$media} { touch-action: pinch-zoom; }
+    &-manipulation#{$media} { touch-action: manipulation; }
 }
 
-@media screen and (max-width: $desktop-width - 1) {
+.touch {
+    @include touch('');
+}
+
+@media screen and (max-width: $width-media--d - 1) {
     .touch {
-        &-auto--m { touch-action: auto; }
-        &-none--m { touch-action: none; }
-        &-x--m { touch-action: pan-x; }
-        &-l--m { touch-action: pan-left; }
-        &-r--m { touch-action: pan-right; }
-        &-y--m { touch-action: pan-y; }
-        &-up--m { touch-action: pan-up; }
-        &-down--m { touch-action: pan-down; }
-        &-pinch--m { touch-action: pinch-zoom; }
-        &-manipulation--m { touch-action: manipulation; }
+        @include touch('--m');
     }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media screen and (min-width: $width-media--d) {
     .touch {
-        &-auto--d { touch-action: auto; }
-        &-none--d { touch-action: none; }
-        &-x--d { touch-action: pan-x; }
-        &-l--d { touch-action: pan-left; }
-        &-r--d { touch-action: pan-right; }
-        &-y--d { touch-action: pan-y; }
-        &-up--d { touch-action: pan-up; }
-        &-down--d { touch-action: pan-down; }
-        &-pinch--d { touch-action: pinch-zoom; }
-        &-manipulation--d { touch-action: manipulation; }
+        @include touch('--d');
     }
 }

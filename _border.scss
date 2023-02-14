@@ -1,194 +1,76 @@
 $max: 50%;
 
-@each $radius in $positive { .radius-#{$radius} { border-radius: #{$radius}px; } }
-.radius-max { border-radius: $max; }
-
-@each $radius in $positive { .radius-tl-#{$radius} { border-top-left-radius: #{$radius}px; } }
-.radius-tl-max { border-top-left-radius: $max; }
-
-@each $radius in $positive { .radius-tr-#{$radius} { border-top-right-radius: #{$radius}px; } }
-.radius-tr-max { border-top-right-radius: $max; }
-
-@each $radius in $positive { .radius-bl-#{$radius} { border-bottom-left-radius: #{$radius}px; } }
-.radius-bl-max { border-bottom-left-radius: $max; }
-
-@each $radius in $positive { .radius-br-#{$radius} { border-bottom-right-radius: #{$radius}px; } }
-.radius-br-max { border-bottom-right-radius: $max; }
-
-@each $radius in $positive {
-    .radius-t-#{$radius} {
-        border-top-left-radius: #{$radius}px;
-        border-top-right-radius: #{$radius}px;
-    }
-}
-
-.radius-t-max {
-    border-top-left-radius: $max;
-    border-top-right-radius: $max;
-}
-
-@each $radius in $positive {
-    .radius-r-#{$radius} {
-        border-top-right-radius: #{$radius}px;
-        border-bottom-right-radius: #{$radius}px;
-    }
-}
-
-.radius-r-max {
-    border-top-right-radius: $max;
-    border-bottom-right-radius: $max;
-}
-
-@each $radius in $positive {
-    .radius-b-#{$radius} {
-        border-bottom-left-radius: #{$radius}px;
-        border-bottom-right-radius: #{$radius}px;
-    }
-}
-
-.radius-b-max {
-    border-bottom-left-radius: $max;
-    border-bottom-right-radius: $max;
-}
-
-@each $radius in $positive {
-    .radius-l-#{$radius} {
-        border-top-left-radius: #{$radius}px;
-        border-bottom-left-radius: #{$radius}px;
-    }
-}
-
-.radius-l-max {
-    border-top-left-radius: $max;
-    border-bottom-left-radius: $max;
-}
-
-@media screen and (max-width: $desktop-width - 1) {
-    @each $radius in $positive { .radius-#{$radius}--m { border-radius: #{$radius}px; } }
-    .radius-max--m { border-radius: $max; }
+@mixin border($media) {
+    @each $radius in $sequence { .radius-#{$radius}#{$media} { border-radius: #{$radius}px; } }
+    .radius-max#{$media} { border-radius: $max; }
     
-    @each $radius in $positive { .radius-tl-#{$radius}--m { border-top-left-radius: #{$radius}px; } }
-    .radius-tl-max--m { border-top-left-radius: $max; }
+    @each $radius in $sequence { .radius-tl-#{$radius}#{$media} { border-top-left-radius: #{$radius}px; } }
+    .radius-tl-max#{$media} { border-top-left-radius: $max; }
     
-    @each $radius in $positive { .radius-tr-#{$radius}--m { border-top-right-radius: #{$radius}px; } }
-    .radius-tr-max--m { border-top-right-radius: $max; }
+    @each $radius in $sequence { .radius-tr-#{$radius}#{$media} { border-top-right-radius: #{$radius}px; } }
+    .radius-tr-max#{$media} { border-top-right-radius: $max; }
     
-    @each $radius in $positive { .radius-bl-#{$radius}--m { border-bottom-left-radius: #{$radius}px; } }
-    .radius-bl-max--m { border-bottom-left-radius: $max; }
+    @each $radius in $sequence { .radius-bl-#{$radius}#{$media} { border-bottom-left-radius: #{$radius}px; } }
+    .radius-bl-max#{$media} { border-bottom-left-radius: $max; }
     
-    @each $radius in $positive { .radius-br-#{$radius}--m { border-bottom-right-radius: #{$radius}px; } }
-    .radius-br-max--m { border-bottom-right-radius: $max; }
+    @each $radius in $sequence { .radius-br-#{$radius}#{$media} { border-bottom-right-radius: #{$radius}px; } }
+    .radius-br-max#{$media} { border-bottom-right-radius: $max; }
     
-    @each $radius in $positive {
-        .radius-t-#{$radius}--m {
+    @each $radius in $sequence {
+        .radius-t-#{$radius}#{$media} {
             border-top-left-radius: #{$radius}px;
             border-top-right-radius: #{$radius}px;
         }
     }
-
-    .radius-t-max--m {
+    
+    .radius-t-max#{$media} {
         border-top-left-radius: $max;
         border-top-right-radius: $max;
     }
     
-    @each $radius in $positive {
-        .radius-r-#{$radius}--m {
+    @each $radius in $sequence {
+        .radius-r-#{$radius}#{$media} {
             border-top-right-radius: #{$radius}px;
             border-bottom-right-radius: #{$radius}px;
         }
     }
-
-    .radius-r-max--m {
+    
+    .radius-r-max#{$media} {
         border-top-right-radius: $max;
         border-bottom-right-radius: $max;
     }
     
-    @each $radius in $positive {
-        .radius-b-#{$radius}--m {
+    @each $radius in $sequence {
+        .radius-b-#{$radius}#{$media} {
             border-bottom-left-radius: #{$radius}px;
             border-bottom-right-radius: #{$radius}px;
         }
     }
-
-    .radius-b-max--m {
+    
+    .radius-b-max#{$media} {
         border-bottom-left-radius: $max;
         border-bottom-right-radius: $max;
     }
     
-    @each $radius in $positive {
-        .radius-l-#{$radius}--m {
-            border-top-left-radius: #{$radius}px;
-            border-bottom-left-radius: #{$radius}px;
-        }
-    }
-
-    .radius-l-max--m {
-        border-top-left-radius: $max;
-        border-bottom-left-radius: $max;
-    }
-}
-
-@media screen and (min-width: $desktop-width) {
-    @each $radius in $positive { .radius-#{$radius}--d { border-radius: #{$radius}px; } }
-    .radius-max--d { border-radius: $max; }
-    
-    @each $radius in $positive { .radius-tl-#{$radius}--d { border-top-left-radius: #{$radius}px; } }
-    .radius-tl-max--d { border-top-left-radius: $max; }
-    
-    @each $radius in $positive { .radius-tr-#{$radius}--d { border-top-right-radius: #{$radius}px; } }
-    .radius-tr-max--d { border-top-right-radius: $max; }
-    
-    @each $radius in $positive { .radius-bl-#{$radius}--d { border-bottom-left-radius: #{$radius}px; } }
-    .radius-bl-max--d { border-bottom-left-radius: $max; }
-    
-    @each $radius in $positive { .radius-br-#{$radius}--d { border-bottom-right-radius: #{$radius}px; } }
-    .radius-br-max--d { border-bottom-right-radius: $max; }
-    
-    @each $radius in $positive {
-        .radius-t-#{$radius}--d {
-            border-top-left-radius: #{$radius}px;
-            border-top-right-radius: #{$radius}px;
-        }
-    }
-
-    .radius-t-max--d {
-        border-top-left-radius: $max;
-        border-top-right-radius: $max;
-    }
-    
-    @each $radius in $positive {
-        .radius-r-#{$radius}--d {
-            border-top-right-radius: #{$radius}px;
-            border-bottom-right-radius: #{$radius}px;
-        }
-    }
-
-    .radius-r-max--d {
-        border-top-right-radius: $max;
-        border-bottom-right-radius: $max;
-    }
-    
-    @each $radius in $positive {
-        .radius-b-#{$radius}--d {
-            border-bottom-left-radius: #{$radius}px;
-            border-bottom-right-radius: #{$radius}px;
-        }
-    }
-
-    .radius-b-max--d {
-        border-bottom-left-radius: $max;
-        border-bottom-right-radius: $max;
-    }
-    
-    @each $radius in $positive {
-        .radius-l-#{$radius}--d {
+    @each $radius in $sequence {
+        .radius-l-#{$radius}#{$media} {
             border-top-left-radius: #{$radius}px;
             border-bottom-left-radius: #{$radius}px;
         }
     }
     
-    .radius-l-max--d {
+    .radius-l-max#{$media} {
         border-top-left-radius: $max;
         border-bottom-left-radius: $max;
     }
+}
+
+@include border('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include border('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include border('--d');
 }

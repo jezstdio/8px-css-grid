@@ -1,26 +1,11 @@
-.float {
-    &-none { float: none; }
-    &-l { float: left; }
-    &-r { float: right; }
-    &-x { float: both; }
-    
-    &-clear {
-        &:after {
-            clear: both;
-            content: "";
-            display: block;
-        }
-    }
-}
-
-@media screen and (max-width: $desktop-width - 1) {
+@mixin float($media) {
     .float {
-        &-none--m { float: none; }
-        &-l--m { float: left; }
-        &-r--m { float: right; }
-        &-x--m { float: both; }
-    
-        &-clear--m {
+        &-none#{$media} { float: none; }
+        &-l#{$media} { float: left; }
+        &-r#{$media} { float: right; }
+        &-x#{$media} { float: both; }
+        
+        &-clear#{$media} {
             &:after {
                 clear: both;
                 content: "";
@@ -30,19 +15,12 @@
     }
 }
 
-@media screen and (min-width: $desktop-width) {
-    .float {
-        &-none--d { float: none; }
-        &-l--d { float: left; }
-        &-r--d { float: right; }
-        &-x--d { float: both; }
-    
-        &-clear--d {
-            &:after {
-                clear: both;
-                content: "";
-                display: block;
-            }
-        }
-    }
+@include float('');
+
+@media screen and (max-width: $width-media--d - 1) {
+    @include float('--m');
+}
+
+@media screen and (min-width: $width-media--d) {
+    @include float('--d');
 }
