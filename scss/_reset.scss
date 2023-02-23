@@ -61,6 +61,10 @@ input, textarea {
     @include fontSize(16px);
 }
 
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
 // Remove default input style
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button,
