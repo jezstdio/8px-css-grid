@@ -39,7 +39,7 @@
     }
     
     @each $margin in $seq-8px {
-        .margin-y#{$margin}#{$media} {
+        .margin-y-#{$margin}#{$media} {
             margin-bottom: #{$margin}px;
             margin-top: #{$margin}px;
         }
