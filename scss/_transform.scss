@@ -1,30 +1,76 @@
 @mixin transform($media) {
-    .transform {
-        &-none#{$media} { transform: none; }
-    
-        @each $x in $seq-8px { &-translate-x-#{$x}#{$media} { transform: translateX($x); }}
-        @each $y in $seq-8px { &-translate-y-#{$y}#{$media} { transform: translateY($y); }}
-        @each $z in $seq-8px { &-translate-z-#{$z}#{$media} { transform: translateZ($z); }}
-    
-        @each $x in $seq-8px { &-scale-x-#{$x}#{$media} { transform: scaleX($x); }}
-        @each $y in $seq-8px { &-scale-y-#{$y}#{$media} { transform: scaleY($y); }}
-        @each $z in $seq-8px { &-scale-z-#{$z}#{$media} { transform: scaleZ($z); }}
-    
-        @each $x in $degree { &-rotate-x-#{$x}#{$media} { transform: rotateX($x); }}
-        @each $y in $degree { &-rotate-y-#{$y}#{$media} { transform: rotateY($y); }}
-        @each $z in $degree { &-rotate-z-#{$z}#{$media} { transform: rotateZ($z); }}
-    
-        @each $x in $degree { &-skew-x-#{$x}#{$media} { transform: skewX($x); }}
-        @each $y in $degree { &-skew-y-#{$y}#{$media} { transform: skewY($y); }}
+  .transform {
+    &-none#{$media} {
+      transform: none;
     }
+
+    @each $x in $seq-8px {
+      &-translate-x-#{$x}#{$media} {
+        transform: translateX($x);
+      }
+    }
+    @each $y in $seq-8px {
+      &-translate-y-#{$y}#{$media} {
+        transform: translateY($y);
+      }
+    }
+    @each $z in $seq-8px {
+      &-translate-z-#{$z}#{$media} {
+        transform: translateZ($z);
+      }
+    }
+
+    @each $x in $seq-8px {
+      &-scale-x-#{$x}#{$media} {
+        transform: scaleX($x);
+      }
+    }
+    @each $y in $seq-8px {
+      &-scale-y-#{$y}#{$media} {
+        transform: scaleY($y);
+      }
+    }
+    @each $z in $seq-8px {
+      &-scale-z-#{$z}#{$media} {
+        transform: scaleZ($z);
+      }
+    }
+
+    @each $x in $degree {
+      &-rotate-x-#{$x}#{$media} {
+        transform: rotateX($x);
+      }
+    }
+    @each $y in $degree {
+      &-rotate-y-#{$y}#{$media} {
+        transform: rotateY($y);
+      }
+    }
+    @each $z in $degree {
+      &-rotate-z-#{$z}#{$media} {
+        transform: rotateZ($z);
+      }
+    }
+
+    @each $x in $degree {
+      &-skew-x-#{$x}#{$media} {
+        transform: skewX($x);
+      }
+    }
+    @each $y in $degree {
+      &-skew-y-#{$y}#{$media} {
+        transform: skewY($y);
+      }
+    }
+  }
 }
 
-@include transform('');
+@include transform("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include transform('--m');
+  @include transform("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include transform('--d');
+  @include transform("--d");
 }

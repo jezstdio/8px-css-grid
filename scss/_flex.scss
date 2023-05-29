@@ -1,63 +1,79 @@
 $flex: (
-    ("wrap", "flex-wrap", "wrap"),
-    ("nowrap", "flex-wrap", "nowrap"),
-
-    ("self-start", "align-self", "flex-start"),
-    ("self-center", "align-self", "flex-center"),
-    ("self-end", "align-self", "flex-end"),
-
-    ("align-start", "align-items", "flex-start"),
-    ("align-center", "align-items", "center"),
-    ("align-end", "align-items", "flex-end"),
-
-    ("justify-start", "justify-content", "flex-start"),
-    ("justify-center", "justify-content", "center"),
-    ("justify-end", "justify-content", "flex-end"),
-    ("justify-between", "justify-content", "space-between"),
-    ("justify-around", "justify-content", "space-around"),
-
-    ("start", "align-items", "flex-start", "justify-content", "flex-start"),
-    ("start-center", "align-items", "flex-start", "justify-content", "center"),
-    ("start-end", "align-items", "flex-start", "justify-content", "flex-end"),
-    ("start-between", "align-items", "flex-start", "justify-content", "space-between"),
-    ("start-around", "align-items", "flex-start", "justify-content", "space-around"),
-
-    ("center-start", "align-items", "center", "justify-content", "flex-start"),
-    ("center", "align-items", "center", "justify-content", "center"),
-    ("center-end", "align-items", "center", "justify-content", "flex-end"),
-    ("center-between", "align-items", "center", "justify-content", "space-between"),
-    ("center-around", "align-items", "center", "justify-content", "space-around"),
-
-    ("end-start", "align-items", "flex-end", "justify-content", "flex-start"),
-    ("end-center", "align-items", "flex-end", "justify-content", "center"),
-    ("end", "align-items", "flex-end", "justify-content", "flex-end"),
-    ("end-between", "align-items", "flex-end", "justify-content", "space-between"),
-    ("end-around", "align-items", "flex-end", "justify-content", "space-around"),
-
-    ("column", "flex-direction", "column"),
-    ("column-reverse", "flex-direction", "column-reverse"),
-    ("row", "flex-direction", "row"),
-    ("row-reverse", "flex-direction", "row-reverse")
-
+  ("wrap", "flex-wrap", "wrap"),
+  ("nowrap", "flex-wrap", "nowrap"),
+  ("self-start", "align-self", "flex-start"),
+  ("self-center", "align-self", "flex-center"),
+  ("self-end", "align-self", "flex-end"),
+  ("align-start", "align-items", "flex-start"),
+  ("align-center", "align-items", "center"),
+  ("align-end", "align-items", "flex-end"),
+  ("justify-start", "justify-content", "flex-start"),
+  ("justify-center", "justify-content", "center"),
+  ("justify-end", "justify-content", "flex-end"),
+  ("justify-between", "justify-content", "space-between"),
+  ("justify-around", "justify-content", "space-around"),
+  ("start", "align-items", "flex-start", "justify-content", "flex-start"),
+  ("start-center", "align-items", "flex-start", "justify-content", "center"),
+  ("start-end", "align-items", "flex-start", "justify-content", "flex-end"),
+  (
+    "start-between",
+    "align-items",
+    "flex-start",
+    "justify-content",
+    "space-between"
+  ),
+  (
+    "start-around",
+    "align-items",
+    "flex-start",
+    "justify-content",
+    "space-around"
+  ),
+  ("center-start", "align-items", "center", "justify-content", "flex-start"),
+  ("center", "align-items", "center", "justify-content", "center"),
+  ("center-end", "align-items", "center", "justify-content", "flex-end"),
+  (
+    "center-between",
+    "align-items",
+    "center",
+    "justify-content",
+    "space-between"
+  ),
+  ("center-around", "align-items", "center", "justify-content", "space-around"),
+  ("end-start", "align-items", "flex-end", "justify-content", "flex-start"),
+  ("end-center", "align-items", "flex-end", "justify-content", "center"),
+  ("end", "align-items", "flex-end", "justify-content", "flex-end"),
+  (
+    "end-between",
+    "align-items",
+    "flex-end",
+    "justify-content",
+    "space-between"
+  ),
+  ("end-around", "align-items", "flex-end", "justify-content", "space-around"),
+  ("column", "flex-direction", "column"),
+  ("column-reverse", "flex-direction", "column-reverse"),
+  ("row", "flex-direction", "row"),
+  ("row-reverse", "flex-direction", "row-reverse")
 );
 
 @mixin flex($media) {
-    @each $name, $key, $value, $key2, $value2 in $flex {
-        .#{$name}#{$media} {
-            #{$key}: #{$value};
-            @if $key2 and $value2 {
-                #{$key2}: #{$value2}
-            };
-        }
+  @each $name, $key, $value, $key2, $value2 in $flex {
+    .#{$name}#{$media} {
+      #{$key}: #{$value};
+      @if $key2 and $value2 {
+        #{$key2}: #{$value2};
+      }
     }
+  }
 }
 
-@include flex('');
+@include flex("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include flex('--m');
+  @include flex("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include flex('--d');
+  @include flex("--d");
 }

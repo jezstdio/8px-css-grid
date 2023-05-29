@@ -1,28 +1,48 @@
 @mixin touch($media) {
-    &-auto#{$media} { touch-action: auto; }
-    &-none#{$media} { touch-action: none; }
-    &-x#{$media} { touch-action: pan-x; }
-    &-l#{$media} { touch-action: pan-left; }
-    &-r#{$media} { touch-action: pan-right; }
-    &-y#{$media} { touch-action: pan-y; }
-    &-up#{$media} { touch-action: pan-up; }
-    &-down#{$media} { touch-action: pan-down; }
-    &-pinch#{$media} { touch-action: pinch-zoom; }
-    &-manipulation#{$media} { touch-action: manipulation; }
+  &-auto#{$media} {
+    touch-action: auto;
+  }
+  &-none#{$media} {
+    touch-action: none;
+  }
+  &-x#{$media} {
+    touch-action: pan-x;
+  }
+  &-l#{$media} {
+    touch-action: pan-left;
+  }
+  &-r#{$media} {
+    touch-action: pan-right;
+  }
+  &-y#{$media} {
+    touch-action: pan-y;
+  }
+  &-up#{$media} {
+    touch-action: pan-up;
+  }
+  &-down#{$media} {
+    touch-action: pan-down;
+  }
+  &-pinch#{$media} {
+    touch-action: pinch-zoom;
+  }
+  &-manipulation#{$media} {
+    touch-action: manipulation;
+  }
 }
 
 .touch {
-    @include touch('');
+  @include touch("");
 }
 
 @media screen and (max-width: $width-media--d - 1) {
-    .touch {
-        @include touch('--m');
-    }
+  .touch {
+    @include touch("--m");
+  }
 }
 
 @media screen and (min-width: $width-media--d) {
-    .touch {
-        @include touch('--d');
-    }
+  .touch {
+    @include touch("--d");
+  }
 }

@@ -1,76 +1,106 @@
 $max: 50%;
 
 @mixin border($media) {
-    @each $radius in $seq-8px { .radius-#{$radius}#{$media} { border-radius: #{$radius}px; } }
-    .radius-max#{$media} { border-radius: $max; }
-    
-    @each $radius in $seq-8px { .radius-tl-#{$radius}#{$media} { border-top-left-radius: #{$radius}px; } }
-    .radius-tl-max#{$media} { border-top-left-radius: $max; }
-    
-    @each $radius in $seq-8px { .radius-tr-#{$radius}#{$media} { border-top-right-radius: #{$radius}px; } }
-    .radius-tr-max#{$media} { border-top-right-radius: $max; }
-    
-    @each $radius in $seq-8px { .radius-bl-#{$radius}#{$media} { border-bottom-left-radius: #{$radius}px; } }
-    .radius-bl-max#{$media} { border-bottom-left-radius: $max; }
-    
-    @each $radius in $seq-8px { .radius-br-#{$radius}#{$media} { border-bottom-right-radius: #{$radius}px; } }
-    .radius-br-max#{$media} { border-bottom-right-radius: $max; }
-    
-    @each $radius in $seq-8px {
-        .radius-t-#{$radius}#{$media} {
-            border-top-left-radius: #{$radius}px;
-            border-top-right-radius: #{$radius}px;
-        }
+  @each $radius in $seq-8px {
+    .radius-#{$radius}#{$media} {
+      border-radius: #{$radius}px;
     }
-    
-    .radius-t-max#{$media} {
-        border-top-left-radius: $max;
-        border-top-right-radius: $max;
+  }
+  .radius-max#{$media} {
+    border-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-tl-#{$radius}#{$media} {
+      border-top-left-radius: #{$radius}px;
     }
-    
-    @each $radius in $seq-8px {
-        .radius-r-#{$radius}#{$media} {
-            border-top-right-radius: #{$radius}px;
-            border-bottom-right-radius: #{$radius}px;
-        }
+  }
+  .radius-tl-max#{$media} {
+    border-top-left-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-tr-#{$radius}#{$media} {
+      border-top-right-radius: #{$radius}px;
     }
-    
-    .radius-r-max#{$media} {
-        border-top-right-radius: $max;
-        border-bottom-right-radius: $max;
+  }
+  .radius-tr-max#{$media} {
+    border-top-right-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-bl-#{$radius}#{$media} {
+      border-bottom-left-radius: #{$radius}px;
     }
-    
-    @each $radius in $seq-8px {
-        .radius-b-#{$radius}#{$media} {
-            border-bottom-left-radius: #{$radius}px;
-            border-bottom-right-radius: #{$radius}px;
-        }
+  }
+  .radius-bl-max#{$media} {
+    border-bottom-left-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-br-#{$radius}#{$media} {
+      border-bottom-right-radius: #{$radius}px;
     }
-    
-    .radius-b-max#{$media} {
-        border-bottom-left-radius: $max;
-        border-bottom-right-radius: $max;
+  }
+  .radius-br-max#{$media} {
+    border-bottom-right-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-t-#{$radius}#{$media} {
+      border-top-left-radius: #{$radius}px;
+      border-top-right-radius: #{$radius}px;
     }
-    
-    @each $radius in $seq-8px {
-        .radius-l-#{$radius}#{$media} {
-            border-top-left-radius: #{$radius}px;
-            border-bottom-left-radius: #{$radius}px;
-        }
+  }
+
+  .radius-t-max#{$media} {
+    border-top-left-radius: $max;
+    border-top-right-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-r-#{$radius}#{$media} {
+      border-top-right-radius: #{$radius}px;
+      border-bottom-right-radius: #{$radius}px;
     }
-    
-    .radius-l-max#{$media} {
-        border-top-left-radius: $max;
-        border-bottom-left-radius: $max;
+  }
+
+  .radius-r-max#{$media} {
+    border-top-right-radius: $max;
+    border-bottom-right-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-b-#{$radius}#{$media} {
+      border-bottom-left-radius: #{$radius}px;
+      border-bottom-right-radius: #{$radius}px;
     }
+  }
+
+  .radius-b-max#{$media} {
+    border-bottom-left-radius: $max;
+    border-bottom-right-radius: $max;
+  }
+
+  @each $radius in $seq-8px {
+    .radius-l-#{$radius}#{$media} {
+      border-top-left-radius: #{$radius}px;
+      border-bottom-left-radius: #{$radius}px;
+    }
+  }
+
+  .radius-l-max#{$media} {
+    border-top-left-radius: $max;
+    border-bottom-left-radius: $max;
+  }
 }
 
-@include border('');
+@include border("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include border('--m');
+  @include border("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include border('--d');
+  @include border("--d");
 }

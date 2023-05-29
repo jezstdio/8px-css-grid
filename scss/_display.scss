@@ -1,18 +1,30 @@
 @mixin display($media) {
-    .block#{$media} { display: block; }
-    .flex#{$media} { display: flex; }
-    .inline#{$media} { display: inline; }
-    .inline-block#{$media} { display: inline-block; }
-    .inline-flex#{$media} { display: inline-flex; }
-    .none#{$media} { display: none; }
+  .block#{$media} {
+    display: block;
+  }
+  .flex#{$media} {
+    display: flex;
+  }
+  .inline#{$media} {
+    display: inline;
+  }
+  .inline-block#{$media} {
+    display: inline-block;
+  }
+  .inline-flex#{$media} {
+    display: inline-flex;
+  }
+  .none#{$media} {
+    display: none;
+  }
 }
 
-@include display('');
+@include display("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include display('--m');
+  @include display("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include display('--d');
+  @include display("--d");
 }

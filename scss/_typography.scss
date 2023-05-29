@@ -1,110 +1,222 @@
 @mixin typography($media) {
-    a, .a#{$media} {
-        font-weight: normal;
-        text-decoration: underline;
-        @include fontSize(16px);
+  a,
+  .a#{$media} {
+    font-weight: normal;
+    text-decoration: underline;
+    @include fontSize(16px);
+  }
+
+  h1,
+  .h1#{$media},
+  h2,
+  .h2#{$media},
+  h3,
+  .h3#{$media} {
+    font-weight: bold;
+  }
+
+  h1,
+  .h1#{$media} {
+    @include fontSize(40px);
+  }
+  h2,
+  .h2#{$media} {
+    @include fontSize(32px);
+  }
+  h3,
+  .h3#{$media} {
+    @include fontSize(24px);
+  }
+
+  p,
+  .p#{$media} {
+    font-weight: normal;
+    @include fontSize(16px);
+  }
+
+  small,
+  .small#{$media} {
+    font-weight: normal;
+    @include fontSize(14px);
+  }
+
+  .font-size {
+    &-12#{$media} {
+      @include fontSize(12px);
     }
-    
-    h1, .h1#{$media}, h2, .h2#{$media}, h3, .h3#{$media} { font-weight: bold; }
-    
-    h1, .h1#{$media} { @include fontSize(40px); }
-    h2, .h2#{$media} { @include fontSize(32px); }
-    h3, .h3#{$media} { @include fontSize(24px); }
-    
-    p, .p#{$media} {
-        font-weight: normal;
-        @include fontSize(16px);
+    &-14#{$media} {
+      @include fontSize(14px);
     }
-    
-    small, .small#{$media} {
-        font-weight: normal;
-        @include fontSize(14px);
+    &-16#{$media} {
+      @include fontSize(16px);
     }
-    
-    .font-size {
-        &-12#{$media} { @include fontSize(12px); }
-        &-14#{$media} { @include fontSize(14px); }
-        &-16#{$media} { @include fontSize(16px); }
-        &-24#{$media} { @include fontSize(24px); }
-        &-32#{$media} { @include fontSize(32px); }
-        &-40#{$media} { @include fontSize(40px); }
-        &-48#{$media} { @include fontSize(48px); }
+    &-24#{$media} {
+      @include fontSize(24px);
     }
-    
-    .nodecoration#{$media} { text-decoration: none; }
-    .underline#{$media} { text-decoration: underline; }
-    .linethrough#{$media} { text-decoration: line-through; }
-    .overline#{$media} { text-decoration: overline; }
-    
-    .uppercase#{$media} { text-transform: uppercase; }
-    .lowercase#{$media} { text-transform: lowercase; }
-    .capitalize#{$media} { text-transform: capitalize; }
-    
-    .line-height {
-        &-16#{$media} { line-height: 16px; }
-        &-24#{$media} { line-height: 24px; }
-        &-32#{$media} { line-height: 32px; }
-        &-40#{$media} { line-height: 40px; }
-        &-48#{$media} { line-height: 48px; }
-        &-56#{$media} { line-height: 56px; }
+    &-32#{$media} {
+      @include fontSize(32px);
     }
-    
-    .text {
-        &-left#{$media} { text-align: left; }
-        &-center#{$media} { text-align: center; }
-        &-right#{$media} { text-align: right; }
+    &-40#{$media} {
+      @include fontSize(40px);
     }
-    
-    .font-weight {
-        &-lighter#{$media} { font-weight: lighter; }
-        &-normal#{$media} { font-weight: normal; }
-        &-bolder#{$media} { font-weight: bolder; }
-        &-bold#{$media} { font-weight: bold; }
-        &-100#{$media} { font-weight: 100; }
-        &-200#{$media} { font-weight: 200; }
-        &-300#{$media} { font-weight: 300; }
-        &-400#{$media} { font-weight: 400; }
-        &-500#{$media} { font-weight: 500; }
-        &-600#{$media} { font-weight: 600; }
-        &-700#{$media} { font-weight: 700; }
-        &-800#{$media} { font-weight: 800; }
-        &-900#{$media} { font-weight: 900; }
+    &-48#{$media} {
+      @include fontSize(48px);
     }
-    
-    .whitespace {
-        &-wrap#{$media} { white-space: normal; }
-        &-nowrap#{$media} { white-space: nowrap; }
+  }
+
+  .nodecoration#{$media} {
+    text-decoration: none;
+  }
+  .underline#{$media} {
+    text-decoration: underline;
+  }
+  .linethrough#{$media} {
+    text-decoration: line-through;
+  }
+  .overline#{$media} {
+    text-decoration: overline;
+  }
+
+  .uppercase#{$media} {
+    text-transform: uppercase;
+  }
+  .lowercase#{$media} {
+    text-transform: lowercase;
+  }
+  .capitalize#{$media} {
+    text-transform: capitalize;
+  }
+
+  .line-height {
+    &-16#{$media} {
+      line-height: 16px;
+    }
+    &-24#{$media} {
+      line-height: 24px;
+    }
+    &-32#{$media} {
+      line-height: 32px;
+    }
+    &-40#{$media} {
+      line-height: 40px;
+    }
+    &-48#{$media} {
+      line-height: 48px;
+    }
+    &-56#{$media} {
+      line-height: 56px;
+    }
+  }
+
+  .text {
+    &-left#{$media} {
+      text-align: left;
+    }
+    &-center#{$media} {
+      text-align: center;
+    }
+    &-right#{$media} {
+      text-align: right;
+    }
+  }
+
+  .font-weight {
+    &-lighter#{$media} {
+      font-weight: lighter;
+    }
+    &-normal#{$media} {
+      font-weight: normal;
+    }
+    &-bolder#{$media} {
+      font-weight: bolder;
+    }
+    &-bold#{$media} {
+      font-weight: bold;
+    }
+    &-100#{$media} {
+      font-weight: 100;
+    }
+    &-200#{$media} {
+      font-weight: 200;
+    }
+    &-300#{$media} {
+      font-weight: 300;
+    }
+    &-400#{$media} {
+      font-weight: 400;
+    }
+    &-500#{$media} {
+      font-weight: 500;
+    }
+    &-600#{$media} {
+      font-weight: 600;
+    }
+    &-700#{$media} {
+      font-weight: 700;
+    }
+    &-800#{$media} {
+      font-weight: 800;
+    }
+    &-900#{$media} {
+      font-weight: 900;
+    }
+  }
+
+  .whitespace {
+    &-wrap#{$media} {
+      white-space: normal;
+    }
+    &-nowrap#{$media} {
+      white-space: nowrap;
+    }
+  }
+
+  .word-break {
+    &-normal#{$media} {
+      word-break: normal;
+    }
+    &-break-all#{$media} {
+      word-break: break-all;
+    }
+    &-keep-all#{$media} {
+      word-break: keep-all;
+    }
+    &-break-word#{$media} {
+      word-break: break-word;
+    }
+  }
+
+  .word-spacing {
+    &-normal#{$media} {
+      word-spacing: normal;
     }
 
-    .word-break {
-        &-normal#{$media} { word-break: normal; }
-        &-break-all#{$media} { word-break: break-all; }
-        &-keep-all#{$media} { word-break: keep-all; }
-        &-break-word#{$media} { word-break: break-word; }
+    @each $length in $seq-8px {
+      &-#{$length}#{$media} {
+        word-spacing: #{$length}px;
+      }
+      &-n#{$length}#{$media} {
+        word-spacing: -#{$length}px;
+      }
     }
+  }
 
-    .word-spacing {
-        &-normal#{$media} { word-spacing: normal; }
-
-        @each $length in $seq-8px {
-            &-#{$length}#{$media} { word-spacing: #{$length}px; };
-            &-n#{$length}#{$media} { word-spacing: -#{$length}px; };
-        }
+  .word-wrap {
+    &-normal#{$media} {
+      word-wrap: normal;
     }
-
-    .word-wrap {
-        &-normal#{$media} { word-wrap: normal; }
-        &-break-word#{$media} { word-wrap: break-word; }
+    &-break-word#{$media} {
+      word-wrap: break-word;
     }
-    
+  }
 }
 
-@include typography('');
+@include typography("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include typography('--m');
+  @include typography("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include typography('--d');
+  @include typography("--d");
 }

@@ -1,14 +1,18 @@
 @mixin visibility($media) {
-    .hidden#{$media} { visibility: hidden; }
-    .visible#{$media} { visibility: visible; }
+  .hidden#{$media} {
+    visibility: hidden;
+  }
+  .visible#{$media} {
+    visibility: visible;
+  }
 }
 
-@include visibility('');
+@include visibility("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include visibility('--m');
+  @include visibility("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include visibility('--d');
+  @include visibility("--d");
 }

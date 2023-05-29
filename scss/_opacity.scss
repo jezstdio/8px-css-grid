@@ -1,13 +1,17 @@
 @mixin opacity($media) {
-    @each $op in $seq-percent { .opacity-#{$op}#{$media} { opacity: calc($op / 100); } }
+  @each $op in $seq-percent {
+    .opacity-#{$op}#{$media} {
+      opacity: calc($op / 100);
+    }
+  }
 }
 
-@include opacity('');
+@include opacity("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include opacity('--m');
+  @include opacity("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include opacity('--d');
+  @include opacity("--d");
 }

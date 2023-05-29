@@ -1,35 +1,95 @@
 @mixin size($media) {
-    .width-0#{$media} { width: 0; }
-    .width-d#{$media} { max-width: $width-media--d; }
-    .width-ld#{$media} { max-width: $width-media--ld; }
-    .width-text#{$media} { max-width: $text-width; }
-    .width-auto#{$media} { width: auto; }
+  .width-0#{$media} {
+    width: 0;
+  }
+  .width-d#{$media} {
+    max-width: $width-media--d;
+  }
+  .width-ld#{$media} {
+    max-width: $width-media--ld;
+  }
+  .width-text#{$media} {
+    max-width: $text-width;
+  }
+  .width-auto#{$media} {
+    width: auto;
+  }
 
-    .height-0#{$media} { height: 0; }
-    
-    @each $minWidth in $size { .width-min-#{$minWidth}#{$media} { min-width: calc(percentage($minWidth) / 100); } }
-    @each $width in $size { .width-#{$width}#{$media} { width: calc(percentage($width) / 100); } }
-    @each $maxWidth in $size { .width-max-#{$maxWidth}#{$media} { max-width: calc(percentage($maxWidth) / 100); } }
-    
-    @each $minWidth in $size { .width-min-#{$minWidth}vw#{$media} { min-width: #{$minWidth}vw; } }
-    @each $width in $size { .width-#{$width}vw#{$media} { width: #{$width}vw; } }
-    @each $maxWidth in $size { .width-max-#{$maxWidth}vw#{$media} { max-width: #{$maxWidth}vw; } }
-    
-    @each $minHeight in $size { .height-min-#{$minHeight}#{$media} { min-height: calc(percentage($minHeight) / 100); } }
-    @each $height in $size { .height-#{$height}#{$media} { height: calc(percentage($height) / 100); } }
-    @each $maxHeight in $size { .height-max-#{$maxHeight}#{$media} { max-height: calc(percentage($maxHeight) / 100); } }
-    
-    @each $minHeight in $size { .height-min-#{$minHeight}vh#{$media} { min-height: #{$minHeight}vh; } }
-    @each $height in $size { .height-#{$height}vh#{$media} { height: #{$height}vh; } }
-    @each $maxHeight in $size { .height-max-#{$maxHeight}vh#{$media} { max-height: #{$maxHeight}vh; } }
+  .height-0#{$media} {
+    height: 0;
+  }
+
+  @each $minWidth in $size {
+    .width-min-#{$minWidth}#{$media} {
+      min-width: calc(percentage($minWidth) / 100);
+    }
+  }
+  @each $width in $size {
+    .width-#{$width}#{$media} {
+      width: calc(percentage($width) / 100);
+    }
+  }
+  @each $maxWidth in $size {
+    .width-max-#{$maxWidth}#{$media} {
+      max-width: calc(percentage($maxWidth) / 100);
+    }
+  }
+
+  @each $minWidth in $size {
+    .width-min-#{$minWidth}vw#{$media} {
+      min-width: #{$minWidth}vw;
+    }
+  }
+  @each $width in $size {
+    .width-#{$width}vw#{$media} {
+      width: #{$width}vw;
+    }
+  }
+  @each $maxWidth in $size {
+    .width-max-#{$maxWidth}vw#{$media} {
+      max-width: #{$maxWidth}vw;
+    }
+  }
+
+  @each $minHeight in $size {
+    .height-min-#{$minHeight}#{$media} {
+      min-height: calc(percentage($minHeight) / 100);
+    }
+  }
+  @each $height in $size {
+    .height-#{$height}#{$media} {
+      height: calc(percentage($height) / 100);
+    }
+  }
+  @each $maxHeight in $size {
+    .height-max-#{$maxHeight}#{$media} {
+      max-height: calc(percentage($maxHeight) / 100);
+    }
+  }
+
+  @each $minHeight in $size {
+    .height-min-#{$minHeight}vh#{$media} {
+      min-height: #{$minHeight}vh;
+    }
+  }
+  @each $height in $size {
+    .height-#{$height}vh#{$media} {
+      height: #{$height}vh;
+    }
+  }
+  @each $maxHeight in $size {
+    .height-max-#{$maxHeight}vh#{$media} {
+      max-height: #{$maxHeight}vh;
+    }
+  }
 }
 
-@include size('');
+@include size("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include size('--m');
+  @include size("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include size('--d');
+  @include size("--d");
 }

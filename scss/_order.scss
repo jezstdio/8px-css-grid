@@ -1,13 +1,17 @@
 @mixin order($media) {
-    @each $or in $order { .order-#{$or}#{$media} { order: #{$or}; } }
+  @each $or in $order {
+    .order-#{$or}#{$media} {
+      order: #{$or};
+    }
+  }
 }
 
-@include order('');
+@include order("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include order('--m');
+  @include order("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include order('--d');
+  @include order("--d");
 }

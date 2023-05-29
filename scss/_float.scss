@@ -1,26 +1,34 @@
 @mixin float($media) {
-    .float {
-        &-none#{$media} { float: none; }
-        &-l#{$media} { float: left; }
-        &-r#{$media} { float: right; }
-        &-x#{$media} { float: both; }
-        
-        &-clear#{$media} {
-            &:after {
-                clear: both;
-                content: "";
-                display: block;
-            }
-        }
+  .float {
+    &-none#{$media} {
+      float: none;
     }
+    &-l#{$media} {
+      float: left;
+    }
+    &-r#{$media} {
+      float: right;
+    }
+    &-x#{$media} {
+      float: both;
+    }
+
+    &-clear#{$media} {
+      &:after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+    }
+  }
 }
 
-@include float('');
+@include float("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include float('--m');
+  @include float("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include float('--d');
+  @include float("--d");
 }

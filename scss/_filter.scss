@@ -1,31 +1,99 @@
 @mixin filter($media) {
-    .filter-none { filter: none; }
-    @each $brightness in $seq-percent { .filter-brightness-#{$brightness}#{$media} { filter: brightness($brightness * 1%); } }
-    @each $blur in $seq-percent { .filter-blur-#{$blur}#{$media} { filter: blur(#{$blur}px); } }
-    @each $contrast in $seq-percent { .filter-contrast-#{$contrast}#{$media} { filter: contrast($contrast * 1%); } }
-    @each $grayscale in $seq-percent { .filter-grayscale-#{$grayscale}#{$media} { filter: grayscale($grayscale * 1%); } }
-    @each $hue-rotate in $seq-percent { .filter-hue-rotate-#{$hue-rotate}#{$media} { filter: hue-rotate($hue-rotate * 1%); } }
-    @each $invert in $seq-percent { .filter-invert-#{$invert}#{$media} { filter: invert($invert * 1%); } }
-    @each $opacity in $seq-percent { .filter-opacity-#{$opacity}#{$media} { filter: opacity($opacity * 1%); } }
-    @each $sepia in $seq-percent { .filter-sepia-#{$sepia}#{$media} { filter: sepia($sepia * 1%); } }
-    
-    .filter-none-bg { backdrop-filter: none; }
-    @each $brightness in $seq-percent { .filter-brightness-bg-#{$brightness}#{$media} { backdrop-filter: brightness($brightness * 1%); } }
-    @each $blur in $seq-percent { .filter-blur-bg-#{$blur}#{$media} { backdrop-filter: blur(#{$blur}px); } }
-    @each $contrast in $seq-percent { .filter-contrast-bg-#{$contrast}#{$media} { backdrop-filter: contrast($contrast * 1%); } }
-    @each $grayscale in $seq-percent { .filter-grayscale-bg-#{$grayscale}#{$media} { backdrop-filter: grayscale($grayscale * 1%); } }
-    @each $hue-rotate in $seq-percent { .filter-hue-rotate-bg-#{$hue-rotate}#{$media} { backdrop-filter: hue-rotate($hue-rotate * 1%); } }
-    @each $invert in $seq-percent { .filter-invert-bg-#{$invert}#{$media} { backdrop-filter: invert($invert * 1%); } }
-    @each $opacity in $seq-percent { .filter-opacity-bg-#{$opacity}#{$media} { backdrop-filter: opacity($opacity * 1%); } }
-    @each $sepia in $seq-percent { .filter-sepia-bg-#{$sepia}#{$media} { backdrop-filter: sepia($sepia * 1%); } }
+  .filter-none {
+    filter: none;
+  }
+  @each $brightness in $seq-percent {
+    .filter-brightness-#{$brightness}#{$media} {
+      filter: brightness($brightness * 1%);
+    }
+  }
+  @each $blur in $seq-percent {
+    .filter-blur-#{$blur}#{$media} {
+      filter: blur(#{$blur}px);
+    }
+  }
+  @each $contrast in $seq-percent {
+    .filter-contrast-#{$contrast}#{$media} {
+      filter: contrast($contrast * 1%);
+    }
+  }
+  @each $grayscale in $seq-percent {
+    .filter-grayscale-#{$grayscale}#{$media} {
+      filter: grayscale($grayscale * 1%);
+    }
+  }
+  @each $hue-rotate in $seq-percent {
+    .filter-hue-rotate-#{$hue-rotate}#{$media} {
+      filter: hue-rotate($hue-rotate * 1%);
+    }
+  }
+  @each $invert in $seq-percent {
+    .filter-invert-#{$invert}#{$media} {
+      filter: invert($invert * 1%);
+    }
+  }
+  @each $opacity in $seq-percent {
+    .filter-opacity-#{$opacity}#{$media} {
+      filter: opacity($opacity * 1%);
+    }
+  }
+  @each $sepia in $seq-percent {
+    .filter-sepia-#{$sepia}#{$media} {
+      filter: sepia($sepia * 1%);
+    }
+  }
+
+  .filter-none-bg {
+    backdrop-filter: none;
+  }
+  @each $brightness in $seq-percent {
+    .filter-brightness-bg-#{$brightness}#{$media} {
+      backdrop-filter: brightness($brightness * 1%);
+    }
+  }
+  @each $blur in $seq-percent {
+    .filter-blur-bg-#{$blur}#{$media} {
+      backdrop-filter: blur(#{$blur}px);
+    }
+  }
+  @each $contrast in $seq-percent {
+    .filter-contrast-bg-#{$contrast}#{$media} {
+      backdrop-filter: contrast($contrast * 1%);
+    }
+  }
+  @each $grayscale in $seq-percent {
+    .filter-grayscale-bg-#{$grayscale}#{$media} {
+      backdrop-filter: grayscale($grayscale * 1%);
+    }
+  }
+  @each $hue-rotate in $seq-percent {
+    .filter-hue-rotate-bg-#{$hue-rotate}#{$media} {
+      backdrop-filter: hue-rotate($hue-rotate * 1%);
+    }
+  }
+  @each $invert in $seq-percent {
+    .filter-invert-bg-#{$invert}#{$media} {
+      backdrop-filter: invert($invert * 1%);
+    }
+  }
+  @each $opacity in $seq-percent {
+    .filter-opacity-bg-#{$opacity}#{$media} {
+      backdrop-filter: opacity($opacity * 1%);
+    }
+  }
+  @each $sepia in $seq-percent {
+    .filter-sepia-bg-#{$sepia}#{$media} {
+      backdrop-filter: sepia($sepia * 1%);
+    }
+  }
 }
 
-@include filter('');
+@include filter("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include filter('--m');
+  @include filter("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include filter('--d');
+  @include filter("--d");
 }

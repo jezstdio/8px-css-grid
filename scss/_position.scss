@@ -1,47 +1,81 @@
 @mixin position($media) {
-    .absolute#{$media} { position: absolute; }
-    .fixed#{$media} { position: fixed; }
-    .relative#{$media} { position: relative; }
-    .static#{$media} { position: static; }
-    .sticky#{$media} { position: sticky; }
-    
-    @each $top in $seq-8px {
-        .top-#{$top}#{$media} { top: #{$top}px; }
-        .top-n#{$top}#{$media} { top: -#{$top}px; }
-    }
+  .absolute#{$media} {
+    position: absolute;
+  }
+  .fixed#{$media} {
+    position: fixed;
+  }
+  .relative#{$media} {
+    position: relative;
+  }
+  .static#{$media} {
+    position: static;
+  }
+  .sticky#{$media} {
+    position: sticky;
+  }
 
-    @each $right in $seq-8px { 
-        .right-#{$right}#{$media} { right: #{$right}px; }
-        .right-n#{$right}#{$media} { right: -#{$right}px; }
+  @each $top in $seq-8px {
+    .top-#{$top}#{$media} {
+      top: #{$top}px;
     }
-    
-    @each $right in $seq-8px {
-        .right-auto#{$right}#{$media} { right: autoIndent(#{$right}px); }
-        .right-auto-#{$right}#{$media} { right: autoIndent(-#{$right}px); }
+    .top-n#{$top}#{$media} {
+      top: -#{$top}px;
     }
-    
-    @each $bottom in $seq-8px { 
-        .bottom-#{$bottom}#{$media} { bottom: #{$bottom}px; }
-        .bottom-n#{$bottom}#{$media} { bottom: -#{$bottom}px; }
-    }
-    
-    @each $left in $seq-8px { 
-        .left-#{$left}#{$media} { left: #{$left}px; }
-        .left-n#{$left}#{$media} { left: -#{$left}px; }
-    }
+  }
 
-    @each $left in $seq-8px { 
-        .left-auto#{$left}#{$media} { left: autoIndent(#{$left}px); }
-        .left-auto-#{$left}#{$media} { left: autoIndent(-#{$left}px); }
+  @each $right in $seq-8px {
+    .right-#{$right}#{$media} {
+      right: #{$right}px;
     }
+    .right-n#{$right}#{$media} {
+      right: -#{$right}px;
+    }
+  }
+
+  @each $right in $seq-8px {
+    .right-auto#{$right}#{$media} {
+      right: autoIndent(#{$right}px);
+    }
+    .right-auto-#{$right}#{$media} {
+      right: autoIndent(-#{$right}px);
+    }
+  }
+
+  @each $bottom in $seq-8px {
+    .bottom-#{$bottom}#{$media} {
+      bottom: #{$bottom}px;
+    }
+    .bottom-n#{$bottom}#{$media} {
+      bottom: -#{$bottom}px;
+    }
+  }
+
+  @each $left in $seq-8px {
+    .left-#{$left}#{$media} {
+      left: #{$left}px;
+    }
+    .left-n#{$left}#{$media} {
+      left: -#{$left}px;
+    }
+  }
+
+  @each $left in $seq-8px {
+    .left-auto#{$left}#{$media} {
+      left: autoIndent(#{$left}px);
+    }
+    .left-auto-#{$left}#{$media} {
+      left: autoIndent(-#{$left}px);
+    }
+  }
 }
 
-@include position('');
+@include position("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include position('--m');
+  @include position("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include position('--d');
+  @include position("--d");
 }

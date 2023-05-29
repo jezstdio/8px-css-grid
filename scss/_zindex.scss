@@ -1,13 +1,17 @@
 @mixin zindex($media) {
-    @each $index in $order { .zindex-#{$index}#{$media} { z-index: #{$index}; } }
+  @each $index in $order {
+    .zindex-#{$index}#{$media} {
+      z-index: #{$index};
+    }
+  }
 }
 
-@include zindex('');
+@include zindex("");
 
 @media screen and (max-width: $width-media--d - 1) {
-    @include zindex('--m');
+  @include zindex("--m");
 }
 
 @media screen and (min-width: $width-media--d) {
-    @include zindex('--d');
+  @include zindex("--d");
 }

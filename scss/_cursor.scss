@@ -1,38 +1,110 @@
 .cursor {
-    &-auto { cursor: auto; }
-    &-default { cursor: default; }
-    &-none { cursor: none; }
-    &-contextmenu { cursor: context-menu; }
-    &-help { cursor: help; }
-    &-pointer { cursor: pointer; }
-    &-progress { cursor: progress; }
-    &-wait { cursor: wait; }
-    &-cell { cursor: cell; }
-    &-crosshair { cursor: crosshair; }
-    &-text { cursor: text; }
-    &-verticaltext { cursor: vertical-text; }
-    &-alias { cursor: alias; }
-    &-copy { cursor: copy; }
-    &-move { cursor: move; }
-    &-nodrop { cursor: no-drop; }
-    &-notallowed { cursor: not-allowed; }
-    &-grab { cursor: grab; }
-    &-grabbing { cursor: grabbing; }
-    &-allscroll { cursor: all-scroll; }
-    &-colresize { cursor: col-resize; }
-    &-rowresize { cursor: row-resize; }
-    &-nresize { cursor: n-resize; }
-    &-eresize { cursor: e-resize; }
-    &-sresize { cursor: s-resize; }
-    &-wresize { cursor: w-resize; }
-    &-neresize { cursor: ne-resize; }
-    &-nwresize { cursor: nw-resize; }
-    &-seresize { cursor: se-resize; }
-    &-swresize { cursor: sw-resize; }
-    &-ewresize { cursor: ew-resize; }
-    &-nsresize { cursor: ns-resize; }
-    &-neswresize { cursor: nesw-resize; }
-    &-nwseresize { cursor: nwse-resize; }
-    &-zoomin { cursor: zoom-in; }
-    &-zoomout { cursor: zoom-out; }
+  &-auto {
+    cursor: auto;
+  }
+  &-default {
+    cursor: default;
+  }
+  &-none {
+    cursor: none;
+  }
+  &-contextmenu {
+    cursor: context-menu;
+  }
+  &-help {
+    cursor: help;
+  }
+  &-pointer {
+    cursor: pointer;
+  }
+  &-progress {
+    cursor: progress;
+  }
+  &-wait {
+    cursor: wait;
+  }
+  &-cell {
+    cursor: cell;
+  }
+  &-crosshair {
+    cursor: crosshair;
+  }
+  &-text {
+    cursor: text;
+  }
+  &-verticaltext {
+    cursor: vertical-text;
+  }
+  &-alias {
+    cursor: alias;
+  }
+  &-copy {
+    cursor: copy;
+  }
+  &-move {
+    cursor: move;
+  }
+  &-nodrop {
+    cursor: no-drop;
+  }
+  &-notallowed {
+    cursor: not-allowed;
+  }
+  &-grab {
+    cursor: grab;
+  }
+  &-grabbing {
+    cursor: grabbing;
+  }
+  &-allscroll {
+    cursor: all-scroll;
+  }
+  &-colresize {
+    cursor: col-resize;
+  }
+  &-rowresize {
+    cursor: row-resize;
+  }
+  &-nresize {
+    cursor: n-resize;
+  }
+  &-eresize {
+    cursor: e-resize;
+  }
+  &-sresize {
+    cursor: s-resize;
+  }
+  &-wresize {
+    cursor: w-resize;
+  }
+  &-neresize {
+    cursor: ne-resize;
+  }
+  &-nwresize {
+    cursor: nw-resize;
+  }
+  &-seresize {
+    cursor: se-resize;
+  }
+  &-swresize {
+    cursor: sw-resize;
+  }
+  &-ewresize {
+    cursor: ew-resize;
+  }
+  &-nsresize {
+    cursor: ns-resize;
+  }
+  &-neswresize {
+    cursor: nesw-resize;
+  }
+  &-nwseresize {
+    cursor: nwse-resize;
+  }
+  &-zoomin {
+    cursor: zoom-in;
+  }
+  &-zoomout {
+    cursor: zoom-out;
+  }
 }
