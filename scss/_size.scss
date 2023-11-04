@@ -67,6 +67,7 @@
     }
   }
 
+  /* VH */
   @each $minHeight in $size {
     .height-min-#{$minHeight}vh#{$media} {
       min-height: #{$minHeight}vh;
@@ -80,6 +81,23 @@
   @each $maxHeight in $size {
     .height-max-#{$maxHeight}vh#{$media} {
       max-height: #{$maxHeight}vh;
+    }
+  }
+
+  /* DVH */
+  @each $minHeight in $size {
+    .height-min-#{$minHeight}dvh#{$media} {
+      min-height: #{$minHeight}dvh;
+    }
+  }
+  @each $height in $size {
+    .height-#{$height}dvh#{$media} {
+      height: #{$height}dvh;
+    }
+  }
+  @each $maxHeight in $size {
+    .height-max-#{$maxHeight}dvh#{$media} {
+      max-height: #{$maxHeight}dvh;
     }
   }
 }
