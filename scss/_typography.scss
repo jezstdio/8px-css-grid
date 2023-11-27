@@ -119,10 +119,10 @@
       text-align: right;
     }
     &-overflow {
-      &-ellipsis {
+      &-ellipsis#{$media} {
         text-overflow: ellipsis;
       }
-      &-clip {
+      &-clip#{$media} {
         text-overflow: clip;
       }
     }
