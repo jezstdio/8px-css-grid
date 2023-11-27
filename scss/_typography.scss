@@ -118,6 +118,14 @@
     &-right#{$media} {
       text-align: right;
     }
+    &-overflow {
+      &-ellipsis {
+        text-overflow: ellipsis;
+      }
+      &-clip {
+        text-overflow: clip;
+      }
+    }
   }
 
   .font-weight {
